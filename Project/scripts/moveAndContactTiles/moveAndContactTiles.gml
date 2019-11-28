@@ -13,15 +13,15 @@ var vector2_y = 1;
 x += velocity[vector2_x];
 
 // backup
-tile_right = false
-tile_left = false
-tile_bottom = false
-tile_top = false
+tile_right = false;
+tile_left = false;
+tile_bottom = false;
+tile_top = false;
 
 // Right collisions
 if (velocity[vector2_x] > 0)
 {
-	var tile_right = tileCollideAtPoints(tile_map_id, [bbox_right - 1, bbox_top], [bbox_right - 1, bbox_bottom - 1])
+	var tile_right = tileCollideAtPoints(tile_map_id, [bbox_right - 1, bbox_top], [bbox_right - 1, bbox_bottom - 1]);
 	if (tile_right)
 	{
 		x = bbox_right & ~(tile_size - 1);
