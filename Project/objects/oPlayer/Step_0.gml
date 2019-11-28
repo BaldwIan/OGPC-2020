@@ -12,6 +12,13 @@ velocity_[vector2_x] = clamp(velocity_[vector2_x] + x_input, -max_velocity_[vect
 // Vertical Movement
 velocity_[vector2_y] = clamp(velocity_[vector2_y] + y_input, -max_velocity_[vector2_y], max_velocity_[vector2_y]);
 
+// Knockback
+velocity_[vector2_x] += knockback_vel[vector2_x] / 2;
+velocity_[vector2_y] += knockback_vel[vector2_y] / 2;
+// Reduce knockaback
+knockback_vel[vector2_x] *= 0.9;
+knockback_vel[vector2_y] *= 0.9;
+
 // Friction
 if (x_input = 0)
 {

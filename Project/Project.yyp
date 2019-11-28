@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "2efb16d2-cf75-42d3-afde-8730c63f9489",
+            "Value": {
+                "id": "a8869a55-261c-42b3-bfab-55b826bf2b21",
+                "resourcePath": "scripts\\applyKnockback\\applyKnockback.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "326ac78d-6a8d-4d73-9eef-ae01f13af017",
             "Value": {
                 "id": "9f377b21-fe23-40a3-b014-2553f2dd0e92",
@@ -60,6 +68,14 @@
                 "id": "61fb6d93-8397-44fb-b9e9-b61d2f7ccd80",
                 "resourcePath": "views\\3dabb29a-6352-4f64-a600-65aed7099ec1.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3ea69afe-55ef-4cd9-b140-a1e9d000b0aa",
+            "Value": {
+                "id": "223616d1-7d78-45a5-9407-6577d075a112",
+                "resourcePath": "sprites\\sKnockback\\sKnockback.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -135,6 +151,22 @@
             }
         },
         {
+            "Key": "73b1283b-73e0-472c-a72b-39c1646544e7",
+            "Value": {
+                "id": "0bc64e65-57f9-485c-b101-b3a7b1faab1f",
+                "resourcePath": "scripts\\declareGlobals\\declareGlobals.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "86b192c8-3647-4e1e-8b8e-ffceb3202538",
+            "Value": {
+                "id": "5685f818-4689-4caf-9aec-c696e5284ab0",
+                "resourcePath": "objects\\oManager\\oManager.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8c0c0fde-d2d9-4232-84e4-3edcb57fe5da",
             "Value": {
                 "id": "857fbe36-ee20-473a-ad62-feb6019a5a19",
@@ -172,6 +204,14 @@
                 "id": "baae0076-1ecc-4cb0-8418-fbbb66a2a739",
                 "resourcePath": "views\\b970ec06-5117-4265-957e-f471239a644a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c2df7bc5-cead-4e2d-9b9d-c85f084fa06e",
+            "Value": {
+                "id": "0c942e12-ec9a-4ecf-83c1-85332c7d28af",
+                "resourcePath": "objects\\oKnockback\\oKnockback.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -241,7 +281,9 @@
     ],
     "script_order": [
         "e804aa4d-74ac-4ffd-b1e0-bd78fd37aa5c",
-        "a42cefc4-2c75-4587-be80-cd158ee0d574"
+        "a42cefc4-2c75-4587-be80-cd158ee0d574",
+        "2efb16d2-cf75-42d3-afde-8730c63f9489",
+        "73b1283b-73e0-472c-a72b-39c1646544e7"
     ],
     "tutorial": ""
 }
