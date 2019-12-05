@@ -1,7 +1,30 @@
-#region movement
+#region get_input
+
 // Get movement input
 var x_input = (keyboard_check(ord("D")) - keyboard_check(ord("A"))) * acceleration_;
 var y_input = (keyboard_check(ord("S")) - keyboard_check(ord("W"))) * acceleration_;
+
+// Shoot input
+if (mouse_check_button(mb_left)) && (shootCooldown <= 0)
+{
+	shootCooldown = defaultShootCooldown;
+	var bullet = instance_create_layer(x, y, "Instances", oProjectile);
+	with (bullet)
+	{
+		direction = point_direction(other.x, other.y, mouse_x, mouse_y);
+		speed = 3;
+	
+	}
+	
+	
+}
+
+
+
+
+#endregion get_input
+
+#region movement
 
 // To reference velocity array
 var vector2_x = 0;
@@ -34,3 +57,12 @@ moveAndContactTiles(collision_tile_map_id, 64, velocity_);
 
 
 #endregion movement
+
+#region update
+
+shootCooldown--;
+
+
+
+#endregion update
+
