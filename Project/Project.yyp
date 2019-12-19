@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "428f6de1-4132-4a0d-98a6-6a67657d4740",
+            "Value": {
+                "id": "c46bbf1c-82ae-497b-a2f9-3a8f6c87725f",
+                "resourcePath": "fonts\\fTitleScreen\\fTitleScreen.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "440a3dd0-b508-4284-96d2-0ace316248b3",
             "Value": {
                 "id": "2d3b5379-f9fc-4cf6-889b-cbecaf72ff5f",
