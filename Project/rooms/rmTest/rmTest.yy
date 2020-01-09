@@ -9,7 +9,8 @@
     "instanceCreationOrderIDs": [
         "ed6eef94-d5eb-4a62-8948-0031b82cdfa0",
         "484f87ac-9fa2-4e81-8ea9-d3048d22ae5b",
-        "123a12fe-9ee2-4f51-b88e-b27f81843e9a"
+        "123a12fe-9ee2-4f51-b88e-b27f81843e9a",
+        "d759e604-c0be-4128-b78e-d225a4e3ecd5"
     ],
     "IsDnD": false,
     "layers": [
@@ -27,7 +28,8 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-{"name": "inst_60C1BA41","id": "123a12fe-9ee2-4f51-b88e-b27f81843e9a","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_60C1BA41","objId": "86b192c8-3647-4e1e-8b8e-ffceb3202538","properties": null,"rotation": 0,"scaleX": 3,"scaleY": 3,"mvc": "1.1","x": -64,"y": -64}
+{"name": "inst_60C1BA41","id": "123a12fe-9ee2-4f51-b88e-b27f81843e9a","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_60C1BA41","objId": "86b192c8-3647-4e1e-8b8e-ffceb3202538","properties": null,"rotation": 0,"scaleX": 3,"scaleY": 3,"mvc": "1.1","x": -64,"y": -64},
+{"name": "inst_7308A000","id": "d759e604-c0be-4128-b78e-d225a4e3ecd5","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_7308A000","objId": "2e32aff6-9be7-4b9a-a1d4-4a4654e32ff4","properties": null,"rotation": 0,"scaleX": 3,"scaleY": 3,"mvc": "1.1","x": -64,"y": 0}
             ],
             "layers": [
 
