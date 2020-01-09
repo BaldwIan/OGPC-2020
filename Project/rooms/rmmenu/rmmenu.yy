@@ -8,7 +8,9 @@
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
         "19a085e6-e0ef-4d15-809f-34b740becbec",
-        "4030de1e-929b-46e2-9548-3dac438c8801"
+        "4030de1e-929b-46e2-9548-3dac438c8801",
+        "6f6391fa-be4b-43f0-96ea-45f4fc15c6fe",
+        "b46efe12-7fb9-4462-9af3-37fe7e085edc"
     ],
     "IsDnD": false,
     "layers": [
@@ -26,8 +28,10 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-{"name": "inst_1DAB9EBD","id": "19a085e6-e0ef-4d15-809f-34b740becbec","colour": { "Value": 4294967295 },"creationCodeFile": "InstanceCreationCode_inst_1DAB9EBD.gml","creationCodeType": ".gml","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_1DAB9EBD","objId": "a08af3d6-7b01-4b93-acdb-1b4b399a4cc3","properties": null,"rotation": 0,"scaleX": 2.333333,"scaleY": 2,"mvc": "1.1","x": 512,"y": 432},
-{"name": "inst_3092560F","id": "4030de1e-929b-46e2-9548-3dac438c8801","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_3092560F","objId": "a08af3d6-7b01-4b93-acdb-1b4b399a4cc3","properties": null,"rotation": 0,"scaleX": 2.333333,"scaleY": 2,"mvc": "1.1","x": 512,"y": 544}
+{"name": "inst_1DAB9EBD","id": "19a085e6-e0ef-4d15-809f-34b740becbec","colour": { "Value": 4294967295 },"creationCodeFile": "InstanceCreationCode_inst_1DAB9EBD.gml","creationCodeType": ".gml","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_1DAB9EBD","objId": "a08af3d6-7b01-4b93-acdb-1b4b399a4cc3","properties": null,"rotation": 0,"scaleX": 2.333333,"scaleY": 2,"mvc": "1.1","x": 480,"y": 240},
+{"name": "inst_3092560F","id": "4030de1e-929b-46e2-9548-3dac438c8801","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_3092560F","objId": "a08af3d6-7b01-4b93-acdb-1b4b399a4cc3","properties": null,"rotation": 0,"scaleX": 2.333333,"scaleY": 2,"mvc": "1.1","x": 480,"y": 352},
+{"name": "inst_4278E421","id": "6f6391fa-be4b-43f0-96ea-45f4fc15c6fe","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_4278E421","objId": "86b192c8-3647-4e1e-8b8e-ffceb3202538","properties": null,"rotation": 0,"scaleX": 3,"scaleY": 3,"mvc": "1.1","x": -128,"y": 64},
+{"name": "inst_69578B3B","id": "b46efe12-7fb9-4462-9af3-37fe7e085edc","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_69578B3B","objId": "2e32aff6-9be7-4b9a-a1d4-4a4654e32ff4","properties": null,"rotation": 0,"scaleX": 3,"scaleY": 3,"mvc": "1.1","x": -128,"y": 160}
             ],
             "layers": [
 
@@ -89,16 +93,16 @@
     },
     "roomSettings":     {
         "id": "93992b42-04ea-40d3-b7ac-98909fffc358",
-        "Height": 768,
+        "Height": 1080,
         "inheritRoomSettings": false,
         "modelName": "GMRoomSettings",
         "persistent": false,
         "mvc": "1.0",
-        "Width": 1024
+        "Width": 1920
     },
     "mvc": "1.0",
     "views": [
-{"id": "bed22d76-a35b-4ba9-bc6d-f48cd5de33ac","hborder": 32,"hport": 768,"hspeed": -1,"hview": 768,"inherit": false,"modelName": "GMRView","objId": "00000000-0000-0000-0000-000000000000","mvc": "1.0","vborder": 32,"visible": false,"vspeed": -1,"wport": 1024,"wview": 1024,"xport": 0,"xview": 0,"yport": 0,"yview": 0},
+{"id": "bed22d76-a35b-4ba9-bc6d-f48cd5de33ac","hborder": 32,"hport": 540,"hspeed": -1,"hview": 540,"inherit": false,"modelName": "GMRView","objId": "00000000-0000-0000-0000-000000000000","mvc": "1.0","vborder": 32,"visible": true,"vspeed": -1,"wport": 960,"wview": 960,"xport": 0,"xview": 0,"yport": 0,"yview": 0},
 {"id": "b68e40c0-7658-4b2a-9034-f04107e2c373","hborder": 32,"hport": 768,"hspeed": -1,"hview": 768,"inherit": false,"modelName": "GMRView","objId": "00000000-0000-0000-0000-000000000000","mvc": "1.0","vborder": 32,"visible": false,"vspeed": -1,"wport": 1024,"wview": 1024,"xport": 0,"xview": 0,"yport": 0,"yview": 0},
 {"id": "e98827be-733b-485a-b932-40175cc51fd1","hborder": 32,"hport": 768,"hspeed": -1,"hview": 768,"inherit": false,"modelName": "GMRView","objId": "00000000-0000-0000-0000-000000000000","mvc": "1.0","vborder": 32,"visible": false,"vspeed": -1,"wport": 1024,"wview": 1024,"xport": 0,"xview": 0,"yport": 0,"yview": 0},
 {"id": "52ba0954-e00c-4147-ab95-ec20bc6df81d","hborder": 32,"hport": 768,"hspeed": -1,"hview": 768,"inherit": false,"modelName": "GMRView","objId": "00000000-0000-0000-0000-000000000000","mvc": "1.0","vborder": 32,"visible": false,"vspeed": -1,"wport": 1024,"wview": 1024,"xport": 0,"xview": 0,"yport": 0,"yview": 0},
@@ -111,7 +115,7 @@
         "id": "7fd9c6b2-527a-4ec5-af70-d8052eb854c9",
         "clearDisplayBuffer": true,
         "clearViewBackground": false,
-        "enableViews": false,
+        "enableViews": true,
         "inheritViewSettings": false,
         "modelName": "GMRoomViewSettings",
         "mvc": "1.0"
