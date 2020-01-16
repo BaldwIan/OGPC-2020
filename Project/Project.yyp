@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "5d04952e-5c16-463d-99b7-14e84b14f6c7",
+            "Value": {
+                "id": "9ffc0212-554c-402b-94d5-5698e92a9d09",
+                "resourcePath": "views\\5d04952e-5c16-463d-99b7-14e84b14f6c7.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "62564dba-d42a-45da-9d44-bb2399a824d0",
             "Value": {
                 "id": "cec39c07-93be-474d-9fc7-13189c5fe66e",
@@ -239,6 +247,14 @@
             }
         },
         {
+            "Key": "7a8cf573-66e5-45f6-8b67-0e07b8a91399",
+            "Value": {
+                "id": "1d39f978-f3d2-4829-8065-ec811291ed73",
+                "resourcePath": "sprites\\sSliderBar\\sSliderBar.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7a8dd0ad-15f6-4f1a-b8b4-299939db9e5b",
             "Value": {
                 "id": "0c698fec-6a97-458b-af61-4bcd6c0d0059",
@@ -276,6 +292,14 @@
                 "id": "5685f818-4689-4caf-9aec-c696e5284ab0",
                 "resourcePath": "objects\\oManager\\oManager.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8b1622da-9dbb-4860-abb9-ab7c6359f444",
+            "Value": {
+                "id": "acf81f13-9650-4ea3-84e7-19c6dc0520d8",
+                "resourcePath": "sprites\\sSlider\\sSlider.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -340,6 +364,14 @@
                 "id": "ee27cbbd-9ef5-472b-9dd7-a6cdde9c2a11",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "aee719a4-26a9-45d3-91ae-c305ca3ce504",
+            "Value": {
+                "id": "14901ae1-1c63-40cb-b4ba-d671dcffc622",
+                "resourcePath": "sounds\\sndPlayback\\sndPlayback.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -476,6 +508,14 @@
                 "id": "3afba7c5-b6d2-4f24-be1d-0d1f84ede115",
                 "resourcePath": "views\\f553a4ce-6888-4c16-b64f-a0852a0e5c1c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f9fd7adf-e60c-4f47-b4cb-470bb1814d98",
+            "Value": {
+                "id": "0059e6ad-7a30-4989-8419-ce8115dec361",
+                "resourcePath": "objects\\oGUISlider\\oGUISlider.yy",
+                "resourceType": "GMObject"
             }
         },
         {

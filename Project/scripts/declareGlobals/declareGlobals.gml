@@ -50,5 +50,16 @@ global.cheight = global.regCHeight;
 
 #endregion camera
 
+#region slider_actions
+
+// Set GUI Slider Actions
+enum slider_actions
+{
+	no_action,
+	volume,
+}
+
+#endregion slider_actions
+
 
 
