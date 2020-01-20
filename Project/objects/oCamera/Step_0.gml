@@ -3,69 +3,69 @@ var smoothZoom = true;
 
 switch (mode)
 {
-	case cammode.follow_object:
-		// Check if object to follow exists
-		if (!instance_exists(following)) break;
+case cammode.follow_object:
+	// Check if object to follow exists
+	if (!instance_exists(following)) break;
 		
 		
-		xTo = following.x + xOffset;
-		yTo = following.y + yOffset;
-		break;
+	xTo = following.x + xOffset;
+	yTo = following.y + yOffset;
+	break;
 		
-	case cammode.follow_mouse_drag:
-		smoothPan = false;
-		var mx = display_mouse_get_x();
-		var my = display_mouse_get_y();
+case cammode.follow_mouse_drag:
+	smoothPan = false;
+	var mx = display_mouse_get_x();
+	var my = display_mouse_get_y();
 	
-		if (mouse_check_button(mb_left))
-		{
-			xTo += (mouseXPrev - mx) / window_get_width() * global.cwidth;
-			yTo += (mouseYPrev - my) / window_get_height() * global.cheight;
-		}
+	if (mouse_check_button(mb_left))
+	{
+		xTo += (mouseXPrev - mx) / window_get_width() * global.cwidth;
+		yTo += (mouseYPrev - my) / window_get_height() * global.cheight;
+	}
 		
-		mouseXPrev = mx;
-		mouseYPrev = my;
+	mouseXPrev = mx;
+	mouseYPrev = my;
 		
-		break;
+	break;
 		
-	case cammode.follow_mouse_border:
-		var borderX = global.cwidth/3;
-		var borderY = global.cheight/3;
-		if (!point_in_rectangle(mouse_x, mouse_y, x - borderX, y - borderY, x + borderX, y + borderY))
-		{
-			xTo = lerp(xTo, mouse_x, 0.05);
-			yTo = lerp(yTo, mouse_y, 0.05);
-		}
-		break;
+case cammode.follow_mouse_border:
+	var borderX = global.cwidth/3;
+	var borderY = global.cheight/3;
+	if (!point_in_rectangle(mouse_x, mouse_y, x - borderX, y - borderY, x + borderX, y + borderY))
+	{
+		xTo = lerp(xTo, mouse_x, 0.05);
+		yTo = lerp(yTo, mouse_y, 0.05);
+	}
+	break;
 		
-	case cammode.follow_mouse_peak:
-		if (!instance_exists(following)) break;
-		xTo = lerp(following.x, mouse_x, 0.5);
-		yTo = lerp(following.y, mouse_y, 0.5);
-		break;
+case cammode.follow_mouse_peak:
+	if (!instance_exists(following)) break;
+	xTo = lerp(following.x, mouse_x, 0.5);
+	yTo = lerp(following.y, mouse_y, 0.5);
+	break;
 		
-	case cammode.move_to_target:
-		if (mouse_check_button(mb_left))
-		{
-			xTo = mouse_x;
-			yTo = mouse_y;
-		}
-		break;
+case cammode.move_to_target:
+	if (mouse_check_button(mb_left))
+	{
+		xTo = mouse_x;
+		yTo = mouse_y;
+	}
+	break;
 		
-	// Buggy
-	case cammode.shake:
-		rotation = random_range(-4, 4);
-		break;
+// Buggy
+case cammode.shake:
+	rotation = random_range(-4, 4);
+	break;
 		
-	// Buggy
-	case cammode.shake_follow:
-		//if (!instance_exists(following)) break;
-		//rotation += random_range(-0.3, 0.3);
-		xTo = following.x;
-		yTo = following.y;
+// Buggy
+case cammode.shake_follow:
+	//if (!instance_exists(following)) break;
+	//rotation += random_range(-0.3, 0.3);
+	xTo = following.x;
+	yTo = following.y;
 		
-	default:
-		break;
+default:
+	break;
 }
 /*
 // Fix offscreen bug

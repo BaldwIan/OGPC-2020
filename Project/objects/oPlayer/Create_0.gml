@@ -15,3 +15,6 @@ collision_tile_map_id = layer_tilemap_get_id(layer_id);
 // Health system
 HP = 100;
 maxHP = 100;
+
+// State
+state = object_states.neutral;

@@ -22,9 +22,6 @@ enum button_actions
 	
 	// Menu actions
 	goto_room,
-	
-	
-	
 }
 
 #endregion button_actions
@@ -61,5 +58,12 @@ enum slider_actions
 
 #endregion slider_actions
 
+// States that dynamic objects can be in such as stun, aggro, 
+#region object_states
 
+enum object_states
+{
+	neutral,
+}
 
+#endregion object_states
