@@ -1,1 +1,1 @@
-applyKnockback(x, y, oKnockback, 50);
+applyKnockback(x, y, oEnemy, 50);

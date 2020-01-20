@@ -223,6 +223,14 @@
             }
         },
         {
+            "Key": "6917ecda-6755-4f0a-9e2b-956da4e17b58",
+            "Value": {
+                "id": "85301064-117f-46d2-ae13-1451b80b8214",
+                "resourcePath": "scripts\\roomSetup\\roomSetup.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "6a0f204e-3ae0-447d-8886-2cee56a44620",
             "Value": {
                 "id": "54d2edc6-b7c4-47bb-b8ff-120fb6eb7c37",
@@ -410,7 +418,7 @@
             "Key": "c2df7bc5-cead-4e2d-9b9d-c85f084fa06e",
             "Value": {
                 "id": "0c942e12-ec9a-4ecf-83c1-85332c7d28af",
-                "resourcePath": "objects\\oKnockback\\oKnockback.yy",
+                "resourcePath": "objects\\oEnemy\\oEnemy.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -547,7 +555,8 @@
         "e804aa4d-74ac-4ffd-b1e0-bd78fd37aa5c",
         "a42cefc4-2c75-4587-be80-cd158ee0d574",
         "2efb16d2-cf75-42d3-afde-8730c63f9489",
-        "73b1283b-73e0-472c-a72b-39c1646544e7"
+        "73b1283b-73e0-472c-a72b-39c1646544e7",
+        "6917ecda-6755-4f0a-9e2b-956da4e17b58"
     ],
     "tutorial": ""
 }

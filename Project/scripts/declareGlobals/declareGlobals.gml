@@ -63,7 +63,28 @@ enum slider_actions
 
 enum object_states
 {
-	neutral,
+	neutral,	// For player when no status effects
+	idle,		// For enemies when not moving
+	wander,		// Patrol for player or as an npc move around
+	alert,		// For enemies when aggro, but not attacking
+	attack,		// For enemies right after alert phase when attacking
+	stunned,	// May be temporary because different types of stuns may be addded later
 }
 
 #endregion object_states
+
+#region collision_grid
+
+// Standard size of grid cells
+var cell_width = 64;
+var cell_height = 64;
+
+// Get amount of cells per height or width
+var hcells = room_width div cell_width;
+var vcells = room_height div cell_height;
+
+// create mp_grid for enemy pathfinding
+global.pathgrid = mp_grid_create(0, 0, hcells, vcells, cell_width, cell_height);
+// grid willl be destroyed and re-created every room start
+
+#endregion collision_grid

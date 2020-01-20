@@ -2,7 +2,7 @@
     "id": "c2df7bc5-cead-4e2d-9b9d-c85f084fa06e",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oKnockback",
+    "name": "oEnemy",
     "eventList": [
         {
             "id": "8f3ef839-9e3a-45c2-bbc2-7212e1c79f2d",

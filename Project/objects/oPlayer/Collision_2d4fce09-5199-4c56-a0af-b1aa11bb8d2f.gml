@@ -1,1 +1,1 @@
-applyKnockback(x, y, other, 15);
+applyKnockback(x, y, other, 8);
