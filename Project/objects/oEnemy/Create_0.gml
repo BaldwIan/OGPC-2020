@@ -1,5 +1,5 @@
 // Movement
-knockForce = 10;
+knockForce = 4;
 spd = 3;
 path = path_add();
 aggroDistance = 200;	// 200 px
