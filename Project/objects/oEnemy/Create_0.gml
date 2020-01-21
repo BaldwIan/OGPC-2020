@@ -5,7 +5,7 @@ path = path_add();
 aggroDistance = 200;	// 200 px
 
 knockback_vel = [0, 0];
-max_knockback_vel = [4, 4];
+max_knockback_vel = [8, 8];
 
 // Get the tile_map_id for collisions
 var layer_id = layer_get_id("CollisionTiles");
