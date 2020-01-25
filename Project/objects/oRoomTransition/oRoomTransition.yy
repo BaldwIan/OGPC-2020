@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "oRoomTransition",
     "eventList": [
-        
+        {
+            "id": "c07780b4-ab51-4544-95f7-f267f27e0980",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "8b473e42-c8ae-4847-b34e-61c951814102"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
