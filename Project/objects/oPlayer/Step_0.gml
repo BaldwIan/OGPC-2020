@@ -1,8 +1,10 @@
 #region get_input
 
 // Get movement input
-var x_input = (keyboard_check(ord("D")) - keyboard_check(ord("A"))) * acceleration_;
-var y_input = (keyboard_check(ord("S")) - keyboard_check(ord("W"))) * acceleration_;
+var x_input = (keyboard_check(global.KRight) - keyboard_check(global.KLeft)) * acceleration_;
+var y_input = (keyboard_check(global.KDown) - keyboard_check(global.KUp)) * acceleration_;
+
+var sprint = keyboard_check(global.KSprint);
 
 // Shoot input
 var shooting = false;

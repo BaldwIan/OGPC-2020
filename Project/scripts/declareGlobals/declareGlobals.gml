@@ -6,7 +6,13 @@ global.debug = false;
 
 #region controls
 
-global.KDebug = ord("H");
+global.KDebug	= ord("H");
+
+global.KUp		= ord("W");
+global.KLeft	= ord("A");
+global.KDown	= ord("S");
+global.KRight	= ord("D");
+global.KSprint	= vk_shift;
 
 #endregion controls
 
