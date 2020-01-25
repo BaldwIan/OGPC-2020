@@ -1,8 +1,9 @@
 // Movement Variables
-velocity_ = [0, 0];
-knockback_vel = [0, 0];
-max_velocity_ = [4, 4];
-acceleration_ = 3;
+velocity_		= [0, 0];
+knockback_vel	= [0, 0];
+max_velocity_	= [4, 4];
+sprintSpd		= [2, 2];
+acceleration_	= 3;
 
 // Shooting
 defaultShootCooldown = room_speed *1;

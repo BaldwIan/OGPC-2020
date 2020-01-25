@@ -4,13 +4,15 @@
 var x_input = (keyboard_check(global.KRight) - keyboard_check(global.KLeft)) * acceleration_;
 var y_input = (keyboard_check(global.KDown) - keyboard_check(global.KUp)) * acceleration_;
 
-var sprint = keyboard_check(global.KSprint);
+var isSprinting = keyboard_check(global.KSprint);
 
 // Shoot input
 var shooting = false;
 if (mouse_check_button(mb_left)) shooting = true;
 
 #endregion get_input
+
+#region state_actions
 
 switch (state)
 {
@@ -32,10 +34,20 @@ case object_states.neutral:
 	var vector2_x = 0;
 	var vector2_y = 1;
 
-	// Horizontal Movement
-	velocity_[vector2_x] = clamp(velocity_[vector2_x] + x_input, -max_velocity_[vector2_x], max_velocity_[vector2_x]);
-	// Vertical Movement
-	velocity_[vector2_y] = clamp(velocity_[vector2_y] + y_input, -max_velocity_[vector2_y], max_velocity_[vector2_y]);
+	// --Horizontal Movement
+	
+	// clamp horiz left
+	var leftVelClamp = -max_velocity_[vector2_x] - (isSprinting * sprintSpd[vector2_x]);	// if sprinting, then sprint speed is added
+	// clamp horiz right
+	var rightVelClamp = max_velocity_[vector2_x] + (isSprinting * sprintSpd[vector2_x]);	// if sprinting, then sprint speed is added
+	velocity_[vector2_x] = clamp(velocity_[vector2_x] + x_input, leftVelClamp, rightVelClamp);
+	
+	// --Vertical Movement
+	
+	var upVelClamp = -max_velocity_[vector2_y] - (isSprinting * sprintSpd[vector2_y]);	// if sprinting, then sprint speed is added
+	// clamp horiz right
+	var downVelClamp = max_velocity_[vector2_y] + (isSprinting * sprintSpd[vector2_y]);	// if sprinting, then sprint speed is added
+	velocity_[vector2_y] = clamp(velocity_[vector2_y] + y_input, upVelClamp, downVelClamp);
 
 	// Knockback
 	velocity_[vector2_x] += knockback_vel[vector2_x] / 2;
@@ -59,6 +71,8 @@ case object_states.neutral:
 default:
 	break;
 }
+
+#endregion state_actions
 
 
 // Move and contact tiles
