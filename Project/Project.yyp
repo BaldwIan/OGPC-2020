@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "5c57bec8-1d2b-42b4-8c06-ce2c1fcef49a",
+            "Value": {
+                "id": "3fa0765a-9e3c-4806-9b96-c7cbcf50d177",
+                "resourcePath": "views\\5c57bec8-1d2b-42b4-8c06-ce2c1fcef49a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "5cc87358-3321-48f0-99f2-ebd0209a16c3",
             "Value": {
                 "id": "8388a773-f2ee-4390-90e5-1a34bb4f9a5e",
@@ -319,6 +327,14 @@
             }
         },
         {
+            "Key": "8b473e42-c8ae-4847-b34e-61c951814102",
+            "Value": {
+                "id": "56bac780-24cb-42e1-8fa4-bed584a3dc10",
+                "resourcePath": "objects\\oRoomTransition\\oRoomTransition.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8c0c0fde-d2d9-4232-84e4-3edcb57fe5da",
             "Value": {
                 "id": "857fbe36-ee20-473a-ad62-feb6019a5a19",
@@ -340,6 +356,14 @@
                 "id": "3c635933-fc6d-46d1-bc8e-212fb4875b28",
                 "resourcePath": "views\\970d5de9-02c2-4e0f-8aae-6661d1418855.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "97bc0689-8499-4ba2-8a47-333a1b4b4ecf",
+            "Value": {
+                "id": "bbfb9403-eba6-43fa-98db-2f8e11cd332e",
+                "resourcePath": "sprites\\sRoomTransition\\sRoomTransition.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -460,6 +484,14 @@
                 "id": "312e0ba6-cdeb-46f9-9c4b-3ddf46e63407",
                 "resourcePath": "options\\android\\options_android.yy",
                 "resourceType": "GMAndroidOptions"
+            }
+        },
+        {
+            "Key": "e519f875-6c4e-4470-b62c-f8018df0bf7f",
+            "Value": {
+                "id": "1ff0c4ff-4acc-49ed-8432-8d9c9324647b",
+                "resourcePath": "views\\e519f875-6c4e-4470-b62c-f8018df0bf7f.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
