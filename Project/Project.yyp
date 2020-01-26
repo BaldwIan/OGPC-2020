@@ -207,6 +207,14 @@
             }
         },
         {
+            "Key": "41f57412-3b52-4d31-b950-7b953c88df78",
+            "Value": {
+                "id": "7894bbce-05dd-4f75-9af0-294e680f8c23",
+                "resourcePath": "sprites\\male_base_light\\male_base_light.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "428f6de1-4132-4a0d-98a6-6a67657d4740",
             "Value": {
                 "id": "c46bbf1c-82ae-497b-a2f9-3a8f6c87725f",
@@ -292,6 +300,14 @@
                 "id": "9ffc0212-554c-402b-94d5-5698e92a9d09",
                 "resourcePath": "views\\5d04952e-5c16-463d-99b7-14e84b14f6c7.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "619221f8-b1c4-47de-8e42-670343e8744e",
+            "Value": {
+                "id": "380a6e87-6cfe-405d-b699-99e6e7d34da3",
+                "resourcePath": "sprites\\male_shoes_black\\male_shoes_black.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -447,6 +463,14 @@
             }
         },
         {
+            "Key": "8a651afb-8f7d-4728-9f99-5c171b5c6e25",
+            "Value": {
+                "id": "09bef0cf-bc49-4686-a4b1-3a1e5e801300",
+                "resourcePath": "sprites\\male_hair_brunette\\male_hair_brunette.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8b1622da-9dbb-4860-abb9-ab7c6359f444",
             "Value": {
                 "id": "acf81f13-9650-4ea3-84e7-19c6dc0520d8",
@@ -567,6 +591,14 @@
             }
         },
         {
+            "Key": "a9d682ca-3b4a-4fda-8661-a6afc91b5734",
+            "Value": {
+                "id": "4f0a4b3a-8a0c-4520-a229-6b17870feffc",
+                "resourcePath": "sprites\\teal_longsleeve\\teal_longsleeve.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ab94b189-52c2-4180-9b58-6caf6522c21f",
             "Value": {
                 "id": "bc5e2585-5c29-4ac4-9ea9-492dd0276201",
@@ -635,6 +667,14 @@
             "Value": {
                 "id": "fd2938d1-88ce-46bc-8f5b-cc806c29412d",
                 "resourcePath": "sprites\\sMainMenuSideGUI\\sMainMenuSideGUI.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "bb935268-ccd0-4124-9e6a-669d342ee8f3",
+            "Value": {
+                "id": "1a16ac78-3ada-4764-81fb-4fc7a86e4f82",
+                "resourcePath": "sprites\\male_pants_white\\male_pants_white.yy",
                 "resourceType": "GMSprite"
             }
         },
