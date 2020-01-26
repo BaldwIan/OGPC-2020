@@ -1,3 +1,5 @@
+#region path_grid
+
 /// @description script should only be run by manager after room has been started
 var tile_map = layer_tilemap_get_id("CollisionTiles");
 
@@ -25,6 +27,16 @@ for (var xx = 0; xx < room_width / cell_width; xx++)
 	}
 }
 
-
-
 //mp_grid_add_instances(global.pathgrid, oEnemySolid, true);
+
+#endregion path_grid
+
+#region player_setup
+
+if (instance_exists(oPlayer))
+{
+	oPlayer.x = spawnX;
+	oPlayer.y = spawnY;
+}
+
+#endregion player_setup

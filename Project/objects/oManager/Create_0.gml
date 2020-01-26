@@ -13,3 +13,6 @@ blackAlpha = 0;	// For black fade effect
 
 spawnRoom = -1;
 doTransition = false;
+
+spawnX = 576;
+spawnY = 448;
