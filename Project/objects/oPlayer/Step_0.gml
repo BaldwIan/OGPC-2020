@@ -74,14 +74,32 @@ default:
 
 #endregion state_actions
 
+#region collision
+// -- COLLISION
 
 // Move and contact tiles
 moveAndContactTiles(collision_tile_map_id, 64, velocity_);
 
+// Room transition
+var rmTransition = instance_place(x, y, oRoomTransition);
+
+#endregion collision
+
 
 #region update
 
+// Reduce shot cooldown
 shootCooldown--;
+
+// Room transition
+if (rmTransition != noone)
+{
+	with (oManager)
+	{
+		spawnRoom = rmTransition.targetRoom;
+		doTransition = true;
+	}
+}
 
 #endregion update
 
