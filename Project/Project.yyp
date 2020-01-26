@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "0d245b41-7325-4c0c-8d46-31af18ab0c94",
+            "Value": {
+                "id": "2d3327c1-a8df-48b4-a07d-1e6c55542e8b",
+                "resourcePath": "sprites\\sCharacterMask\\sCharacterMask.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0d9a592e-935e-4fed-a60f-ad32f675127a",
             "Value": {
                 "id": "0fc8e40e-9cc0-4b99-acc7-90cfc28ac5d1",
