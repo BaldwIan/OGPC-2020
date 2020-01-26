@@ -2,7 +2,7 @@
     "id": "a9d682ca-3b4a-4fda-8661-a6afc91b5734",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "teal_longsleeve",
+    "name": "male_shirt_teal",
     "For3D": false,
     "HTile": false,
     "VTile": false,

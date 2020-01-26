@@ -77,6 +77,18 @@ enum object_states
 	stunned,	// May be temporary because different types of stuns may be addded later
 }
 
+enum dir
+{
+	east,
+	north_east,
+	north,
+	north_west,
+	west,
+	south_west,
+	south,
+	south_east,
+}
+
 #endregion object_states
 
 #region collision_grid

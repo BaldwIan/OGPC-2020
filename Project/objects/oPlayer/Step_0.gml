@@ -6,6 +6,8 @@ var y_input = (keyboard_check(global.KDown) - keyboard_check(global.KUp)) * acce
 
 var isSprinting = keyboard_check(global.KSprint);
 
+var isMoving = x_input || y_input;
+
 // Shoot input
 var shooting = false;
 if (mouse_check_button(mb_left)) shooting = true;
@@ -87,6 +89,11 @@ var rmTransition = instance_place(x, y, oRoomTransition);
 
 
 #region update
+
+var mouseAngle = point_direction(x, y, mouse_x, mouse_y);
+
+if (isMoving)	{ dir_state = getDirStateVelocity(velocity_);	}
+else			{ dir_state = getDirStateAngle(mouseAngle);		}
 
 // Reduce shot cooldown
 shootCooldown--;

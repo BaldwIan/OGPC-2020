@@ -594,7 +594,7 @@
             "Key": "a9d682ca-3b4a-4fda-8661-a6afc91b5734",
             "Value": {
                 "id": "4f0a4b3a-8a0c-4520-a229-6b17870feffc",
-                "resourcePath": "sprites\\teal_longsleeve\\teal_longsleeve.yy",
+                "resourcePath": "sprites\\male_shirt_teal\\male_shirt_teal.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -676,6 +676,14 @@
                 "id": "1a16ac78-3ada-4764-81fb-4fc7a86e4f82",
                 "resourcePath": "sprites\\male_pants_white\\male_pants_white.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c04de3e9-af36-464d-83a2-6ede3b48b497",
+            "Value": {
+                "id": "c30c4ae5-5373-4383-acec-830f22b8ce5b",
+                "resourcePath": "scripts\\getDirStateAngle\\getDirStateAngle.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -799,6 +807,14 @@
             }
         },
         {
+            "Key": "f23d3618-0486-4d31-8f92-be9ce6281af1",
+            "Value": {
+                "id": "c29cc5f6-f167-4fb1-aadf-081e7fef1db3",
+                "resourcePath": "scripts\\getDirStateVelocity\\getDirStateVelocity.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f3424a4c-1ecb-4d4d-9df0-bb51e35b832a",
             "Value": {
                 "id": "b6195b9d-8098-4b08-bb19-3fb48dba0b86",
@@ -868,7 +884,9 @@
         "a42cefc4-2c75-4587-be80-cd158ee0d574",
         "2efb16d2-cf75-42d3-afde-8730c63f9489",
         "73b1283b-73e0-472c-a72b-39c1646544e7",
-        "6917ecda-6755-4f0a-9e2b-956da4e17b58"
+        "6917ecda-6755-4f0a-9e2b-956da4e17b58",
+        "c04de3e9-af36-464d-83a2-6ede3b48b497",
+        "f23d3618-0486-4d31-8f92-be9ce6281af1"
     ],
     "tutorial": ""
 }
