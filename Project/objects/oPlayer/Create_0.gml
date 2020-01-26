@@ -21,8 +21,10 @@ maxHP = 100;
 state = object_states.neutral;
 dir_state = dir.east;
 
+isMoving = false;
+
 // Draw info
-xFrame = 0;
+xFrame = 1;
 yFrame = 0;
 
 spriteBase	= male_base_light;

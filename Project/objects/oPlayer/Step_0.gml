@@ -6,7 +6,8 @@ var y_input = (keyboard_check(global.KDown) - keyboard_check(global.KUp)) * acce
 
 var isSprinting = keyboard_check(global.KSprint);
 
-var isMoving = x_input || y_input;
+isMoving =	(keyboard_check(global.KRight))	|| (keyboard_check(global.KLeft)) ||
+			(keyboard_check(global.KDown))	|| (keyboard_check(global.KUp));
 
 // Shoot input
 var shooting = false;
@@ -61,11 +62,11 @@ case object_states.neutral:
 	// Friction
 	if (x_input = 0)
 	{
-		velocity_[vector2_x] = lerp(velocity_[vector2_x], 0, .5);
+		velocity_[vector2_x] = lerp(velocity_[vector2_x], 0, .75);
 	}
 	if (y_input = 0)
 	{
-		velocity_[vector2_y] = lerp(velocity_[vector2_y], 0, .5);
+		velocity_[vector2_y] = lerp(velocity_[vector2_y], 0, .75);
 	}
 	
 	#endregion movement
