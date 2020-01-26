@@ -96,10 +96,13 @@ if (rmTransition != noone)
 {
 	with (oManager)
 	{
-		spawnRoom	= rmTransition.targetRoom;
-		spawnX		= rmTransition.targetX;
-		spawnY		= rmTransition.targetY;
-		doTransition = true;
+		if (!doTransition)
+		{
+			spawnRoom	= rmTransition.targetRoom;
+			spawnX		= rmTransition.targetX;
+			spawnY		= rmTransition.targetY;
+			doTransition = true;
+		}
 	}
 }
 
