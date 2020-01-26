@@ -33,7 +33,7 @@ for (var xx = 0; xx < room_width / cell_width; xx++)
 
 #region player_setup
 
-if (instance_exists(oPlayer))
+if (instance_exists(oPlayer)) && (spawnRoom != -1)
 {
 	oPlayer.x = spawnX;
 	oPlayer.y = spawnY;
