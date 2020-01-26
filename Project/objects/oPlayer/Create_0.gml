@@ -32,3 +32,6 @@ spriteHair	= male_hair_brunette;
 spriteFeet	= male_shoes_black;
 spriteLegs	= male_pants_white;
 spriteTorso = male_shirt_teal;
+
+xOffset = sprite_get_xoffset(mask_index);	// Offsets for player mask
+yOffset = sprite_get_yoffset(mask_index);
