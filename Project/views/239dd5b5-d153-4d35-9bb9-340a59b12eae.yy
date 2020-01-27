@@ -8,7 +8,7 @@
         "a2e1d21f-b7ca-49fe-8dd3-89bdcdc872f8"
     ],
     "filterType": "GMSprite",
-    "folderName": "Body",
+    "folderName": "Base",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

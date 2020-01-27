@@ -23,12 +23,13 @@ case object_states.neutral:
 	if (shooting && shootCooldown <= 0)
 	{
 		shootCooldown = defaultShootCooldown;
-		/*var bullet = instance_create_layer(x, y, "Instances", oProjectile);
+		var bullet = instance_create_layer(x, y, "Instances", oProjectile);
 		with (bullet)
 		{
 			direction = point_direction(other.x, other.y, mouse_x, mouse_y);
-			speed = 3;
-		}*/
+			image_angle = direction;
+			speed = 5;
+		}
 	}
 	
 	#region movement

@@ -6,7 +6,7 @@ sprintSpd		= [2, 2];
 acceleration_	= 3;
 
 // Shooting
-defaultShootCooldown = room_speed *1;
+defaultShootCooldown = room_speed * 0.5;
 shootCooldown = defaultShootCooldown;
 
 // Get the tile_map_id for collisions
@@ -35,8 +35,3 @@ spriteTorso = male_shirt_teal;
 
 xOffset = sprite_get_xoffset(mask_index);	// Offsets for player mask
 yOffset = sprite_get_yoffset(mask_index);
-
-//TEST
-redness = shader_get_uniform(test, "redPercent");
-greenness = shader_get_uniform(test, "greenPercent");
-blueness = shader_get_uniform(test, "bluePercent");

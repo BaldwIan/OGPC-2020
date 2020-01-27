@@ -60,10 +60,6 @@ enum slider_actions
 {
 	no_action,
 	volume,
-	// TESTING ONLY
-	global1,
-	global2,
-	global3,
 }
 
 #endregion slider_actions
@@ -113,8 +109,6 @@ global.pathgrid = mp_grid_create(0, 0, hcells, vcells, cell_width, cell_height);
 
 #region TESTING_ONLY
 
-global.slider1 = 155 / 255;
-global.slider2 = 155 / 255;
-global.slider3 = 155 / 255;
+
 
 #endregion TESTING_ONLY

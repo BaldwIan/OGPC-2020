@@ -1,4 +1,3 @@
-direction = 0;
 speed = 0;
 
 // Time to destroy object
