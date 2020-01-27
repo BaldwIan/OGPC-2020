@@ -1,7 +1,7 @@
 // Movement Variables
 velocity_		= [0, 0];
 knockback_vel	= [0, 0];
-max_velocity_	= [4, 4];
+max_velocity_	= [2, 2];
 sprintSpd		= [2, 2];
 acceleration_	= 3;
 
@@ -35,3 +35,8 @@ spriteTorso = male_shirt_teal;
 
 xOffset = sprite_get_xoffset(mask_index);	// Offsets for player mask
 yOffset = sprite_get_yoffset(mask_index);
+
+//TEST
+redness = shader_get_uniform(test, "redPercent");
+greenness = shader_get_uniform(test, "greenPercent");
+blueness = shader_get_uniform(test, "bluePercent");

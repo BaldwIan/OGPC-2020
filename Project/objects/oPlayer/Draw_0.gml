@@ -19,8 +19,18 @@ var yy = y - yOffset;
 draw_sprite_part(spriteBase,  0, floor(xFrame) * frameSize, yFrame * frameSize, frameSize, frameSize, xx, yy);
 draw_sprite_part(spriteHair,  0, floor(xFrame) * frameSize, yFrame * frameSize, frameSize, frameSize, xx, yy);
 draw_sprite_part(spriteFeet,  0, floor(xFrame) * frameSize, yFrame * frameSize, frameSize, frameSize, xx, yy);
+
+shader_set(test);
+shader_set_uniform_f(redness, global.slider1);
+shader_set_uniform_f(greenness, global.slider2);
+shader_set_uniform_f(blueness, global.slider3);
 draw_sprite_part(spriteLegs,  0, floor(xFrame) * frameSize, yFrame * frameSize, frameSize, frameSize, xx, yy);
+shader_reset();
+
+draw_text(x, y- 50, "slide 1: " + string(global.slider1) + " slide 2: " + string(global.slider2) + " slide 3: " + string(global.slider3));
+
 draw_sprite_part(spriteTorso, 0, floor(xFrame) * frameSize, yFrame * frameSize, frameSize, frameSize, xx, yy);
+
 
 // Inc frame for animation
 if (xFrame < frames - 1)	{ xFrame += animSpd / room_speed; }
