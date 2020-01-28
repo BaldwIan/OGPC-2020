@@ -4,10 +4,12 @@ switch (state)
 {
 case object_states.idle:
 
+	state = object_states.wander;
 	break;
 	
 case object_states.wander:
 
+	state = object_states.idle;
 	break;
 	
 default:
