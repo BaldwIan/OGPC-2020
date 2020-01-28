@@ -9,7 +9,7 @@ var layer_id = layer_get_id("CollisionTiles");
 collision_tile_map_id = layer_tilemap_get_id(layer_id);
 
 // State
-state = object_states.neutral;
+state = object_states.idle;
 dir_state = dir.east;
 
 // Draw info
