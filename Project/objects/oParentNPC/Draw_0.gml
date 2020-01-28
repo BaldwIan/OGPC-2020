@@ -20,11 +20,10 @@ if (xFrame + (animSpd / room_speed) < frames)	{ xFrame += animSpd / room_speed; 
 else						{ xFrame = 1;  }
 
 if (spriteBase  != -1) draw_sprite_part(spriteBase,  0, floor(xFrame) * frameSize, yFrame * frameSize, frameSize, frameSize, xx, yy);
-if (spriteHair  != -1) draw_sprite_part(spriteHair,  0, floor(xFrame) * frameSize, yFrame * frameSize, frameSize, frameSize, xx, yy);
 if (spriteFeet  != -1) draw_sprite_part(spriteFeet,  0, floor(xFrame) * frameSize, yFrame * frameSize, frameSize, frameSize, xx, yy);
 if (spriteLegs  != -1) draw_sprite_part(spriteLegs,  0, floor(xFrame) * frameSize, yFrame * frameSize, frameSize, frameSize, xx, yy);
 if (spriteTorso != -1) draw_sprite_part(spriteTorso, 0, floor(xFrame) * frameSize, yFrame * frameSize, frameSize, frameSize, xx, yy);
-
+if (spriteHair  != -1) draw_sprite_part(spriteHair,  0, floor(xFrame) * frameSize, yFrame * frameSize, frameSize, frameSize, xx, yy);
 
 // DEBUG
 if (global.debug)
