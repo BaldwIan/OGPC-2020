@@ -6,6 +6,8 @@ var vector2_y = 1;
 
 isMoving = (abs(velocity_[vector2_x]) > 0.001) || (abs(velocity_[vector2_y]) > 0.001)
 
+if (isMoving) { dir_state = getDirStateVelocity(velocity_); }
+
 #endregion get_input
 
 #region logic
