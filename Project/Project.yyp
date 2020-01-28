@@ -831,6 +831,14 @@
             }
         },
         {
+            "Key": "d5d360bb-19d6-4144-b530-002e9c5142ea",
+            "Value": {
+                "id": "3f5be9bb-2069-474e-be2f-f23ce854f42d",
+                "resourcePath": "objects\\oCrops\\oCrops.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d89a64fd-b0e4-4002-8404-15dc880346f3",
             "Value": {
                 "id": "dbd22fa6-a26c-49ff-b985-125488c35fc0",

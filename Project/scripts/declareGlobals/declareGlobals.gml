@@ -64,6 +64,21 @@ enum slider_actions
 
 #endregion slider_actions
 
+#region crops
+
+enum crop
+{
+	tomato,
+	potato,
+	carrot,
+	artichoke,
+	chilli,
+	cucumber,
+	corn,
+}
+
+#endregion crops
+
 // States that dynamic objects can be in such as stun, aggro, 
 #region object_states
 
