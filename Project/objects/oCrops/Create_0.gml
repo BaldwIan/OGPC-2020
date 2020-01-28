@@ -7,3 +7,7 @@ createCropType(4, 45);	// Artichoke
 createCropType(3, 20);	// Chilli
 createCropType(2, 20);	// Cucumber
 createCropType(5, 50);	// Corn
+
+// Mode that must be true for player to plant crops
+planting = false;
+selectCrop = 0;	// Type of crop that will be planted

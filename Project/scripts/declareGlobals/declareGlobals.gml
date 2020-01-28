@@ -14,6 +14,8 @@ global.KDown	= ord("S");
 global.KRight	= ord("D");
 global.KSprint	= vk_shift;
 
+global.KPlant = ord("P");
+
 #endregion controls
 
 #region button_actions
