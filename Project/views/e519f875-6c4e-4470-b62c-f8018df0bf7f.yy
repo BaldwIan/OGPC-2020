@@ -7,7 +7,7 @@
         "8b473e42-c8ae-4847-b34e-61c951814102"
     ],
     "filterType": "GMObject",
-    "folderName": "Collision",
+    "folderName": "Utility",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
