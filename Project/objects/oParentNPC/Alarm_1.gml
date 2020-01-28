@@ -8,6 +8,7 @@ case object_states.idle:
 	break;
 	
 case object_states.wander:
+	
 
 	state = object_states.idle;
 	break;
