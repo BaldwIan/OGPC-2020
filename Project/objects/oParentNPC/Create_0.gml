@@ -24,3 +24,6 @@ spriteTorso = -1;
 
 xOffset = sprite_get_xoffset(mask_index);	// Offsets for player mask
 yOffset = sprite_get_yoffset(mask_index);
+
+// Start movement
+alarm[1] = 1;
