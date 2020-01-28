@@ -4,6 +4,11 @@ knockback_vel	= [0, 0];
 max_velocity_	= [2, 2];
 acceleration_	= 3;
 
+x_input = 0;
+y_input = 0;
+
+isMoving = false;
+
 // Get the tile_map_id for collisions
 var layer_id = layer_get_id("CollisionTiles");
 collision_tile_map_id = layer_tilemap_get_id(layer_id);

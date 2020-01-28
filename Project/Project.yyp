@@ -351,6 +351,14 @@
             }
         },
         {
+            "Key": "655dda4a-4617-44c8-8578-538779642803",
+            "Value": {
+                "id": "0f9ed84d-656c-467c-afc4-f10d9f941423",
+                "resourcePath": "objects\\oNPCTest\\oNPCTest.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "667f3ba1-547a-423a-b916-7affc76fb330",
             "Value": {
                 "id": "adbff566-c3c2-471d-a515-ad3661fa61e4",
