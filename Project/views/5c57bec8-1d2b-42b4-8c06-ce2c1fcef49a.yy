@@ -7,7 +7,7 @@
         "97bc0689-8499-4ba2-8a47-333a1b4b4ecf"
     ],
     "filterType": "GMSprite",
-    "folderName": "Collision",
+    "folderName": "Utility",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

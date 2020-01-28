@@ -15,17 +15,15 @@ if (!isMoving) { xFrame = 0; }	// Draw first frame (idle frame) if not moving
 var xx = x - xOffset;
 var yy = y - yOffset;
 
+// Inc frame for animation
+if (xFrame + (animSpd / room_speed) < frames)	{ xFrame += animSpd / room_speed; }
+else						{ xFrame = 1;  }
+
 draw_sprite_part(spriteBase,  0, floor(xFrame) * frameSize, yFrame * frameSize, frameSize, frameSize, xx, yy);
 draw_sprite_part(spriteHair,  0, floor(xFrame) * frameSize, yFrame * frameSize, frameSize, frameSize, xx, yy);
 draw_sprite_part(spriteFeet,  0, floor(xFrame) * frameSize, yFrame * frameSize, frameSize, frameSize, xx, yy);
 draw_sprite_part(spriteLegs,  0, floor(xFrame) * frameSize, yFrame * frameSize, frameSize, frameSize, xx, yy);
 draw_sprite_part(spriteTorso, 0, floor(xFrame) * frameSize, yFrame * frameSize, frameSize, frameSize, xx, yy);
-
-
-
-// Inc frame for animation
-if (xFrame < frames - 1)	{ xFrame += animSpd / room_speed; }
-else						{ xFrame = 1;  }
 
 
 // DEBUG
