@@ -8,6 +8,8 @@ isMoving = (abs(velocity_[vector2_x]) > 0.001) || (abs(velocity_[vector2_y]) > 0
 
 #endregion get_input
 
+#region logic
+
 switch (state)
 {
 case object_states.idle:
@@ -52,6 +54,7 @@ case object_states.stunned:
 default:
 	break;
 }
+#endregion logic
 
 // Move and contact tiles
 moveAndContactTiles(collision_tile_map_id, 64, velocity_);
