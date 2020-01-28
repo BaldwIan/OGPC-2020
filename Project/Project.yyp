@@ -735,6 +735,14 @@
             }
         },
         {
+            "Key": "c2091ba9-0163-4a09-8bd9-b73241e23856",
+            "Value": {
+                "id": "d653e3b8-6378-451b-806d-b9a916de14d9",
+                "resourcePath": "objects\\oParentNPC\\oParentNPC.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c2df7bc5-cead-4e2d-9b9d-c85f084fa06e",
             "Value": {
                 "id": "0c942e12-ec9a-4ecf-83c1-85332c7d28af",
