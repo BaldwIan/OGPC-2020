@@ -3,13 +3,16 @@
 switch (state)
 {
 case object_states.idle:
-
+	x_input = irandom_range(-1, 1) * acceleration_;
+	y_input = irandom_range(-1, 1) * acceleration_;
+	
 	state = object_states.wander;
 	break;
 	
 case object_states.wander:
+	x_input = 0;
+	y_input = 0;
 	
-
 	state = object_states.idle;
 	break;
 	

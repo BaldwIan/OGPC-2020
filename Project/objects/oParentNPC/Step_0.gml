@@ -11,22 +11,6 @@ isMoving = (abs(velocity_[vector2_x]) > 0.001) || (abs(velocity_[vector2_y]) > 0
 switch (state)
 {
 case object_states.idle:
-	#region movement
-
-	// --Horizontal Movement
-	
-	// clamp horiz left
-	var leftVelClamp = -max_velocity_[vector2_x];
-	// clamp horiz right
-	var rightVelClamp = max_velocity_[vector2_x];
-	velocity_[vector2_x] = clamp(velocity_[vector2_x] + x_input, leftVelClamp, rightVelClamp);
-	
-	// --Vertical Movement
-	
-	var upVelClamp = -max_velocity_[vector2_y];
-	// clamp horiz right
-	var downVelClamp = max_velocity_[vector2_y];
-	velocity_[vector2_y] = clamp(velocity_[vector2_y] + y_input, upVelClamp, downVelClamp);
 
 	// Knockback
 	velocity_[vector2_x] += knockback_vel[vector2_x] / 2;
@@ -45,9 +29,26 @@ case object_states.idle:
 		velocity_[vector2_y] = lerp(velocity_[vector2_y], 0, .75);
 	}
 	
-	#endregion movement
-	
 case object_states.wander:
+	// --Horizontal Movement
+	
+	// clamp horiz left
+	var leftVelClamp = -max_velocity_[vector2_x];
+	// clamp horiz right
+	var rightVelClamp = max_velocity_[vector2_x];
+	velocity_[vector2_x] = clamp(velocity_[vector2_x] + x_input, leftVelClamp, rightVelClamp);
+	
+	// --Vertical Movement
+	
+	var upVelClamp = -max_velocity_[vector2_y];
+	// clamp horiz right
+	var downVelClamp = max_velocity_[vector2_y];
+	velocity_[vector2_y] = clamp(velocity_[vector2_y] + y_input, upVelClamp, downVelClamp);
+
+	break;
+	
+default:
+	break;
 }
 
 // Move and contact tiles
