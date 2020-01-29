@@ -11,3 +11,5 @@ createCropType(5, 50);	// Corn
 // Mode that must be true for player to plant crops
 planting = false;
 selectCrop = 0;	// Type of crop that will be planted
+
+cellSize = 64;
