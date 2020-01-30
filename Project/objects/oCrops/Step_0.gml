@@ -25,7 +25,12 @@ if (global.debug)
 			if (growthStage < maxGrowthStage)
 			{
 				daysOld++;
-				growthStage = daysOld div growthStageDuration;
+				
+				// First growth will automatically put plant into next growth stage
+				var firstGrowth = 0;
+				if (daysOld > 0) { firstGrowth = 1; }
+				
+				growthStage = firstGrowth + (daysOld div growthStageDuration);
 			} else
 			{
 				growthStage = maxGrowthStage;
