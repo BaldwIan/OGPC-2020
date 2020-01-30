@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "0d3bbca2-dd3f-4e33-821e-cb7ccbddd932",
+            "Value": {
+                "id": "2d889516-1f42-43bc-9055-159c9866fc30",
+                "resourcePath": "tilesets\\tilSoil\\tilSoil.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "0d9a592e-935e-4fed-a60f-ad32f675127a",
             "Value": {
                 "id": "0fc8e40e-9cc0-4b99-acc7-90cfc28ac5d1",
@@ -852,6 +860,14 @@
                 "id": "3f5be9bb-2069-474e-be2f-f23ce854f42d",
                 "resourcePath": "objects\\oCrops\\oCrops.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d82a223f-7ea2-4940-be25-ecbb4307d8dd",
+            "Value": {
+                "id": "02d12809-2093-42a2-a629-7e0fbda92ccc",
+                "resourcePath": "sprites\\sTilSoil\\sTilSoil.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
