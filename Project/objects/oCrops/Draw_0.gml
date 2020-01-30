@@ -8,5 +8,16 @@ var yy = (mouse_y div cs);
 xx *= cs;
 yy *= cs;
 
+// Set default color as red for rectangle
+var recCol = c_red;
+
+var layID = layer_get_id("T_Soil");
+var mapID = layer_tilemap_get_id(layID);
+var tilData = tilemap_get_at_pixel(mapID, mouse_x, mouse_y);
+if (tilData != 0) { recCol = c_green; }
+
+// Draw green or red rectangle depending on planting is possible or not (may be chnaged to a sprite later)
+draw_rectangle_color(xx, yy, xx + cs, yy + cs, recCol, recCol, recCol, recCol, true);
+
 // Draw the crop that is selected at mouse position in grid
 draw_sprite(sCropsPicked, selectCrop, xx + (cs / 2), yy + (cs / 2));
