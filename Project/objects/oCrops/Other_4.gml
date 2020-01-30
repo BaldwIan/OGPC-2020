@@ -18,4 +18,28 @@ if (room == rmTest)
 			);
 		}
 	}
+	
+	
+	// Update crop days
+	if (instance_exists(oCrop))
+	{
+		with (oCrop)
+		{
+			if (growthStage < maxGrowthStage)
+			{
+				daysOld++;
+				
+				// First growth will automatically put plant into next growth stage
+				var firstGrowth = 0;
+				if (daysOld > 0) { firstGrowth = 1; }
+				
+				growthStage = firstGrowth + (daysOld div growthStageDuration);
+			} else
+			{
+				growthStage = maxGrowthStage;
+				fullyGrown = true;
+				alarm[1] = 1;
+			}
+		}
+	}
 }
