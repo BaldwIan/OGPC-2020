@@ -1,5 +1,5 @@
-ds_crops_types = 0;
-ds_crops_instances = 0;
+ds_crops_types = -1;
+ds_crops_instances = -1;
 
 createCropType(4, 40);	// Tomato
 createCropType(3, 35);	// Potato
