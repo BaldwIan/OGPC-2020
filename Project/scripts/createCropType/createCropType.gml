@@ -18,5 +18,5 @@ if (!ds_exists(ds_crops_types, ds_type_grid))
 var yy = height - 1;
 for (i = 0; i < argNum; i++)
 {
-	ds_crops_types[# i,yy] = argument[i];
+	ds_crops_types[# i, yy] = argument[i];
 }
