@@ -2,19 +2,24 @@ if (!planting) { exit; }
 
 // Grid info
 var cs = cellSize;
-var xx = (mouse_x div cs);
-var yy = (mouse_y div cs);
+var gx = (mouse_x div cs);
+var gy = (mouse_y div cs);
 
-xx *= cs;
-yy *= cs;
-
+// Check if anything is in the cell that the mouse is over
 // Set default color as red for rectangle
 var recCol = c_red;
 
-var layID = layer_get_id("T_Soil");
-var mapID = layer_tilemap_get_id(layID);
-var tilData = tilemap_get_at_pixel(mapID, mouse_x, mouse_y);
-if (tilData != 0) { recCol = c_green; }
+var cell = ds_crops_instances[# gx, gy];
+if (cell == 0)	// If there is no crop in the grid location
+{
+	var layID = layer_get_id("T_Soil");
+	var mapID = layer_tilemap_get_id(layID);
+	var tilData = tilemap_get_at_pixel(mapID, mouse_x, mouse_y);
+	if (tilData != 0) { recCol = c_green; }
+}
+
+xx = gx * cs;
+yy = gy * cs;
 
 // Draw green or red rectangle depending on planting is possible or not (may be chnaged to a sprite later)
 draw_rectangle_color(xx, yy, xx + cs, yy + cs, recCol, recCol, recCol, recCol, true);
