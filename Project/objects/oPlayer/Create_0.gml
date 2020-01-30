@@ -1,3 +1,5 @@
+randomize();
+
 // Movement Variables
 velocity_		= [0, 0];
 knockback_vel	= [0, 0];
@@ -35,3 +37,28 @@ spriteTorso = male_shirt_teal;
 
 xOffset = sprite_get_xoffset(mask_index);	// Offsets for player mask
 yOffset = sprite_get_yoffset(mask_index);
+
+rPercent = shader_get_uniform(colorPercent, "redPercent");
+gPercent = shader_get_uniform(colorPercent, "greenPercent");
+bPercent = shader_get_uniform(colorPercent, "bluePercent");
+
+percentrBase = random(1.0);
+percentgBase = random(1.0);
+percentbBase = random(1.0);
+
+percentrFeet = random(1.0);
+percentgFeet = random(1.0);
+percentbFeet = random(1.0);
+
+percentrLegs = random(1.0);
+percentgLegs = random(1.0);
+percentbLegs = random(1.0);
+
+percentrTorso = random(1.0);
+percentgTorso = random(1.0);
+percentbTorso= random(1.0);
+
+percentrHair = random(1.0);
+percentgHair = random(1.0);
+percentbHair = random(1.0);
+
