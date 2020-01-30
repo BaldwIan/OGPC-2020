@@ -20,7 +20,7 @@ if (mouse_check_button(mb_left)) shooting = true;
 switch (state)
 {
 case object_states.neutral:
-	if (shooting && shootCooldown <= 0)
+	if (shooting && shootCooldown <= 0 && oCrops.planting = false)
 	{
 		shootCooldown = defaultShootCooldown;
 		var bullet = instance_create_layer(x, y, "Instances", oProjectile);
