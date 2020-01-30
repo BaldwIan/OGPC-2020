@@ -8,7 +8,7 @@ growthStage = 0;
 growthStageDuration = 0;
 maxGrowthStage = (sprite_get_width(sCrops) / frameWidth - 1);
 fullyGrown = false;
-sparkle = false;	// The sparkle effect may be replaced with a particle system later;
+sparkle =  -1;	// The sparkle effect may be replaced with a particle system later;
 
 // Correction position for drawing
 xx = x - (frameWidth / 2) + 2;

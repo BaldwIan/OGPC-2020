@@ -30,6 +30,7 @@ if (global.debug)
 			{
 				growthStage = maxGrowthStage;
 				fullyGrown = true;
+				alarm[1] = 1;
 			}
 		}
 	}
