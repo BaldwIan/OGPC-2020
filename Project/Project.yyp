@@ -527,6 +527,14 @@
             }
         },
         {
+            "Key": "7bbe02f9-5af3-4ced-89b0-95f57e6481e9",
+            "Value": {
+                "id": "c910d67c-82c1-4e76-aaba-69343d22db0f",
+                "resourcePath": "sounds\\sndUnequipped\\sndUnequipped.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "7bd00eae-6f58-4d4c-bd52-030954456013",
             "Value": {
                 "id": "cf6ee8b5-5c0b-416a-8235-ce8f19c8cb2e",
@@ -620,6 +628,14 @@
                 "id": "857fbe36-ee20-473a-ad62-feb6019a5a19",
                 "resourcePath": "views\\8c0c0fde-d2d9-4232-84e4-3edcb57fe5da.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8c6c9457-4c16-4af1-8cca-908dc7a7bdfb",
+            "Value": {
+                "id": "fb190b70-83c4-4d99-b85f-49c60e16c15d",
+                "resourcePath": "sounds\\sndSwordSwing\\sndSwordSwing.yy",
+                "resourceType": "GMSound"
             }
         },
         {

@@ -1,5 +1,3 @@
-randomize();
-
 // Movement Variables
 velocity_		= [0, 0];
 knockback_vel	= [0, 0];

@@ -13,6 +13,7 @@ global.KLeft	= ord("A");
 global.KDown	= ord("S");
 global.KRight	= ord("D");
 global.KSprint	= vk_shift;
+global.KEquip = ord("1");
 
 global.KPlant = ord("P");
 

@@ -2,7 +2,10 @@
 declareGlobals();
 
 // Item Array (arrayname[number] = ["name", damage, soundeffect];)
-item_stat[0] = ["Wooden Sword", 1, sndPlayback];
+item_stat[0] = ["Unequipped", 0, sndUnequipped];
+item_stat[1] = ["Wooden Sword", 1, sndSwordSwing];
+
+
 
 // GUI dimensions
 guiWidth = display_get_width();
