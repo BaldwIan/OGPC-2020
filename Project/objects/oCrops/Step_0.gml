@@ -37,6 +37,9 @@ if (global.debug)
 				fullyGrown = true;
 				alarm[1] = 1;
 			}
+			
+			// Fixing a bug that causes plant to go over growth stage - should find a diff solution later
+			if (growthStage > maxGrowthStage) { growthStage = maxGrowthStage; }
 		}
 	}
 }

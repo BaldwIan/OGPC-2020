@@ -9,7 +9,7 @@ createCropType(2, 25, "Carrot");	// Carrot
 createCropType(4, 45, "Artichoke");	// Artichoke
 createCropType(3, 20, "Chilli");	// Chilli
 createCropType(2, 20, "Cucumber");	// Cucumber
-createCropType(5, 50, "Corn");	// Corn
+createCropType(5, 50, "Corn");		// Corn
 
 // Mode that must be true for player to plant crops
 planting = false;
