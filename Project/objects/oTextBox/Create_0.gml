@@ -45,3 +45,8 @@ textCol = c_black;
 nameTextCol = c_black;
 
 font = fntGui_12;
+
+// Vars for defining max width till text wraps
+textMaxW = boxW - (2 * textXOffset);
+draw_set_font(font);
+textH = string_height("I");
