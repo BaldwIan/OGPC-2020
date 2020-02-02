@@ -38,7 +38,9 @@ nameTextY = nameBoxY + (nameBoxH / 2);
 portraitIndex = 0;
 
 // Text data
-text = "stuff that is displayed here stuff that is displayed here stuff that is displayed here stuff that is displayed here stuff that is displayed here stuff that is displayed here ";
+text[0] = "stuff that is displayed here stuff that is displayed here stuff that is displayed here stuff that is displayed here stuff that is displayed here stuff that is displayed here ";
+text[1] = "SECOND 2 2 2 2 2 text SECOND 2 2 2 2 2 text SECOND 2 2 2 2 2 text SECOND 2 2 2 2 2 text SECOND 2 2 2 2 2 text SECOND 2 2 2 2 2 text ";
+page = 0;	// Index of text array
 name = "Name";
 
 textCol = c_black;
