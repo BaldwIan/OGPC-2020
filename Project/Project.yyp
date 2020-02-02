@@ -815,6 +815,14 @@
             }
         },
         {
+            "Key": "b2300e4d-470a-4d8b-b7dc-78b7a35e6ee9",
+            "Value": {
+                "id": "53fea0e4-e666-4ef7-ae45-f42f12ec6275",
+                "resourcePath": "sprites\\sNameBox\\sNameBox.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b2900d93-f066-4d41-ba25-e09426eb0fa3",
             "Value": {
                 "id": "37a05e0b-856c-46fa-96b8-8d43dd9e0a3f",
