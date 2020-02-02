@@ -24,4 +24,7 @@ draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 
 // Draw Text
-draw_text_ext_color(textX, textY, text[page], textH, textMaxW, textCol, textCol, textCol, textCol, 1);
+counter = min(counter + 1, string_length(text[page]));
+var substring = string_copy(text[page], 1, counter);
+
+draw_text_ext_color(textX, textY, substring, textH, textMaxW, textCol, textCol, textCol, textCol, 1);

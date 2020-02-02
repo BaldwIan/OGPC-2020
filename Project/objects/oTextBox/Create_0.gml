@@ -37,6 +37,9 @@ nameTextY = nameBoxY + (nameBoxH / 2);
 // Portrait to draw depending on who is talking
 portraitIndex = 0;
 
+// Counter for typewriter effect
+counter = 0;
+
 // Text data
 text[0] = "stuff that is displayed here stuff that is displayed here stuff that is displayed here stuff that is displayed here stuff that is displayed here stuff that is displayed here ";
 text[1] = "SECOND 2 2 2 2 2 text SECOND 2 2 2 2 2 text SECOND 2 2 2 2 2 text SECOND 2 2 2 2 2 text SECOND 2 2 2 2 2 text SECOND 2 2 2 2 2 text ";
