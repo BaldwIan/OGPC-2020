@@ -17,6 +17,8 @@ global.KEquip = ord("1");
 
 global.KPlant = ord("P");
 
+global.KInteract = ord("E");
+
 #endregion controls
 
 #region button_actions
