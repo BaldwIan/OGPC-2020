@@ -791,6 +791,14 @@
             }
         },
         {
+            "Key": "af7f905f-c2c0-4327-b20b-a207ad6c0306",
+            "Value": {
+                "id": "58642545-52b3-4e28-becf-c9477a640682",
+                "resourcePath": "sprites\\sTextBox\\sTextBox.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "afbdc5fb-2d91-4263-9f0a-1a6f906c22d8",
             "Value": {
                 "id": "27e24f7e-1b71-42df-a780-cfdee577eb34",
