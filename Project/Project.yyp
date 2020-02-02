@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "0b06e52a-bb67-416c-9546-2f7cce2358c2",
+            "Value": {
+                "id": "222b1ad3-884c-4e89-ae06-bd8bdd60a384",
+                "resourcePath": "sprites\\sPortraitFrame\\sPortraitFrame.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0b4a18e8-29e7-4327-83f0-ea4266a1a52a",
             "Value": {
                 "id": "562e6cf7-964b-4d3a-991a-a431ab69e50a",
