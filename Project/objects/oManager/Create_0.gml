@@ -19,3 +19,5 @@ doTransition = false;
 
 spawnX = 0;
 spawnY = 0;
+
+display_set_gui_size(window_get_width(), window_get_height());

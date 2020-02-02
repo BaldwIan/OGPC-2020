@@ -56,6 +56,12 @@ global.cheight = global.regCHeight;
 
 #endregion camera
 
+#region display
+
+
+
+#endregion display
+
 #region slider_actions
 
 // Set GUI Slider Actions
