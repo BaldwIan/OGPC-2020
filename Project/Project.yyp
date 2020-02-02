@@ -663,6 +663,14 @@
             }
         },
         {
+            "Key": "93bf3914-77f6-4146-bf64-6a3a03ef465e",
+            "Value": {
+                "id": "386a18c9-a4e3-4230-92c1-772cd9e0a2b3",
+                "resourcePath": "objects\\oTextBox\\oTextBox.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "970d5de9-02c2-4e0f-8aae-6661d1418855",
             "Value": {
                 "id": "3c635933-fc6d-46d1-bc8e-212fb4875b28",
