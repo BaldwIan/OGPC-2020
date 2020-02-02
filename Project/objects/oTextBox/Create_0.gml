@@ -26,5 +26,22 @@ boxY = portY;
 nameBoxX = portX;
 nameBoxY = portY - nameBoxH;
 
+textXOffset = 12;
+textYOffset = 8;
+
+textX = boxX + textXOffset;
+textY = boxY + textYOffset;
+nameTextX = nameBoxX + (nameBoxW / 2);
+nameTextY = nameBoxY + (nameBoxH / 2);
+
 // Portrait to draw depending on who is talking
 portraitIndex = 0;
+
+// Text data
+text = "stuff that is displayed here stuff that is displayed here stuff that is displayed here stuff that is displayed here stuff that is displayed here stuff that is displayed here ";
+name = "Name";
+
+textCol = c_black;
+nameTextCol = c_black;
+
+font = fntGui_12;

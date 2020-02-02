@@ -14,7 +14,14 @@ draw_sprite(frame, 1, portX, portY);
 draw_sprite(nameBox, 0, nameBoxX, nameBoxY);
 
 // TEXT
-// Draw Name
+draw_set_font(font);
 
+// Draw Name
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+draw_text_color(nameTextX, nameTextY, name, nameTextCol, nameTextCol, nameTextCol, nameTextCol, 1);
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
 
 // Draw Text
+draw_text_color(textX, textY, text, textCol, textCol, textCol, textCol, 1);
