@@ -13,12 +13,12 @@ nameBoxW = sprite_get_width(nameBox);
 nameBoxH = sprite_get_height(nameBox);
 
 // gui dimensions (set in oManager)
-winW = window_get_width();
-winH = window_get_height();
+guiW = display_get_gui_width();
+guiH = display_get_gui_height();
 
 // Positions to draw
-portX = (winW - boxW - portH);
-portY = (winH * 0.98 - portH);
+portX = (guiW - boxW - portW) / 2;
+portY = (guiH * 0.98 - portH);
 
 boxX = portX + portW;
 boxY = portY;
