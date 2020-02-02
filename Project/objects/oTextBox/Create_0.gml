@@ -1,7 +1,7 @@
 // Sprite names
 box = sTextBox;
 frame = sPortraitFrame;
-portrait - sPortraits;
+portrait = sPortraits;
 nameBox = sNameBox;
 
 // Dimensions of sprites
@@ -23,5 +23,8 @@ portY = (winH * 0.98 - portH);
 boxX = portX + portW;
 boxY = portY;
 
-nameX = portX;
-nameY = portY - nameBoxH;
+nameBoxX = portX;
+nameBoxY = portY - nameBoxH;
+
+// Portrait to draw depending on who is talking
+portraitIndex = 0;
