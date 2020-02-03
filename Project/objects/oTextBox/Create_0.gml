@@ -58,3 +58,6 @@ font = fntGui_12;
 textMaxW = boxW - (2 * textXOffset);
 draw_set_font(font);
 textH = string_height("I");
+
+// Event to get wrapped string
+event_perform(ev_other, ev_user1);

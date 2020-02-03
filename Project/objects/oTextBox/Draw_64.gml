@@ -24,11 +24,11 @@ draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 
 // Draw Text
-if (counter + 1 < string_length(text[page]))
+if (counter < strLen)
 {
 	counter++;
 	if (counter % 3 == 0) { audio_play_sound(voice, 1, false); }
 }
-var substring = string_copy(text[page], 1, counter);
+var substring = string_copy(textWrapped, 1, counter);
 
-draw_text_ext_color(textX, textY, substring, textH, textMaxW, textCol, textCol, textCol, textCol, 1);
+draw_text_color(textX, textY, substring, textCol, textCol, textCol, textCol, 1);
