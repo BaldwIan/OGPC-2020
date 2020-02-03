@@ -31,6 +31,7 @@ if(nx >= 0 and nx < inv_slots_width and ny >= 0 and ny < inv_slots_height)
 selected_slot = min(inv_slots - 1, m_slotx + (m_sloty * inv_slots_width));
 #endregion Mouse Slot
 
+#region Pickup Item
 //Pickup Item
 
 var inv_grid = ds_inventory;
@@ -78,8 +79,14 @@ if(pickup_slot != -1)
 else 
 if(ss_item != item.none)
 {
+
+	
+	
+	//Drop pickup item into new slot
 	if(mouse_check_button_pressed(mb_left))
 	{
 		pickup_slot = selected_slot;
 	}
 }
+#endregion Pickup Item
+

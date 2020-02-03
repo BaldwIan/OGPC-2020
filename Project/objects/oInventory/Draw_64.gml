@@ -57,28 +57,42 @@ repeat(inv_slots)
 			gpu_set_blendmode(bm_add);
 			draw_sprite_part_ext(spr_inv_UI, 0, 0, 0, cellSize, cellSize, xx, yy, scale, scale, c_white, .3);
 			gpu_set_blendmode(bm_normal);
+			
+			//Draw item number
+			if(iitem > 0)
+			{
+
+			var number = inv_grid[# 1, ii];
+			draw_text_color(xx, yy, string(number), c, c, c, c, 1);
+
+			}
 		break;
 		
 		case pickup_slot:
-			if(iitem > 0) draw_sprite_part_ext
-			(spr_inv_items, 0, sx, sy, cellSize, 
-			cellSize, xx, yy, scale, scale, c_white, .2);
+			if(iitem > 0) 
+			//If picked up current slot will NOT show number or item
 		break;
+		
+
 		
 		default:
 			if(iitem > 0) draw_sprite_part_ext
 			(spr_inv_items, 0, sx, sy, cellSize, 
 			cellSize, xx, yy, scale, scale, c_white, 1);
+			
+			//Draw item number
+			if(iitem > 0)
+			{
+
+			var number = inv_grid[# 1, ii];
+			draw_text_color(xx, yy, string(number), c, c, c, c, 1);
+
+			}
 		
 		break;
 	}
 	
-	//Draw item number
-	if(iitem > 0)
-	{
-		var number = inv_grid[# 1, ii];
-		draw_text_color(xx, yy, string(number), c, c, c, c, 1);
-	}
+
 	
 	//Increment
 	ii += 1;
@@ -97,5 +111,5 @@ if(pickup_slot != -1)
 	cellSize, mousex, mousey, scale, scale, c_white, 1);
 	
 	var inum = inv_grid[# 1, pickup_slot];
-	draw_text_color(mousex, mousey, string(inum), c, c, c, c, 1);
+	draw_text_color(mousex - (cellSize * scale * 0.4), mousey, string(inum), c, c, c, c, 1);
 }
