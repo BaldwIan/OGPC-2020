@@ -1,8 +1,8 @@
 // Movement Variables
 velocity_		= [0, 0];
 knockback_vel	= [0, 0];
-max_velocity_	= [2, 2];
-acceleration_	= 3;
+max_velocity_	= [1, 1];
+acceleration_	= 1;
 
 x_input = 0;
 y_input = 0;
