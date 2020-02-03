@@ -455,6 +455,14 @@
             }
         },
         {
+            "Key": "6cbb4a78-3736-48a6-8e22-7a711745f9b9",
+            "Value": {
+                "id": "4d5ed898-ad38-43c8-890c-a59657b6d7a7",
+                "resourcePath": "views\\6cbb4a78-3736-48a6-8e22-7a711745f9b9.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "711104bf-2d0b-4b6c-84d8-b92407f26aa6",
             "Value": {
                 "id": "3717e4fa-43a3-4ef0-b730-5ce006bd358a",
@@ -620,6 +628,14 @@
                 "id": "09bef0cf-bc49-4686-a4b1-3a1e5e801300",
                 "resourcePath": "sprites\\male_hair_brunette\\male_hair_brunette.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8a6c73db-9b65-4898-b62d-03b52caaae27",
+            "Value": {
+                "id": "eb337d58-b9fb-41e3-9353-214e03e4c5bd",
+                "resourcePath": "sounds\\sndVoice1\\sndVoice1.yy",
+                "resourceType": "GMSound"
             }
         },
         {
