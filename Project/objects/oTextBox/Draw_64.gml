@@ -24,10 +24,27 @@ draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 
 // Draw Text
-if (counter < strLen)
+if (!pause) && (counter < strLen)
 {
 	counter++;
 	if (counter % 3 == 0) { audio_play_sound(voice, 1, false); }
+
+	switch(string_char_at(textWrapped, counter))
+	{
+	case ",":
+	alarm[1] = room_speed * 0.10;
+		pause = true;
+		break;
+	case ".":
+	case "?":
+	case "!":
+		alarm[1] = room_speed * 0.20;
+		pause = true;
+		break;
+		
+	default:
+		break;
+	}
 }
 var substring = string_copy(textWrapped, 1, counter);
 
