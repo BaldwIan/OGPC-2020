@@ -27,7 +27,7 @@ draw_set_valign(fa_top);
 if (counter + 1 < string_length(text[page]))
 {
 	counter++;
-	audio_play_sound(voice, 1, false);
+	if (counter % 3 == 0) { audio_play_sound(voice, 1, false); }
 }
 var substring = string_copy(text[page], 1, counter);
 
