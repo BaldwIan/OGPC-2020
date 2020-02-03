@@ -90,6 +90,36 @@ enum crop
 
 #endregion crops
 
+#region items
+
+//Written with "= x" so that we do not have to count through the items list each time
+
+enum item
+{
+	none         = 0,
+	tomato       = 1,
+	potato       = 2,
+	carrot       = 3,
+	artichoke    = 4,
+	chilli       = 5,
+	gourd        = 6,
+	corn         = 7,
+	wood         = 8,
+	stone        = 9,
+	bucket      = 10,
+	chair       = 11,
+	picture     = 12,
+	axe         = 13,
+	potion      = 14,
+	starfish    = 15,
+	mushroom    = 16,
+	
+	height      = 17,
+	//Height must be the last enum!
+}
+
+#endregion items
+
 // States that dynamic objects can be in such as stun, aggro, 
 #region object_states
 
