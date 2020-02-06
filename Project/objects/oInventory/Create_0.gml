@@ -29,8 +29,8 @@ spr_inv_items = sItems;
 spr_inv_items_columns = sprite_get_width(spr_inv_items) / cellSize;
 spr_inv_items_rows = sprite_get_height(spr_inv_items) / cellSize;
 
-inv_UI_x = (gui_width * 0.5) - (inv_UI_width * 0.5 * scale);
-inv_UI_y = (gui_height * 0.5) - (inv_UI_height * 0.5 * scale);
+inv_UI_x = (gui_width * 0.5) - (inv_UI_width * 0.5 * scale - 28);
+inv_UI_y = (gui_height * 0.5) - (inv_UI_height * 0.5 * scale) - 20;
 
 info_x = inv_UI_x + (9 * scale);
 info_y = inv_UI_y + (9 * scale);
