@@ -1,5 +1,5 @@
 depth = -1;
-scale = 2;
+scale = 1.5;
 showInventory = false;
 inventoryButton = "E";
 
