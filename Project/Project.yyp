@@ -39,10 +39,26 @@
             }
         },
         {
+            "Key": "0266cc5b-a091-4d89-902a-2b6cf5b80cc9",
+            "Value": {
+                "id": "6f7e7e62-5f9e-4f6d-a86f-b68a5f75ee2d",
+                "resourcePath": "objects\\oRock\\oRock.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0424e9fd-36ce-42ca-9e0c-1246e395326d",
             "Value": {
                 "id": "33f113a2-fc87-4f31-8fdb-c26d0a5ec7c3",
                 "resourcePath": "views\\0424e9fd-36ce-42ca-9e0c-1246e395326d.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "05ad6d6d-f54a-4436-818c-ccc8108715fa",
+            "Value": {
+                "id": "2b47dd47-591b-4cf0-b00e-d23e5d9d6c3f",
+                "resourcePath": "views\\05ad6d6d-f54a-4436-818c-ccc8108715fa.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -203,6 +219,14 @@
             "Value": {
                 "id": "9f377b21-fe23-40a3-b014-2553f2dd0e92",
                 "resourcePath": "views\\326ac78d-6a8d-4d73-9eef-ae01f13af017.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "368f969d-d7c6-468d-8216-b50c6764e829",
+            "Value": {
+                "id": "23947d71-4e9f-46b7-880b-919191352bcc",
+                "resourcePath": "views\\368f969d-d7c6-468d-8216-b50c6764e829.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -527,6 +551,14 @@
             }
         },
         {
+            "Key": "70c10deb-9335-49ab-8f70-1733563f8559",
+            "Value": {
+                "id": "1ea56976-1bb6-4cc0-8f3c-813c30d9e3cc",
+                "resourcePath": "sprites\\sDiamondOre\\sDiamondOre.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "711104bf-2d0b-4b6c-84d8-b92407f26aa6",
             "Value": {
                 "id": "3717e4fa-43a3-4ef0-b730-5ce006bd358a",
@@ -564,6 +596,14 @@
                 "id": "02b943e2-084f-4631-9f1c-efbf15fc1935",
                 "resourcePath": "options\\html5\\options_html5.yy",
                 "resourceType": "GMHtml5Options"
+            }
+        },
+        {
+            "Key": "75bfc27a-c289-40c8-87e7-7496c3af9ea6",
+            "Value": {
+                "id": "7478fb8d-83ca-4664-bd70-a50296f21157",
+                "resourcePath": "objects\\oMiningGrid\\oMiningGrid.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -644,6 +684,14 @@
                 "id": "6da2e963-1f20-4029-88fc-f47e86823238",
                 "resourcePath": "sprites\\sCropsPicked\\sCropsPicked.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8103b796-8789-4b22-89dc-2076b69b0391",
+            "Value": {
+                "id": "c7e380ce-f13b-4004-967c-cbf12e6d16f4",
+                "resourcePath": "objects\\oDiamondOre\\oDiamondOre.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -951,6 +999,14 @@
             }
         },
         {
+            "Key": "b2d0031c-126d-434b-a94c-a023ef4e2b34",
+            "Value": {
+                "id": "24f5e5ee-2816-4309-8ff4-5846f315d48e",
+                "resourcePath": "sprites\\sMiningGrid\\sMiningGrid.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b636e2ee-c8e8-4ada-9ec5-ecf1f5065eea",
             "Value": {
                 "id": "4bdc07d3-d262-469f-a8ef-3b9999b4a5ff",
@@ -1039,6 +1095,14 @@
             }
         },
         {
+            "Key": "d6c80bc9-7d92-4e25-b6e7-df2365e47ee7",
+            "Value": {
+                "id": "74621b24-cb57-4324-97b7-9a70f6a32936",
+                "resourcePath": "sprites\\sRock\\sRock.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d82a223f-7ea2-4940-be25-ecbb4307d8dd",
             "Value": {
                 "id": "02d12809-2093-42a2-a629-7e0fbda92ccc",
@@ -1052,6 +1116,14 @@
                 "id": "dbd22fa6-a26c-49ff-b985-125488c35fc0",
                 "resourcePath": "rooms\\rmTest\\rmTest.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "d9438dd0-cd59-49fb-994f-34f5a2ccb082",
+            "Value": {
+                "id": "d04fcb94-048f-431d-9602-4b485a861393",
+                "resourcePath": "sprites\\sMining\\sMining.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
