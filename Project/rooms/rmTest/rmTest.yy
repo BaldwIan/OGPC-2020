@@ -49,14 +49,14 @@
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
-            "hierarchyVisible": false,
+            "hierarchyVisible": true,
             "inheritLayerDepth": false,
             "inheritLayerSettings": false,
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
 {"name": "inst_7D7B99B4","id": "d57f5c55-d0a4-45f4-88d7-4603d5df56fc","colour": { "Value": 4294967295 },"creationCodeFile": "InstanceCreationCode_inst_7D7B99B4.gml","creationCodeType": ".gml","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_7D7B99B4","objId": "8b473e42-c8ae-4847-b34e-61c951814102","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 4,"mvc": "1.1","x": -32,"y": 640},
-{"name": "inst_2FF40832","id": "00222ff4-1f9e-4c8e-9090-61226d3e09f8","colour": { "Value": 4294967295 },"creationCodeFile": "InstanceCreationCode_inst_2FF40832.gml","creationCodeType": ".gml","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_2FF40832","objId": "8b473e42-c8ae-4847-b34e-61c951814102","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 4,"mvc": "1.1","x": 1056,"y": 640}
+{"name": "inst_2FF40832","id": "00222ff4-1f9e-4c8e-9090-61226d3e09f8","colour": { "Value": 4294967295 },"creationCodeFile": "InstanceCreationCode_inst_2FF40832.gml","creationCodeType": ".gml","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_2FF40832","objId": "8b473e42-c8ae-4847-b34e-61c951814102","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 4,"mvc": "1.1","x": 992,"y": 640}
             ],
             "layers": [
 
@@ -66,7 +66,7 @@
             "modelName": "GMRInstanceLayer",
             "mvc": "1.0",
             "userdefined_depth": false,
-            "visible": false
+            "visible": true
         },
         {
             "__type": "GMRTileLayer_Model:#YoYoStudio.MVCFormat",
@@ -101,9 +101,9 @@
                     1,2147483648,2147483648,2147483648,1,2147483648,2147483648,1,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,
                     1,2147483648,2147483648,2147483648,1,2147483648,2147483648,1,2147483648,2147483648,2147483648,0,2147483648,2147483648,2147483648,
                     1,2147483648,2147483648,2147483648,1,2147483648,2147483648,1,2147483648,2147483648,1,1,1,1,1,
-                    1,2147483648,2147483648,2147483648,1,2147483648,2147483648,2147483648,0,0,0,0,2147483648,2147483648,2147483648,
-                    1,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,0,0,2147483648,2147483648,2147483648,
-                    1,2147483648,2147483648,0,0,2147483648,2147483648,1,2147483648,2147483648,1,2147483648,2147483648,2147483648,2147483648,
+                    1,2147483648,2147483648,2147483648,1,2147483648,2147483648,2147483648,0,0,0,0,2147483648,2147483648,1,
+                    1,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,0,0,2147483648,2147483648,1,
+                    1,2147483648,2147483648,0,0,2147483648,2147483648,1,2147483648,2147483648,1,2147483648,2147483648,2147483648,1,
                     0,2147483648,2147483648,0,1,2147483648,2147483648,1,2147483648,2147483648,1,2147483648,2147483648,2147483648,2147483648,
                     0,2147483648,2147483648,2147483648,1,2147483648,2147483648,1,2147483648,2147483648,1,2147483648,2147483648,2147483648,2147483648,
                     1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
