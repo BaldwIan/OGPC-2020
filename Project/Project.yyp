@@ -1207,6 +1207,14 @@
             }
         },
         {
+            "Key": "f69208fa-bffd-4f9e-92af-37c6ac9fe65c",
+            "Value": {
+                "id": "7817c086-5d87-418f-b3b3-5a17868a7ce2",
+                "resourcePath": "shaders\\shdDayNight\\shdDayNight.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "f6dca0c7-1c12-47d1-8d46-71c918fa2bd1",
             "Value": {
                 "id": "f7b708f4-4981-4dcd-b87b-4881964a9473",
