@@ -18,5 +18,7 @@ addKeyTime(010, 070, 200);	// midnight
 addKeyTime(250, 230, 200);	// dawn
 addKeyTime(250, 240, 200);	// later afternoon
 
+numKeyTimes = array_height_2d(color);
+
 // --Water Reflection
 //This may or may not be set up
