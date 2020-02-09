@@ -15,7 +15,9 @@ colorMix = [lerp(color[keyPrev, 0], color[keyNext, 0], lerpAmt),
 			
 conSatBrtMix = [lerp(conSatBrt[keyPrev, 0], conSatBrt[keyNext, 0], lerpAmt),
 			lerp(conSatBrt[keyPrev, 1], conSatBrt[keyNext, 1], lerpAmt),
-			lerp(conSatBrt[keyPrev, 2], conSatBrt[keyNext, 2], lerpAmt)];
+			lerp(conSatBrt[keyPrev, 2], conSatBrt[keyNext, 2], lerpAmt),
+			lerp(conSatBrt[keyPrev, 3], conSatBrt[keyNext, 3], lerpAmt),
+			lerp(conSatBrt[keyPrev, 4], conSatBrt[keyNext, 4], lerpAmt)];
 
 // Reflection alpha
 //Will be added later maybe
