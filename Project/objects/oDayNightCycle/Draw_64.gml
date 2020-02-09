@@ -1,6 +1,12 @@
-shader_set(shader);
+if (global.debug)
+{
+	shader_set(shader);
+	shader_set_uniform_f_array(uCol, colorMix);
+}
 
-shader_set_uniform_f_array(uCol, colorMix);
 draw_surface(0, 0, application_surface);
 
-shader_reset();
+if (global.debug)
+{
+	shader_reset();
+}
