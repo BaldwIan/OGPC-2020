@@ -15,3 +15,4 @@ colorMix = [lerp(color[keyPrev, 0], color[keyNext, 0], lerpAmt),
 
 // Reflection alpha
 //Will be added later maybe
+global.time = global.slider1;

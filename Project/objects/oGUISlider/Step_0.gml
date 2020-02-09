@@ -23,6 +23,10 @@ if (active)
 		if (!audio_is_playing(sndPlayback)) audio_play_sound(sndPlayback, 1, false);
 		break;
 		
+	case slider_actions.slider1:
+		global.slider1 = val;
+		break;
+		
 	default:
 		break;
 	}

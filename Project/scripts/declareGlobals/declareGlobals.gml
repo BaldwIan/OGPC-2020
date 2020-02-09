@@ -2,6 +2,8 @@
 
 global.debug = false;
 
+global.slider1 = 0;
+
 #endregion management
 
 #region day_night_cycle
@@ -78,6 +80,7 @@ enum slider_actions
 {
 	no_action,
 	volume,
+	slider1,
 }
 
 #endregion slider_actions
