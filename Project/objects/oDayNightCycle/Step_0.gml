@@ -12,6 +12,10 @@ var lerpAmt = (time - keyPrev / numKeyTimes) * numKeyTimes;
 colorMix = [lerp(color[keyPrev, 0], color[keyNext, 0], lerpAmt),
 			lerp(color[keyPrev, 1], color[keyNext, 1], lerpAmt),
 			lerp(color[keyPrev, 2], color[keyNext, 2], lerpAmt)];
+			
+conSatBrtMix = [lerp(conSatBrt[keyPrev, 0], conSatBrt[keyNext, 0], lerpAmt),
+			lerp(conSatBrt[keyPrev, 1], conSatBrt[keyNext, 1], lerpAmt),
+			lerp(conSatBrt[keyPrev, 2], conSatBrt[keyNext, 2], lerpAmt)];
 
 // Reflection alpha
 //Will be added later maybe
