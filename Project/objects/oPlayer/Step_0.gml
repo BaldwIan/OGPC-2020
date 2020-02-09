@@ -20,6 +20,7 @@ if (mouse_check_button(mb_left)) shooting = true;
 switch (state)
 {
 case object_states.neutral:
+/*
 	if (shooting && shootCooldown <= 0 && oCrops.planting = false)
 	{
 		shootCooldown = defaultShootCooldown;
@@ -30,7 +31,7 @@ case object_states.neutral:
 			image_angle = direction;
 			speed = 5;
 		}
-	}
+	}*/
 	
 	#region movement
 	

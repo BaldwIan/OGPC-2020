@@ -1,3 +1,3 @@
 targetRoom = rmTest;
-targetX = 980;
+targetX = 924;
 targetY = 640;
