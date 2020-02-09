@@ -15,8 +15,13 @@ keyNext = -1;
 
 // Args:	R	G	B	con		sat		brt		popS	popT
 addKeyTime(010, 070, 200);	// midnight
+addKeyTime(010, 080, 220);	// late night
 addKeyTime(250, 230, 200);	// dawn
-addKeyTime(250, 240, 200);	// later afternoon
+addKeyTime(245, 235, 190);	// morning
+addKeyTime(255, 250, 230);	// noon
+addKeyTime(250, 240, 200);	// late afternoon
+addKeyTime(215, 150, 165);	// dusk
+addKeyTime(010, 080, 220);	// early night
 
 numKeyTimes = array_height_2d(color);
 
