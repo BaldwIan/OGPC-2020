@@ -4,6 +4,13 @@ global.debug = false;
 
 #endregion management
 
+#region day_night_cycle
+
+// This will be the time of day, this will range from 0-1 and will reset to 0 every day cycle
+global.time = 0.5;
+
+#endregion day_night_cycle
+
 #region controls
 
 global.KDebug	= ord("H");
