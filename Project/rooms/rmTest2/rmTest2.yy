@@ -9,7 +9,8 @@
     "instanceCreationOrderIDs": [
         "1b118774-a494-41d6-8226-2a327c9a6545",
         "76ed3f58-4f7b-447c-a8f3-107916704b1e",
-        "39b9c5db-2cd6-4c92-804a-fbe5d22e8a01"
+        "39b9c5db-2cd6-4c92-804a-fbe5d22e8a01",
+        "34114d28-f62d-4de3-85d6-4220031b49d6"
     ],
     "IsDnD": false,
     "layers": [
@@ -100,7 +101,8 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-{"name": "inst_78BDAB4","id": "76ed3f58-4f7b-447c-a8f3-107916704b1e","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_78BDAB4","objId": "2e32aff6-9be7-4b9a-a1d4-4a4654e32ff4","properties": null,"rotation": 0,"scaleX": 3,"scaleY": 3,"mvc": "1.1","x": 544,"y": 288}
+{"name": "inst_78BDAB4","id": "76ed3f58-4f7b-447c-a8f3-107916704b1e","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_78BDAB4","objId": "2e32aff6-9be7-4b9a-a1d4-4a4654e32ff4","properties": null,"rotation": 0,"scaleX": 3,"scaleY": 3,"mvc": "1.1","x": 544,"y": 288},
+{"name": "inst_3497F9AF","id": "34114d28-f62d-4de3-85d6-4220031b49d6","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_3497F9AF","objId": "9bac6ed9-a6a3-47cd-aaeb-28598cfa92a6","properties": null,"rotation": 0,"scaleX": 3,"scaleY": 3,"mvc": "1.1","x": -96,"y": 256}
             ],
             "layers": [
 

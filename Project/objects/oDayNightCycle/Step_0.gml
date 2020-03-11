@@ -27,6 +27,6 @@ global.dayTicks++;
 if (global.dayTicks > global.dayLength)
 {
 	global.dayTicks = 0;
-	global.daysPassed++;
+	incrementDay();
 }
 global.time = global.dayTicks / global.dayLength;

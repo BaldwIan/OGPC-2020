@@ -9,13 +9,16 @@ var gy = (mouse_y div cs);
 // Set default color as red for rectangle
 var recCol = c_red;
 
-var cell = ds_crops_instances[# gx, gy];
-if (cell == 0)	// If there is no crop in the grid location
+if (ds_exists(ds_crops_instances, ds_type_grid))
 {
-	var layID = layer_get_id("T_Soil");
-	var mapID = layer_tilemap_get_id(layID);
-	var tilData = tilemap_get_at_pixel(mapID, mouse_x, mouse_y);
-	if (tilData != 0) { recCol = c_green; }
+	var cell = ds_crops_instances[# gx, gy];
+	if (cell == 0)	// If there is no crop in the grid location
+	{
+		var layID = layer_get_id("T_Soil");
+		var mapID = layer_tilemap_get_id(layID);
+		var tilData = tilemap_get_at_pixel(mapID, mouse_x, mouse_y);
+		if (tilData != 0) { recCol = c_green; }
+	}
 }
 
 xx = gx * cs;
