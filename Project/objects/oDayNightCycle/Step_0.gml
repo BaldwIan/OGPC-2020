@@ -19,6 +19,10 @@ conSatBrtMix = [lerp(conSatBrt[keyPrev, 0], conSatBrt[keyNext, 0], lerpAmt),
 			lerp(conSatBrt[keyPrev, 3], conSatBrt[keyNext, 3], lerpAmt),
 			lerp(conSatBrt[keyPrev, 4], conSatBrt[keyNext, 4], lerpAmt)];
 
-// Reflection alpha
-//Will be added later maybe
-global.time = global.slider1;
+// Reflection alpha - This may be added later (or not)
+
+
+// Update time according to day length
+global.dayTicks++;
+if (global.dayTicks > global.dayLength) { global.dayTicks = 0; }
+global.time = global.dayTicks / global.dayLength;
