@@ -21,8 +21,8 @@ keyNext = -1;
 // Args:	R   G    B    con  sat  brt   popS  popT
 addKeyTime(010, 070, 200, 0.7, 0.6, 0.00, 2.50, 0.67);	// midnight
 addKeyTime(010, 080, 220, 0.8, 0.9, 0.00, 2.00, 0.75);	// late night
-addKeyTime(250, 230, 200, 1.1, 1.3, 0.05, 0.80, 0.80);	// dawn
-addKeyTime(245, 235, 190, 1.1, 1.1, 0.10, 0.00, 1.00);	// morning
+addKeyTime(240, 180, 063, 1.1, 1.1, 0.10, 0.80, 0.80);	// dawn
+addKeyTime(250, 250, 190, 1.1, 1.1, 0.12, 0.00, 1.00);	// morning
 addKeyTime(255, 250, 230, 1.3, 0.9, 0.15, 0.00, 1.00);	// noon
 addKeyTime(250, 240, 200, 1.4, 1.1, 0.15, 0.00, 1.00);	// late afternoon
 addKeyTime(215, 150, 165, 1.4, 1.3, 0.20, 0.80, 0.80);	// dusk
