@@ -22,8 +22,14 @@ with (cropInst)
 {
 	cropType = cropType_;
 	daysOld = daysOld_;
+		
+	// First growth will automatically put plant into next growth stage
+	var firstGrowth = 0;
+	if (daysOld > 0) { firstGrowth = 1; }
 	
 	growthStageDuration = oCrops.ds_crops_types[# 0, cropType];
+				
+	growthStage = firstGrowth + (daysOld div growthStageDuration);
 }
 
 return cropInst;

@@ -14,3 +14,10 @@ if (sparkle >= 0)
 		alarm[1] = random_range(3, 4) * room_speed;
 	}
 }
+
+if (global.debug)
+{
+	draw_text(x, y - 75, "Growth stage: " + string(growthStage));
+	draw_text(x, y - 50, "Days Old: " + string(daysOld));
+	//draw_text(x, y - 25, "Growth stage: " + growthStage);
+}

@@ -1,12 +1,5 @@
-
-
 if (global.debug)
-{
-	if (instance_exists(oCrop))
-	{
-		with(oCrop) show_debug_message(maxGrowthStage - growthStage);
-	}
-	
+{	
 	// Draw plant grid
 	var cs = oCrops.cellSize;
 	
