@@ -24,5 +24,9 @@ conSatBrtMix = [lerp(conSatBrt[keyPrev, 0], conSatBrt[keyNext, 0], lerpAmt),
 
 // Update time according to day length
 global.dayTicks++;
-if (global.dayTicks > global.dayLength) { global.dayTicks = 0; }
+if (global.dayTicks > global.dayLength)
+{
+	global.dayTicks = 0;
+	global.daysPassed++;
+}
 global.time = global.dayTicks / global.dayLength;

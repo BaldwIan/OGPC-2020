@@ -13,6 +13,9 @@ global.dayLength	= room_speed * 10;
 global.dayTicks		= global.dayLength * 0.5;
 global.time			= global.dayTicks / global.dayLength;
 
+// Total days passed
+global.daysPassed = 0;
+
 #endregion day_night_cycle
 
 #region controls
