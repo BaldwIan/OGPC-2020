@@ -1,6 +1,6 @@
 /// @description increment crop day and growth cycle
 
-if (growthStage < maxGrowthStage)
+if (growthStage < maxGrowthStage) // Not fully grown
 {
 	daysOld++;
 				
@@ -9,6 +9,13 @@ if (growthStage < maxGrowthStage)
 	if (daysOld > 0) { firstGrowth = 1; }
 				
 	growthStage = firstGrowth + (daysOld div growthStageDuration);
+	
+	if (growthStage >= maxGrowthStage)
+	{
+		growthStage = maxGrowthStage;
+		fullyGrown = true;
+		alarm[1] = 1;
+	}
 } else
 {
 	growthStage = maxGrowthStage;
