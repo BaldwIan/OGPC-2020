@@ -21,8 +21,9 @@ if (global.debug) { show_debug_message("Respawned a " + ds_crops_types[# 2, crop
 with (cropInst)
 {
 	cropType = cropType_;
+	
 	daysOld = daysOld_;
-		
+	
 	// First growth will automatically put plant into next growth stage
 	var firstGrowth = 0;
 	if (daysOld > 0) { firstGrowth = 1; }
@@ -30,6 +31,8 @@ with (cropInst)
 	growthStageDuration = oCrops.ds_crops_types[# 0, cropType];
 				
 	growthStage = firstGrowth + (daysOld div growthStageDuration);
+	
+	daysOld = min(daysOld_, maxGrowthStage * growthStageDuration);	// Do this because when outside the room the days will increase regardless of whether growthStage is at max
 }
 
 return cropInst;

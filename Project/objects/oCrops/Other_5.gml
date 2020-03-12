@@ -1,10 +1,11 @@
 if (room = rmTest)	// Whatever room the crops will grow in
 {
 	var instNum = instance_number(oCrop);
-	if (instNum == 0) { ds_grid_clear(ds_crops_data, -1) }	// No data
+	if (instNum == 0) { ds_grid_destroy(ds_crops_data) }	// No data
 	else	// There is crops, and their data needs to be saved
 	{
-		ds_grid_resize(ds_crops_data, ds_grid_width(ds_crops_data), instNum);
+		ds_crops_data = ds_grid_create(4, instNum);
+		//ds_grid_resize(ds_crops_data, ds_grid_width(ds_crops_data), instNum);
 		
 		// Loop through instance grid and get each crops data
 		var gw = ds_grid_width(ds_crops_instances);

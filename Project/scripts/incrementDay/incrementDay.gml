@@ -22,7 +22,7 @@ if (instance_exists(oCrops))
 				}
 			}
 		}
-	} else if (oCrops.ds_crops_data[# 0, 0] != -1)	// If crop data grid has data
+	} else if (ds_exists(oCrops.ds_crops_data, ds_type_grid))	// If crop data grid exists
 	{
 		var instNum = ds_grid_height(oCrops.ds_crops_data);
 		for (var i = 0; i < instNum; i++)

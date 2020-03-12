@@ -9,7 +9,7 @@ global.slider1 = 0;
 #region day_night_cycle
 
 // This will be the time of day, this will range from 0-1 and will reset to 0 every day cycle
-global.dayLength	= room_speed * 10;
+global.dayLength	= room_speed * 8;
 global.dayTicks		= global.dayLength * 0.5;
 global.time			= global.dayTicks / global.dayLength;
 

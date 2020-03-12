@@ -1,4 +1,5 @@
 /// @description increment crop day and growth cycle
+
 if (growthStage < maxGrowthStage)
 {
 	daysOld++;
