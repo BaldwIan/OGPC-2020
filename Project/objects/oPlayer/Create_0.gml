@@ -28,7 +28,7 @@ xFrame = 1;
 yFrame = 0;
 
 spriteBase	= male_base;
-spriteHair	= male_hair1;
+spriteHair	= sInvis;
 spriteFeet	= sInvis;
 spriteLegs	= sInvis;
 spriteTorso = sInvis;

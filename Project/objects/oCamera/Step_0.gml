@@ -95,13 +95,12 @@ if (smoothZoom)
 	global.cheight = hTo;
 }
 
+// Camera won't go outside room
+x = clamp(x, 0 + global.cwidth / 2, room_width - global.cwidth / 2);
+y = clamp(y, 0 + global.cheight / 2, room_height - global.cheight / 2);
+
 // Set view again
 var vm = matrix_build_lookat(x, y, -10, x, y, 0, rotation, 1, 0);
 var pm = matrix_build_projection_ortho(global.cwidth, global.cheight, 1, 10000);
 camera_set_view_mat(camera, vm);
 camera_set_proj_mat(camera, pm);
-
-
-// Camera won't go outside room
-x = clamp(x, 0 + global.cwidth / 2, room_width - global.cwidth / 2);
-y = clamp(y, 0 + global.cheight / 2, room_height - global.cheight / 2);
