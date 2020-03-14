@@ -551,6 +551,14 @@
             }
         },
         {
+            "Key": "70bffb15-8e6d-4578-97a9-49a90b7e117f",
+            "Value": {
+                "id": "ddee965e-febc-4fde-928f-dcabb00b77ed",
+                "resourcePath": "sprites\\sInvis\\sInvis.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "711104bf-2d0b-4b6c-84d8-b92407f26aa6",
             "Value": {
                 "id": "3717e4fa-43a3-4ef0-b730-5ce006bd358a",
@@ -746,7 +754,7 @@
             "Key": "8a651afb-8f7d-4728-9f99-5c171b5c6e25",
             "Value": {
                 "id": "09bef0cf-bc49-4686-a4b1-3a1e5e801300",
-                "resourcePath": "sprites\\male_hair_brunette\\male_hair_brunette.yy",
+                "resourcePath": "sprites\\male_hair1\\male_hair1.yy",
                 "resourceType": "GMSprite"
             }
         },

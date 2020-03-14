@@ -28,10 +28,10 @@ xFrame = 1;
 yFrame = 0;
 
 spriteBase	= male_base;
-spriteHair	= male_base;
-spriteFeet	= male_base;
-spriteLegs	= male_base;
-spriteTorso = male_base;
+spriteHair	= male_hair1;
+spriteFeet	= sInvis;
+spriteLegs	= sInvis;
+spriteTorso = sInvis;
 
 xOffset = sprite_get_xoffset(mask_index);	// Offsets for player mask
 yOffset = sprite_get_yoffset(mask_index);
