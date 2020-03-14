@@ -1,7 +1,7 @@
 // Movement Variables
 velocity_		= [0, 0];
 knockback_vel	= [0, 0];
-max_velocity_	= [2, 2];
+max_velocity_	= [1.5, 1.5];
 sprintSpd		= [2, 2];
 acceleration_	= 3;
 
@@ -28,7 +28,7 @@ xFrame = 1;
 yFrame = 0;
 
 spriteBase	= male_base;
-spriteHair	= sInvis;
+spriteHair	= male_hair1;
 spriteFeet	= sInvis;
 spriteLegs	= sInvis;
 spriteTorso = sInvis;
