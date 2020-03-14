@@ -40,9 +40,9 @@ rPercent = shader_get_uniform(colorPercent, "redPercent");
 gPercent = shader_get_uniform(colorPercent, "greenPercent");
 bPercent = shader_get_uniform(colorPercent, "bluePercent");
 
-percentrBase = random(1.0);
-percentgBase = random(1.0);
-percentbBase = random(1.0);
+percentrBase = 209 / 255;
+percentgBase = 163 / 255;
+percentbBase = 164 / 255;
 
 percentrFeet = random(1.0);
 percentgFeet = random(1.0);
