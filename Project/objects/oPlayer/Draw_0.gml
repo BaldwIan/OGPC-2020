@@ -1,6 +1,6 @@
 var frames = 8;
 var frameSize = 64;
-var animSpd = 12;		// FPS
+var animSpd = 8;		// FPS
 
 // Change y frame based off of direction state
 

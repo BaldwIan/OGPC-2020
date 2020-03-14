@@ -27,11 +27,11 @@ isMoving = false;
 xFrame = 1;
 yFrame = 0;
 
-spriteBase	= male_base_light;
-spriteHair	= male_hair_brunette;
-spriteFeet	= male_shoes_black;
-spriteLegs	= male_pants_white;
-spriteTorso = male_shirt_teal;
+spriteBase	= male_base;
+spriteHair	= male_base;
+spriteFeet	= male_base;
+spriteLegs	= male_base;
+spriteTorso = male_base;
 
 xOffset = sprite_get_xoffset(mask_index);	// Offsets for player mask
 yOffset = sprite_get_yoffset(mask_index);

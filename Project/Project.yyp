@@ -314,7 +314,7 @@
             "Key": "41f57412-3b52-4d31-b950-7b953c88df78",
             "Value": {
                 "id": "7894bbce-05dd-4f75-9af0-294e680f8c23",
-                "resourcePath": "sprites\\male_base_light\\male_base_light.yy",
+                "resourcePath": "sprites\\male_base\\male_base.yy",
                 "resourceType": "GMSprite"
             }
         },

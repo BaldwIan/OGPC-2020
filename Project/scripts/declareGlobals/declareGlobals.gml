@@ -65,8 +65,8 @@ enum cammode
 	shake_follow,
 }
 
-global.regCWidth = 640;
-global.regCHeight = 360;
+global.regCWidth = 320;
+global.regCHeight = 180;
 global.cwidth = global.regCWidth;
 global.cheight = global.regCHeight;
 

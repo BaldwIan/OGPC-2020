@@ -8,6 +8,8 @@ var isSprinting = keyboard_check(global.KSprint);
 
 isMoving =	(keyboard_check(global.KRight))	|| (keyboard_check(global.KLeft)) ||
 			(keyboard_check(global.KDown))	|| (keyboard_check(global.KUp));
+	
+isMoving = isMoving && (abs(velocity_[0]) > 0 || abs(velocity_[1]) > 0);
 
 // Shoot input
 var shooting = false;

@@ -6,34 +6,34 @@
     "For3D": false,
     "HTile": false,
     "VTile": false,
-    "bbox_bottom": 60,
-    "bbox_left": 19,
+    "bbox_bottom": 63,
+    "bbox_left": 20,
     "bbox_right": 44,
-    "bbox_top": 52,
+    "bbox_top": 55,
     "bboxmode": 2,
     "colkind": 1,
     "coltolerance": 0,
     "edgeFiltering": false,
     "frames": [
         {
-            "id": "bd955eec-f149-459f-aa0f-3e25bcfe308d",
+            "id": "9923fda5-00a5-48ca-9dbb-4d6033e67b49",
             "modelName": "GMSpriteFrame",
             "mvc": "1.0",
             "SpriteId": "0d245b41-7325-4c0c-8d46-31af18ab0c94",
             "compositeImage": {
-                "id": "bb3b4c85-2557-4e58-995e-a949c43f7bd1",
+                "id": "5b2805dd-3939-4792-8f55-3b8e621f5a6e",
                 "modelName": "GMSpriteImage",
                 "mvc": "1.0",
-                "FrameId": "bd955eec-f149-459f-aa0f-3e25bcfe308d",
+                "FrameId": "9923fda5-00a5-48ca-9dbb-4d6033e67b49",
                 "LayerId": "00000000-0000-0000-0000-000000000000"
             },
             "images": [
                 {
-                    "id": "92cb89f7-ad86-4d5a-b3d8-95cfaafd9570",
+                    "id": "6549d4f6-2692-471c-b697-e4ab359ae821",
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
-                    "FrameId": "bd955eec-f149-459f-aa0f-3e25bcfe308d",
-                    "LayerId": "4fb1801f-48f4-40a6-947f-81d2551f581d"
+                    "FrameId": "9923fda5-00a5-48ca-9dbb-4d6033e67b49",
+                    "LayerId": "e290603e-7a26-487b-a193-1d09045b0e28"
                 }
             ]
         }
@@ -43,7 +43,7 @@
     "height": 64,
     "layers": [
         {
-            "id": "4fb1801f-48f4-40a6-947f-81d2551f581d",
+            "id": "e290603e-7a26-487b-a193-1d09045b0e28",
             "modelName": "GMImageLayer",
             "mvc": "1.0",
             "SpriteId": "0d245b41-7325-4c0c-8d46-31af18ab0c94",
@@ -54,7 +54,7 @@
             "visible": true
         }
     ],
-    "origin": 9,
+    "origin": 7,
     "originLocked": false,
     "playbackSpeed": 15,
     "playbackSpeedType": 0,
@@ -66,5 +66,5 @@
     "type": 0,
     "width": 64,
     "xorig": 32,
-    "yorig": 56
+    "yorig": 63
 }
