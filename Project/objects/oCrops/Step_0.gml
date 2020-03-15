@@ -15,6 +15,7 @@ if (planting)
 	
 	if (keyboard_check_pressed(global.KInteract))
 	{
+		show_debug_message("Attempting to harvest crop");
 		harvestCrop(mouse_x, mouse_y);
 	}
 }
