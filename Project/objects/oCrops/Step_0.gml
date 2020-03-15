@@ -12,6 +12,11 @@ if (planting)
 	{
 		instanceCreateCrop(mouse_x, mouse_y, selectCrop);
 	}
+	
+	if (keyboard_check_pressed(global.KInteract))
+	{
+		harvestCrop(mouse_x, mouse_y);
+	}
 }
 
 #endregion planting
