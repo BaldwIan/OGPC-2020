@@ -29,7 +29,7 @@ yFrame = 0;
 
 spriteBase	= male_base;
 spriteHair	= male_hair1;
-spriteFeet	= sInvis;
+spriteFeet	= male_boots1;
 spriteLegs	= sInvis;
 spriteTorso = sInvis;
 
@@ -44,9 +44,9 @@ percentrBase = 209 / 255;
 percentgBase = 163 / 255;
 percentbBase = 164 / 255;
 
-percentrFeet = random(1.0);
-percentgFeet = random(1.0);
-percentbFeet = random(1.0);
+percentrFeet = 1.0;
+percentgFeet = 1.0;
+percentbFeet = 1.0;
 
 percentrLegs = random(1.0);
 percentgLegs = random(1.0);
