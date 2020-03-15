@@ -29,6 +29,7 @@ if (instance_exists(oCrops))
 		{
 			// Add to day
 			oCrops.ds_crops_data[# 3, i]++;
+			// ^ Growth stage is updated when crop is respawned
 		}
 	}
 }
