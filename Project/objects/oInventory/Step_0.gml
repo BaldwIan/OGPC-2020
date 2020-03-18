@@ -81,7 +81,7 @@ if(ss_item != item.none)
 {
 
 	//Drop item into the Game World
-	if(keyboard_check_pressed(ord("R")))
+	if(keyboard_check_pressed(global.KInteract))
 	{
 		inv_grid[# 1, selected_slot] -= 1;
 		//destroy item in inventory if it was the last one
