@@ -1,4 +1,4 @@
-if(keyboard_check_pressed(ord(inventoryButton))) { showInventory = !showInventory; }
+if(keyboard_check_pressed(global.KInventory)) { showInventory = !showInventory; }
 
 if(!showInventory) exit;
 

@@ -29,6 +29,7 @@ yFrame = 0;
 
 spriteBase	= male_base;
 spriteHair	= male_hair1;
+spriteHands	= sMale_hand_leather;
 spriteFeet	= male_boots1;
 spriteLegs	= sInvis;
 spriteTorso = sInvis;

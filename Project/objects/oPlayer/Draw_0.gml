@@ -28,6 +28,9 @@ if (spriteBase  != -1) draw_sprite_part(spriteBase,  0, floor(xFrame) * frameSiz
 
 shader_reset();
 
+// Hands
+if (spriteFeet  != -1) draw_sprite_part(spriteHands,  0, floor(xFrame) * frameSize, yFrame * frameSize, frameSize, frameSize, xx, yy);
+
 shader_set(colorPercent);
 shader_set_uniform_f(rPercent, percentrFeet);
 shader_set_uniform_f(gPercent, percentgFeet);

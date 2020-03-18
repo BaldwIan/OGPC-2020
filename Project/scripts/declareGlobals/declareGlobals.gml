@@ -32,6 +32,7 @@ global.KEquip = ord("1");
 global.KPlant = ord("P");
 
 global.KInteract = ord("F");
+global.KInventory = ord("E");
 
 #endregion controls
 

@@ -1,7 +1,6 @@
 depth = -1;
 scale = 1.5;
 showInventory = false;
-inventoryButton = "E";
 
 inv_slots = 17;
 inv_slots_width = 8;
