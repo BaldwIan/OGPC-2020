@@ -1,7 +1,7 @@
 event_inherited();
 
-spriteBase	= male_base;
-spriteHair	= male_base;
-spriteFeet	= male_base;
-spriteLegs	= male_base;
-spriteTorso = male_base;
+spriteBase	= sMale_base;
+spriteHair	= sMale_base;
+spriteFeet	= sMale_base;
+spriteLegs	= sMale_base;
+spriteTorso = sMale_base;
