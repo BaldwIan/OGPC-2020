@@ -97,8 +97,14 @@ var rmTransition = instance_place(x, y, oRoomTransition);
 
 var mouseAngle = point_direction(x, y, mouse_x, mouse_y);
 
-if (isMoving)	{ dir_state = getDirStateVelocity(velocity_);	}
-else			{ dir_state = getDirStateAngle(mouseAngle);		}
+if (isMoving)
+{
+	dir_state = getDirStateVelocity(velocity_);
+	walkParticleSystem.bursting = true;
+} else
+{
+	dir_state = getDirStateAngle(mouseAngle);
+}
 
 // Reduce shot cooldown
 shootCooldown--;

@@ -88,3 +88,93 @@ percentgHair	= 1.0;
 percentbHair	= 1.0;
 
 #endregion blend_shader
+
+#region particle_system
+
+walkParticleSystem = instance_create_layer(x, y, "Instances", oPartSystem);
+
+with (walkParticleSystem)
+{
+	// Adjust depth to be behind player
+	depth = other.depth + 1;
+	
+	#region particle_info
+
+	// --Particle info
+	// Follow
+	followObj = other.id;
+	
+	// Sprite info
+	partSprite			= sPartDirt;
+	animateSprite		= false;
+	stretchSpriteAnim	= false;
+	randomSpriteSubImg	= false;
+
+	// Scale Info
+	xScale				= 1.0;
+	yScale				= 1.0;
+
+	// Size Info
+	sizeMin				= 1.0;
+	sizeMax				= 1.5;
+	sizeIncr			= 0.0;
+	sizeWiggle			= 0.0;
+
+	// Color Info
+	col1				= c_white;
+	col2				= c_white;
+	col3				= c_white;
+
+	// Alpha Info
+	alpha1				= 1.0;
+	alpha2				= 0.5;
+	alpha3				= 0.0;
+
+	// Direction Info
+	dirMin				= 0.0;
+	dirMax				= 180.0;
+	dirIncr				= 10.0;
+	dirWiggle			= 0.0;
+
+	// Speed Info
+	spdMin				= 0.1;
+	spdMax				= 0.2;
+	spdIncr				= 0.0;
+	spdWiggle			= 0.0;
+
+	// Gravity Info
+	gravAmt				= 0.02;
+	gravDir				= 90.0;
+
+	// Orientation Info
+	orienAngMin			= 0.0;
+	orienAngMax			= 360.0;
+	orienAngIncr		= 0.0;
+	orienAngWiggle		= 0.0;
+	orienAngRelative	= true;
+
+	// Life Info
+	lifeMin				= 10;
+	lifeMax				= 25;
+
+	#endregion particle_info
+	
+	#region emitter_info
+	
+	// --Emitter info - default values
+	regionW				= 32;
+	regionH				= bbox_top - bbox_bottom;
+	regionOffsetX		= 0;
+	regionOffsetY		= 0;
+
+	xMin				= x - (regionW / 2) + regionOffsetX;
+	xMax				= x + (regionW / 2) + regionOffsetX;
+	yMin				= y - (regionH / 2) + regionOffsetY;
+	yMax				= y + (regionH / 2) + regionOffsetY;
+	
+	streamMode = false;
+	
+	#endregion emitter_info
+}
+
+#endregion particle_system

@@ -1,7 +1,4 @@
-if (streamMode)
-{
-	exit;
-} else if (bursting)	// Burst mode
+if (!streamMode && bursting)	// Burst mode
 {
 	part_emitter_burst(ps, emitter, particle, burstAmt);
 	bursting = false;	// Setting this to false let's the controlling object emit burst on command
@@ -9,6 +6,7 @@ if (streamMode)
 
 if (followObj != noone && instance_exists(followObj))
 {
+	show_debug_message("Should be following")
 	x = followObj.x;
 	y = followObj.y;
 	
