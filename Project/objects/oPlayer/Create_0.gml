@@ -41,23 +41,23 @@ rPercent = shader_get_uniform(colorPercent, "redPercent");
 gPercent = shader_get_uniform(colorPercent, "greenPercent");
 bPercent = shader_get_uniform(colorPercent, "bluePercent");
 
-percentrBase = 209 / 255;
-percentgBase = 163 / 255;
-percentbBase = 164 / 255;
+percentrBase	= 209 / 255;
+percentgBase	= 163 / 255;
+percentbBase	= 164 / 255;
 
-percentrFeet = 1.0;
-percentgFeet = 1.0;
-percentbFeet = 1.0;
+percentrFeet	= 1.0;
+percentgFeet	= 1.0;
+percentbFeet	= 1.0;
 
-percentrLegs = random(1.0);
-percentgLegs = random(1.0);
-percentbLegs = random(1.0);
+percentrLegs	= 1.0;
+percentgLegs	= 1.0;
+percentbLegs	= 1.0;
 
-percentrTorso = random(1.0);
-percentgTorso = random(1.0);
-percentbTorso= random(1.0);
+percentrTorso	= 1.0;
+percentgTorso	= 1.0;
+percentbTorso	= 1.0;
 
-percentrHair = random(1.0);
-percentgHair = random(1.0);
-percentbHair = random(1.0);
+percentrHair	= 1.0;
+percentgHair	= 1.0;
+percentbHair	= 1.0;
 
