@@ -3,18 +3,6 @@ draw_sprite_part(
 	frameWidth, frameHeight, xx, yy
 );
 
-// Draw sparkle if fully grown
-if (sparkle >= 0)
-{
-	draw_sprite(sSparkle, sparkle, x + 2, y - 10);
-	sparkle += 0.1;
-	if (sparkle >= sprite_get_number(sSparkle))
-	{
-		sparkle = -1;
-		alarm[1] = random_range(3, 4) * room_speed;
-	}
-}
-
 if (global.debug)
 {
 	draw_text(x, y - 75, "Growth stage: " + string(growthStage));

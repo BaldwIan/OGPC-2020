@@ -186,7 +186,7 @@
             "Key": "25eb0834-19d9-429c-9bc0-58b06ba1292c",
             "Value": {
                 "id": "ce9f2e1e-edae-4c97-9bd9-5b7eb64a402c",
-                "resourcePath": "objects\\oPartSystem\\oPartSystem.yy",
+                "resourcePath": "objects\\oPartEmitter\\oPartEmitter.yy",
                 "resourceType": "GMObject"
             }
         },

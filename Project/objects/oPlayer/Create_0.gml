@@ -91,7 +91,7 @@ percentbHair	= 1.0;
 
 #region particle_system
 
-walkParticleSystem = instance_create_layer(x, y, "Instances", oPartSystem);
+walkParticleSystem = instance_create_layer(x, y, "Instances", oPartEmitter);
 
 with (walkParticleSystem)
 {

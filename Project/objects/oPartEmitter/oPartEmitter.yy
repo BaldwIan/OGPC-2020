@@ -2,7 +2,7 @@
     "id": "25eb0834-19d9-429c-9bc0-58b06ba1292c",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oPartSystem",
+    "name": "oPartEmitter",
     "eventList": [
         {
             "id": "58ab6010-3b12-4ebc-b41c-1fe481abbc94",

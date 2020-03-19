@@ -1,1 +1,1 @@
-sparkle = 0;
+/// @description Make fully grown particle effect if not yet created
