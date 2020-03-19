@@ -4,7 +4,7 @@ if (streamMode)
 } else if (bursting)	// Burst mode
 {
 	part_emitter_burst(ps, emitter, particle, burstAmt);
-	//bursting = false;	// Setting this to false let's the controlling object emit burst on command
+	bursting = false;	// Setting this to false let's the controlling object emit burst on command
 }
 
 if (followObj != noone && instance_exists(followObj))

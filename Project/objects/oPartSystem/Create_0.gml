@@ -94,7 +94,7 @@ yMax				= y + (regionH / 2) + regionOffsetY;
 emitterShape		= ps_shape_ellipse;
 emitterDistribution	= ps_distr_gaussian;
 
-streamMode			= false;	// Stream mode creates a certain amount of particles every second
+streamMode			= true;	// Stream mode creates a certain amount of particles every second
 						// burst is the other mode (if stream == false) which creates particles when activated
 streamAmt			= 1;	// Amount of particles to create every frame
 burstAmt			= 1;	// Amount of particles to create when emitting burst
