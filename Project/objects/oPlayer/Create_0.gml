@@ -27,10 +27,10 @@ isMoving = false;
 xFrame = 1;
 yFrame = 0;
 
-spriteBase	= male_base;
-spriteHair	= male_hair1;
+spriteBase	= sMale_base;
+spriteHair	= sMale_hair1;
 spriteHands	= sMale_hand_leather;
-spriteFeet	= male_boots1;
+spriteFeet	= sMale_feet_leatherboots;
 spriteLegs	= sInvis;
 spriteTorso = sInvis;
 

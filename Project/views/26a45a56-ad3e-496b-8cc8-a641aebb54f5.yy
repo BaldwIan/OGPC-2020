@@ -7,7 +7,7 @@
         
     ],
     "filterType": "GMSprite",
-    "folderName": "non-armor",
+    "folderName": "common",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
