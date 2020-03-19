@@ -33,6 +33,12 @@ with (cropInst)
 	growthStage = firstGrowth + (daysOld div growthStageDuration);
 	
 	daysOld = min(daysOld_, maxGrowthStage * growthStageDuration);	// Do this because when outside the room the days will increase regardless of whether growthStage is at max
+
+	// Add particles if fully grown
+	if ((growthStage >= maxGrowthStage) && (sparkleParticles == noone))
+	{
+		alarm[1] = 1;
+	}
 }
 
 return cropInst;
