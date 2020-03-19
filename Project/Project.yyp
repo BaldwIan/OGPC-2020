@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "25eb0834-19d9-429c-9bc0-58b06ba1292c",
+            "Value": {
+                "id": "ce9f2e1e-edae-4c97-9bd9-5b7eb64a402c",
+                "resourcePath": "objects\\oPartSystem\\oPartSystem.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "26a45a56-ad3e-496b-8cc8-a641aebb54f5",
             "Value": {
                 "id": "95a5c69b-d0cc-49c7-ae65-d545aaab0920",
@@ -403,6 +411,14 @@
             "Value": {
                 "id": "2d358802-8805-40d7-9023-f9f28eca2ad4",
                 "resourcePath": "sprites\\sInventory\\sInventory.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "52bdf44f-40f8-49fa-9120-21e36bd38b01",
+            "Value": {
+                "id": "584608e8-dd20-4a90-96e1-efa7f488be18",
+                "resourcePath": "sprites\\sPartDefault\\sPartDefault.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -807,6 +823,14 @@
             }
         },
         {
+            "Key": "8a88e0ac-00d2-4dda-b524-a38fd4734b93",
+            "Value": {
+                "id": "d2b09e96-957e-4970-8c96-92d132946db8",
+                "resourcePath": "views\\8a88e0ac-00d2-4dda-b524-a38fd4734b93.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "8b1622da-9dbb-4860-abb9-ab7c6359f444",
             "Value": {
                 "id": "acf81f13-9650-4ea3-84e7-19c6dc0520d8",
@@ -836,6 +860,14 @@
                 "id": "fb190b70-83c4-4d99-b85f-49c60e16c15d",
                 "resourcePath": "sounds\\sndSwordSwing\\sndSwordSwing.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "8e5d60ce-990d-46a5-bad0-65fffcb9afce",
+            "Value": {
+                "id": "ff648cca-4aab-41eb-8384-a5a4ed344ff1",
+                "resourcePath": "views\\8e5d60ce-990d-46a5-bad0-65fffcb9afce.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1012,6 +1044,14 @@
                 "id": "ee27cbbd-9ef5-472b-9dd7-a6cdde9c2a11",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "aa96eb95-813b-42cf-bede-8882e989fd80",
+            "Value": {
+                "id": "fc76f1c9-5ef7-49e6-a296-f66fcb6c35bd",
+                "resourcePath": "views\\aa96eb95-813b-42cf-bede-8882e989fd80.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
