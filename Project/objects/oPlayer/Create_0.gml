@@ -126,36 +126,36 @@ with (walkParticleSystem)
 	col3				= c_white;
 
 	// Alpha Info
-	alpha1				= 1.0;
-	alpha2				= 0.5;
+	alpha1				= 0.5;
+	alpha2				= 0.25;
 	alpha3				= 0.0;
 
 	// Direction Info
 	dirMin				= 0.0;
 	dirMax				= 180.0;
 	dirIncr				= 10.0;
-	dirWiggle			= 0.0;
+	dirWiggle			= 15.0;
 
 	// Speed Info
 	spdMin				= 0.1;
-	spdMax				= 0.2;
-	spdIncr				= 0.0;
+	spdMax				= 0.15;
+	spdIncr				= -0.05;
 	spdWiggle			= 0.0;
 
 	// Gravity Info
-	gravAmt				= 0.02;
+	gravAmt				= 0.08;
 	gravDir				= 90.0;
 
 	// Orientation Info
 	orienAngMin			= 0.0;
 	orienAngMax			= 360.0;
-	orienAngIncr		= 0.0;
-	orienAngWiggle		= 0.0;
+	orienAngIncr		= 10.0;
+	orienAngWiggle		= 15.0;
 	orienAngRelative	= true;
 
 	// Life Info
 	lifeMin				= 10;
-	lifeMax				= 25;
+	lifeMax				= 20;
 
 	#endregion particle_info
 	
@@ -163,7 +163,7 @@ with (walkParticleSystem)
 	
 	// --Emitter info - default values
 	regionW				= 32;
-	regionH				= bbox_top - bbox_bottom;
+	regionH				= 8;
 	regionOffsetX		= 0;
 	regionOffsetY		= 0;
 
