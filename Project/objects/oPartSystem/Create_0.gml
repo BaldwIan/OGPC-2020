@@ -2,7 +2,6 @@
 followObj = noone;	// If not noone, then particles will be drawn on follow's position
 
 // --Particle System
-ps = part_system_create();
 particle = part_type_create();
 
 #region particle_info

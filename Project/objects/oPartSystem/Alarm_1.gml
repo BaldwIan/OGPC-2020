@@ -12,14 +12,11 @@ part_type_orientation(particle, orienAngMin, orienAngMax, orienAngIncr, orienAng
 part_type_life(particle, lifeMin, lifeMax);
 part_type_blend(particle, true);
 
-// Adjust depth
-part_system_depth(ps, depth);
-
 // --Create Emitter
-emitter = part_emitter_create(ps);
-part_emitter_region(ps, particle, xMin, xMax, yMin, yMax, emitterShape, emitterDistribution);
+emitter = part_emitter_create(global.ps);
+part_emitter_region(global.ps, particle, xMin, xMax, yMin, yMax, emitterShape, emitterDistribution);
 
 if (streamMode)
 {
-	part_emitter_stream(ps, emitter, particle, streamAmt);
+	part_emitter_stream(global.ps, emitter, particle, streamAmt);
 }

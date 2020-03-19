@@ -136,6 +136,12 @@ enum item
 
 #endregion items
 
+#region particle_system
+
+global.ps = part_system_create();
+
+#endregion particle_system
+
 // States that dynamic objects can be in such as stun, aggro, 
 #region object_states
 
