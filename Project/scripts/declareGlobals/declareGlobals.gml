@@ -139,6 +139,7 @@ enum item
 #region particle_system
 
 global.ps = part_system_create();
+createParticleTypes();
 
 #endregion particle_system
 

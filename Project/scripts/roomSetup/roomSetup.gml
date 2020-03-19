@@ -40,3 +40,5 @@ if (instance_exists(oPlayer)) && (spawnRoom != -1)
 }
 
 #endregion player_setup
+
+if (!part_system_exists(global.ps)) { global.ps = part_system_create(); }

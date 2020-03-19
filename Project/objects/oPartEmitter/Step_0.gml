@@ -9,7 +9,6 @@ if (!streamMode && bursting)	// Burst mode
 
 if (followObj != noone && instance_exists(followObj))
 {
-	show_debug_message("Should be following")
 	x = followObj.x;
 	y = followObj.y;
 	

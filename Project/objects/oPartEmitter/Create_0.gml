@@ -2,9 +2,9 @@
 followObj = noone;	// If not noone, then particles will be drawn on follow's position
 
 // --Particle System
-particle = part_type_create();
+particle = noone;
 
-#region particle_info
+#region default_particle_info
 
 // --Particle info - default values
 // Sprite info
@@ -60,7 +60,7 @@ orienAngRelative	= true;
 lifeMin				= 100;
 lifeMax				= 500;
 
-#endregion particle_info
+#endregion default_particle_info
 
 #region set_components
 

@@ -13,5 +13,5 @@ fullyGrown = false;
 xx = x - (frameWidth / 2) + 2;
 yy = y - frameHeight + 6;
 
-// Particle System
-
+// Particles
+sparkleParticles = noone;
