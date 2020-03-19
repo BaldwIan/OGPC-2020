@@ -511,6 +511,14 @@
             }
         },
         {
+            "Key": "5d2c8afd-9b96-473e-9b9d-4a418fe37be5",
+            "Value": {
+                "id": "222c64b5-3ab0-4735-b6bc-09490e9f5b56",
+                "resourcePath": "sprites\\sPartSparkle\\sPartSparkle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5f952972-1f50-4d28-8e9e-2e38da7e08b2",
             "Value": {
                 "id": "9039fa84-bc0a-48ed-8551-074e546e8cb1",

@@ -66,3 +66,69 @@ createParticle(global.particleDirt, partSprite, animateSprite, stretchSpriteAnim
 				dirMax, dirIncr, dirWiggle, spdMin, spdMax, spdIncr, spdWiggle,
 				gravAmt, gravDir, orienAngMin, orienAngMax, orienAngIncr,
 				orienAngWiggle, orienAngRelative, lifeMin, lifeMax);
+				
+#region particle_info_sparkle
+
+// --Particle info
+
+// Sprite info
+partSprite			= sPartSparkle;
+animateSprite		= true;
+stretchSpriteAnim	= true;
+randomSpriteSubImg	= false;
+
+// Scale Info
+xScale				= 1.0;
+yScale				= 1.0;
+
+// Size Info
+sizeMin				= 0.5;
+sizeMax				= 0.8;
+sizeIncr			= -0.1;
+sizeWiggle			= 1.0;
+
+// Color Info
+col1				= c_white;
+col2				= c_white;
+col3				= c_white;
+
+// Alpha Info
+alpha1				= 1.0;
+alpha2				= 0.75;
+alpha3				= 0.5;
+
+// Direction Info
+dirMin				= 0.0;
+dirMax				= 360.0;
+dirIncr				= 0.0;
+dirWiggle			= 0.0;
+
+// Speed Info
+spdMin				= 0.03;
+spdMax				= 0.035;
+spdIncr				= -0.02;
+spdWiggle			= 1.0;
+
+// Gravity Info
+gravAmt				= 0.05;
+gravDir				= 270.0;
+
+// Orientation Info
+orienAngMin			= 0.0;
+orienAngMax			= 360.0;
+orienAngIncr		= 10.0;
+orienAngWiggle		= 15.0;
+orienAngRelative	= true;
+
+// Life Info
+lifeMin				= 15;
+lifeMax				= 60;
+
+#endregion particle_info_sparkle
+global.particleSparkle	= part_type_create();
+createParticle(global.particleSparkle, partSprite, animateSprite, stretchSpriteAnim,
+				randomSpriteSubImg, xScale, yScale, sizeMin, sizeMax, sizeIncr,
+				sizeWiggle, col1, col2, col3, alpha1, alpha2, alpha3, dirMin,
+				dirMax, dirIncr, dirWiggle, spdMin, spdMax, spdIncr, spdWiggle,
+				gravAmt, gravDir, orienAngMin, orienAngMax, orienAngIncr,
+				orienAngWiggle, orienAngRelative, lifeMin, lifeMax);
