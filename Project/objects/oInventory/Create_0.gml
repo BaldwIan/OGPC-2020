@@ -1,28 +1,47 @@
+//For camera
 depth = -1;
+//Incase we change the resolution of our screen
 scale = 3;
+
+//At the start of the game the player has the inventory closed, it is not open
 showInventory = false;
 
+//Number of total inventory slots
 inv_slots = 24;
+//Total inventory slots is width X height
+//Number of slots wide
 inv_slots_width = 8;
+//Number of slots going down
 inv_slots_height = 3;
 
+//Slot currently selected by player WHILE IN INVENTORY (this is shown with a light overlay)
 selected_slot = 0;
+//Slot that picked up oItem is being placed into
 pickup_slot = -1;
+
+//Coordinates for what slot the mouse is on (starts at (0,0))
 m_slotx = 0;
 m_sloty = 0;
 
+//Space between inventory slots
 x_buffer = 2;
 y_buffer = 4;
+
 
 gui_width = display_get_gui_width();
 gui_height = display_get_gui_height();
 
+//Size of an individual inventory slot
 cellSize = 32;
+
 
 inv_UI_width = 288;
 inv_UI_height = 192;
 
+//Inventory sprite
 spr_inv_UI = sInventory;
+
+//Item sprite
 spr_inv_items = sItems;
 
 spr_inv_items_columns = sprite_get_width(spr_inv_items) / cellSize;
@@ -60,7 +79,7 @@ ds_player_info[# 1, 3] = "Player";
 
 ds_inventory = ds_grid_create(2, inv_slots);
 
-
+//Draws the inventory
 var yy = 0; 
 repeat(inv_slots)
 {
