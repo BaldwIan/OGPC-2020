@@ -10,7 +10,70 @@ if (sparkleParticles == noone)
 		// Adjust depth to be in front of crop
 		depth = other.depth - 1;
 	
-		particle = global.particleSparkle;
+		particle = part_type_create();
+		
+		#region particle_info
+			
+		var partSprite			= sPartSparkle;
+		var animateSprite		= true;
+		var stretchSpriteAnim	= true;
+		var randomSpriteSubImg	= false;
+			
+		// Scale Info
+		var xScale				= 1.0;
+		var yScale				= 1.0;
+			
+		// Size Info
+		var sizeMin				= 0.5;
+		var sizeMax				= 0.8;
+		var sizeIncr			= -0.1;
+		var sizeWiggle			= 1.0;
+			
+		// Color Info
+		var col1				= c_white;
+		var col2				= c_white;
+		var col3				= c_white;
+			
+		// Alpha Info
+		var alpha1				= 1.0;
+		var alpha2				= 0.75;
+		var alpha3				= 0.5;
+			
+		// Direction Info
+		var dirMin				= 0.0;
+		var dirMax				= 360.0;
+		var dirIncr				= 0.0;
+		var dirWiggle			= 0.0;
+			
+		// Speed Info
+		var spdMin				= 0.03;
+		var spdMax				= 0.035;
+		var spdIncr				= -0.02;
+		var spdWiggle			= 1.0;
+			
+		// Gravity Info
+		var gravAmt				= 0.05;
+		var gravDir				= 270.0;
+			
+		// Orientation Info
+		var orienAngMin			= 0.0;
+		var orienAngMax			= 360.0;
+		var orienAngIncr		= 10.0;
+		var orienAngWiggle		= 15.0;
+		var orienAngRelative	= true;
+			
+		// Life Info
+		var lifeMin				= 15;
+		var lifeMax				= 60;
+			
+		createParticle(particle, partSprite, animateSprite, stretchSpriteAnim,
+			randomSpriteSubImg, xScale, yScale, sizeMin, sizeMax, sizeIncr,
+			sizeWiggle, col1, col2, col3, alpha1, alpha2, alpha3, dirMin,
+			dirMax, dirIncr, dirWiggle, spdMin, spdMax, spdIncr, spdWiggle,
+			gravAmt, gravDir, orienAngMin, orienAngMax, orienAngIncr,
+			orienAngWiggle, orienAngRelative, lifeMin, lifeMax);
+			
+		#endregion particle_info
 	
 		#region emitter_info
 	
