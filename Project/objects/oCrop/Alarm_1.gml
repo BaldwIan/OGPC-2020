@@ -15,17 +15,17 @@ if (sparkleParticles == noone)
 		#region particle_info
 			
 		var partSprite			= sPartSparkle;
-		var animateSprite		= true;
+		var animateSprite		= false;
 		var stretchSpriteAnim	= true;
-		var randomSpriteSubImg	= false;
+		var randomSpriteSubImg	= true;
 			
 		// Scale Info
 		var xScale				= 1.0;
 		var yScale				= 1.0;
 			
 		// Size Info
-		var sizeMin				= 0.5;
-		var sizeMax				= 0.8;
+		var sizeMin				= 0.25;
+		var sizeMax				= 0.4;
 		var sizeIncr			= -0.1;
 		var sizeWiggle			= 1.0;
 			
@@ -41,18 +41,18 @@ if (sparkleParticles == noone)
 			
 		// Direction Info
 		var dirMin				= 0.0;
-		var dirMax				= 360.0;
+		var dirMax				= 180.0;
 		var dirIncr				= 0.0;
 		var dirWiggle			= 0.0;
 			
 		// Speed Info
-		var spdMin				= 0.03;
-		var spdMax				= 0.035;
-		var spdIncr				= -0.02;
+		var spdMin				= -0.5;
+		var spdMax				= 0.5;
+		var spdIncr				= 0.0;
 		var spdWiggle			= 1.0;
 			
 		// Gravity Info
-		var gravAmt				= 0.05;
+		var gravAmt				= 0.015;
 		var gravDir				= 270.0;
 			
 		// Orientation Info
@@ -63,7 +63,7 @@ if (sparkleParticles == noone)
 		var orienAngRelative	= true;
 			
 		// Life Info
-		var lifeMin				= 15;
+		var lifeMin				= 30;
 		var lifeMax				= 60;
 			
 		createParticle(particle, partSprite, animateSprite, stretchSpriteAnim,
