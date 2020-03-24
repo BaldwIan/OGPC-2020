@@ -73,6 +73,16 @@ case object_states.neutral:
 	}
 	
 	#endregion movement
+	break;
+	
+case object_states.attack:
+	// Stop moving the player in attack state
+	velocity_[0]	= 0;
+	velocity_[1]	= 0;
+	
+	state = object_states.neutral;
+	
+	break;
 	
 default:
 	break;
