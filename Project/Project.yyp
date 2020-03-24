@@ -1271,6 +1271,14 @@
             }
         },
         {
+            "Key": "d35b1fa9-5b8b-42c1-a498-f0cc06561611",
+            "Value": {
+                "id": "3062f1a3-370b-4d93-b24c-696a2d8b67bd",
+                "resourcePath": "sprites\\sMale_torso_leather\\sMale_torso_leather.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d5d360bb-19d6-4144-b530-002e9c5142ea",
             "Value": {
                 "id": "3f5be9bb-2069-474e-be2f-f23ce854f42d",
@@ -1316,6 +1324,14 @@
                 "id": "3929bca4-391c-459d-a73e-5ad3966786a0",
                 "resourcePath": "views\\de4a1b1e-bcbd-4281-8082-bb3b231f5021.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e1b966a6-dc6e-432f-9e80-678635d32147",
+            "Value": {
+                "id": "19c8b28c-6c00-421e-ae52-e2b4cbd0bbdc",
+                "resourcePath": "sprites\\sMale_pants_leather\\sMale_pants_leather.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

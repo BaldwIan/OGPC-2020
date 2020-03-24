@@ -53,8 +53,8 @@ spriteBase	= sMale_base;
 spriteHair	= sMale_hair1;
 spriteHands	= sMale_hand_leather;
 spriteFeet	= sMale_feet_leatherboots;
-spriteLegs	= sInvis;
-spriteTorso = sInvis;
+spriteLegs	= sMale_pants_leather;
+spriteTorso = sMale_torso_leather;
 
 xOffset = sprite_get_xoffset(mask_index);	// Offsets for player mask
 yOffset = sprite_get_yoffset(mask_index);
