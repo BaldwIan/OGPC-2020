@@ -91,6 +91,17 @@ enum slider_actions
 
 #endregion slider_actions
 
+#region combat
+
+enum attack_types
+{
+	none,
+	primary,
+	alternate,
+}
+
+#endregion combat
+
 #region crops
 
 enum crop

@@ -9,13 +9,11 @@ acceleration_	= 3;
 
 #endregion movement
 
-#region shooting
+#region attacking
 
-// Shooting
-defaultShootCooldown = room_speed * 0.5;
-shootCooldown = defaultShootCooldown;
+attackType	= attack_types.none;
 
-#endregion shooting
+#endregion attacking
 
 #region collision_layer
 

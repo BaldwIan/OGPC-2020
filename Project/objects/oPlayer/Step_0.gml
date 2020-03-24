@@ -11,9 +11,20 @@ isMoving =	(keyboard_check(global.KRight))	|| (keyboard_check(global.KLeft)) ||
 	
 isMoving = isMoving && (abs(velocity_[0]) > 0 || abs(velocity_[1]) > 0);
 
-// Shoot input
-var attack = false;
-if (mouse_check_button(mb_left)) attack = true;
+// Attack input
+if (state != object_states.attack)	// If not attacking
+{
+	if (mouse_check_button(mb_left))
+	{
+		state		= object_states.attack;
+		attackType	= attack_types.primary;
+	}
+	if (mouse_check_button(mb_right))
+	{
+		state		= object_states.attack;
+		attackType	= attack_types.primary;
+	}
+}
 
 #endregion get_input
 
@@ -93,9 +104,6 @@ if (isMoving)
 {
 	dir_state = getDirStateAngle(mouseAngle);
 }
-
-// Reduce shot cooldown
-shootCooldown--;
 
 // Room transition
 if (rmTransition != noone)
