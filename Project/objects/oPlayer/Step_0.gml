@@ -12,8 +12,8 @@ isMoving =	(keyboard_check(global.KRight))	|| (keyboard_check(global.KLeft)) ||
 isMoving = isMoving && (abs(velocity_[0]) > 0 || abs(velocity_[1]) > 0);
 
 // Shoot input
-var shooting = false;
-if (mouse_check_button(mb_left)) shooting = true;
+var attack = false;
+if (mouse_check_button(mb_left)) attack = true;
 
 #endregion get_input
 
