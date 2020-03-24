@@ -11,20 +11,6 @@ isMoving =	(keyboard_check(global.KRight))	|| (keyboard_check(global.KLeft)) ||
 	
 isMoving = isMoving && (abs(velocity_[0]) > 0 || abs(velocity_[1]) > 0);
 
-// Attack input
-if (state != object_states.attack)	// If not attacking
-{
-	if (mouse_check_button(mb_left))
-	{
-		state		= object_states.attack;
-		attackType	= attack_types.primary;
-	}
-	if (mouse_check_button(mb_right))
-	{
-		state		= object_states.attack;
-		attackType	= attack_types.primary;
-	}
-}
 
 #endregion get_input
 
@@ -33,6 +19,46 @@ if (state != object_states.attack)	// If not attacking
 switch (state)
 {
 case object_states.neutral:
+	
+	#region input
+	
+	// Attack input
+	if (mouse_check_button_pressed(mb_left))
+	{
+		var mAngle	= point_direction(x, y, mouse_x, mouse_y);
+		if ((mAngle < 90) && (mAngle <= 270))
+		{
+			yFrame = 8;
+		} else
+		{
+			yFrame = 9;
+		}
+		state		= object_states.attack;
+		attackType	= attack_types.primary;
+		frames		= attackFrames;
+		animSpd		= primaryAttackAnimSpd;
+		xFrame = 0;
+		break;
+	}
+	if (mouse_check_button_pressed(mb_right))
+	{
+		var mAngle	= point_direction(x, y, mouse_x, mouse_y);
+		if ((mAngle < 90) && (mAngle <= 270))
+		{
+			yFrame = 10;
+		} else
+		{
+			yFrame = 11;
+		}
+		state		= object_states.attack;
+		attackType	= attack_types.alternate;
+		frames		= attackFrames;
+		animSpd		= alternateAttackAnimSpd;
+		xFrame = 0;
+		break;
+	}
+	
+	#endregion input
 	
 	#region movement
 	
@@ -80,7 +106,12 @@ case object_states.attack:
 	velocity_[0]	= 0;
 	velocity_[1]	= 0;
 	
-	state = object_states.neutral;
+	if (xFrame >= frames - 1)
+	{
+		state	= object_states.neutral;
+		frames	= walkFrames;
+		animSpd	= walkAnimSpd;
+	}
 	
 	break;
 	

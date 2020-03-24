@@ -1,23 +1,32 @@
-var frames = 8;
 var frameSize = 64;
-var animSpd = 8;		// FPS
-
-// Change y frame based off of direction state
-
-if		(dir_state == dir.north) { yFrame = 0; }
-else if	(dir_state == dir.south) { yFrame = 2; }
-else if (dir_state == dir.north_east || dir_state == dir.east || dir_state == dir.south_east) { yFrame = 3; }	// Check all east type directions because no sprite are made for diagonal directions
-else	{ yFrame = 1; }
-
-if (!isMoving) { xFrame = 0; }	// Draw first frame (idle frame) if not moving
 
 // Corrected position for offset
 var xx = x - xOffset;
 var yy = y - yOffset;
 
-// Inc frame for animation
-if (xFrame + (animSpd / room_speed) < frames)	{ xFrame += animSpd / room_speed; }
-else						{ xFrame = 1;  }
+switch (state)
+{
+case object_states.neutral:
+	// Change y frame based off of direction state
+	if		(dir_state == dir.north) { yFrame = 0; }
+	else if	(dir_state == dir.south) { yFrame = 2; }
+	else if (dir_state == dir.north_east || dir_state == dir.east || dir_state == dir.south_east) { yFrame = 3; }	// Check all east type directions because no sprite are made for diagonal directions
+	else	{ yFrame = 1; }
+
+	if (!isMoving) { xFrame = 0; }	// Draw first frame (idle frame) if not moving
+	
+	// Inc frame for animation
+	if (xFrame + (animSpd / room_speed) < frames)	{ xFrame += animSpd / room_speed; }
+	else						{ xFrame = 1;  }
+
+	break;
+	
+case object_states.attack:
+	
+	if (xFrame + (animSpd / room_speed) < frames)	{ xFrame += animSpd / room_speed; }
+	
+	break;
+}
 
 shader_set(colorPercent);
 shader_set_uniform_f(rPercent, percentrBase);

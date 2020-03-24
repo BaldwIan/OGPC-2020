@@ -44,6 +44,14 @@ isMoving = false;
 #region draw_info
 
 // Draw info
+walkFrames		= 8;
+attackFrames	= 9;
+frames			= walkFrames;
+walkAnimSpd				= 8;
+primaryAttackAnimSpd	= 10;
+alternateAttackAnimSpd	= 9;
+animSpd					= walkAnimSpd;	// Animation fps
+
 xFrame = 1;
 yFrame = 0;
 
