@@ -22,18 +22,6 @@ if (mouse_check_button(mb_left)) shooting = true;
 switch (state)
 {
 case object_states.neutral:
-/*
-	if (shooting && shootCooldown <= 0 && oCrops.planting = false)
-	{
-		shootCooldown = defaultShootCooldown;
-		var bullet = instance_create_layer(x, y, "Instances", oProjectile);
-		with (bullet)
-		{
-			direction = point_direction(other.x, other.y, mouse_x, mouse_y);
-			image_angle = direction;
-			speed = 5;
-		}
-	}*/
 	
 	#region movement
 	
