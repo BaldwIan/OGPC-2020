@@ -24,21 +24,38 @@ conSatBrtMix = [lerp(conSatBrt[keyPrev, 0], conSatBrt[keyNext, 0], lerpAmt),
 
 // Weather system
 randomize();
-if (global.curWeather == weather_types.none)
+if ((global.curWeather == weather_types.none) && (weatherCooldown <= 0))
 {
-	var weatherChanceScale	= 1.0;
-	var makeWeatherEvent	= random(weatherChanceScale);
+	var makeWeatherEvent	= random(1.0);	// Random value for weather chance
 	
-	if (makeWeatherEvent < (weatherChanceScale * global.weatherChance))	// Make weather event happen
+	// Get if makeWeatherEvent is in range of percentage, make weather event happen
+	if (makeWeatherEvent < global.weatherChance)	// Make weather event happen
 	{
+		// Set random weather length
+		weatherTime				= random_range(global.weatherLengthMin, global.weatherLengthMax);
+		
+		// Set random weather type
 		var len = array_length_1d(global.weatherTypeArray) - 1;
 		global.curWeather	= global.weatherTypeArray[irandom(len)];	// set current weather to a random weather type
 	
 		// DEBUG
 		if (global.debug) { show_debug_message("Weather randomized"); }
 	}
+} else	// Weather happening
+{
+	if (weatherTime <= 0)		// If amount of time chosen for weather has passed
+	{
+		// Reset weather and start cooldown
+		global.curWeather	= weather_types.none;
+		if (weatherCooldown < 0) { weatherCooldown		= global.weatherCooldownTime; }
+	} else
+	{
+		weatherTime--;
+	}
+	
+	weatherCooldown--;
+	show_debug_message("No weather happening");
 }
-
 
 // Update time according to day length
 global.dayTicks++;
@@ -46,11 +63,5 @@ if (global.dayTicks > global.dayLength)
 {
 	global.dayTicks = 0;
 	incrementDay();
-	
-	// DEBUG
-	if (global.debug)
-	{
-		global.curWeather = weather_types.none;
-	}
 }
 global.time = global.dayTicks / global.dayLength;

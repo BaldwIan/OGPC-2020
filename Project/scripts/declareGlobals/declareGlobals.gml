@@ -9,7 +9,7 @@ global.slider1 = 0;
 #region day_night_cycle
 
 // This will be the time of day, this will range from 0-1 and will reset to 0 every day cycle
-global.dayLength	= room_speed * 8;
+global.dayLength	= room_speed * 24;
 global.dayTicks		= global.dayLength * 0.5;
 global.time			= global.dayTicks / global.dayLength;
 
@@ -32,6 +32,11 @@ global.weatherTypeArray	= [weather_types.rain];
 global.weatherStrength	= 0.0;
 global.curWeather		= weather_types.none;		// current type of weather
 global.weatherChance	= 0.10 / global.dayLength;	// ~10% chance for a weather event to happen in a day
+// Range that weather event can occur
+global.weatherLengthMin	= 2 * (global.dayLength / 24);	// 2 in game hours
+global.weatherLengthMax	= 24 * (global.dayLength / 24)	// 24 in game hours
+// Cooldown for weather to start again after a weather event
+global.weatherCooldownTime	= 24 * (global.dayLength / 24);	// 24 in game hours
 
 #endregion weather
 

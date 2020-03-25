@@ -1,5 +1,9 @@
 // This object is to manage the day night cycle and weather system
 
+// --Weather
+weatherCooldown		= 0;	// current time (frames) remaining till another weather event can happen
+weatherTime			= 0;	// Amount of time that weather will last - chosen randomly every time a weather event starts
+
 // Will draw whole surface with day night shader
 application_surface_draw_enable(false);
 
