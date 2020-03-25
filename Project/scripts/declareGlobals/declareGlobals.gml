@@ -18,6 +18,23 @@ global.daysPassed = 0;
 
 #endregion day_night_cycle
 
+#region weather
+
+enum weather_types
+{
+	none,
+	rain,
+}
+
+global.weatherTypeArray	= [weather_types.rain];
+
+// Scale from 0 - 1
+global.weatherStrength	= 0.0;
+global.curWeather		= weather_types.none;		// current type of weather
+global.weatherChance	= 0.10 / global.dayLength;	// ~10% chance for a weather event to happen in a day
+
+#endregion weather
+
 #region controls
 
 global.KDebug	= ord("H");

@@ -6,3 +6,7 @@ draw_surface(0, 0, application_surface);
 
 shader_reset();
 
+if (global.debug)
+{
+	draw_text(0, 0, "Weather type: " + string(global.curWeather));
+}
