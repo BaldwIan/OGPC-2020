@@ -31,7 +31,7 @@ global.weatherTypeArray	= [weather_types.rain];
 // Scale from 0 - 1
 global.weatherStrength	= 0.0;
 global.curWeather		= weather_types.none;		// current type of weather
-global.weatherChance	= 0.10 / global.dayLength;	// ~10% chance for a weather event to happen in a day
+global.weatherChance	= 0.90 / global.dayLength;	// ~10% chance for a weather event to happen in a day
 // Range that weather event can occur
 global.weatherLengthMin	= 2 * (global.dayLength / 24);	// 2 in game hours
 global.weatherLengthMax	= 24 * (global.dayLength / 24)	// 24 in game hours

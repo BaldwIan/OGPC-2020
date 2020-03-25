@@ -26,17 +26,28 @@ case weather_types.none:
 
 case weather_types.rain:
 	// Change colors to match rain
-	colorMix[0]		*= 0.7;
-	colorMix[1]		*= 0.85;
-	colorMix[2]		*= 1.0;
+	colorMix[0]		-= colorMix[0] * (1.0 - 0.70) * global.weatherStrength;	// 70% red strength
+	colorMix[1]		-= colorMix[1] * (1.0 - 0.85) * global.weatherStrength;	// 85% green strength
+	//colorMix[2]		*= 1.0;
 
-	conSatBrtMix[0] *= 0.75;
-	conSatBrtMix[1] *= 0.85;
-	conSatBrtMix[2] *= 0.80;
+	conSatBrtMix[0] -= conSatBrtMix[0] * ( 1.0 - 0.75) * global.weatherStrength; // 75% contrast
+	conSatBrtMix[1] -= conSatBrtMix[1] * ( 1.0 - 0.85) * global.weatherStrength; // 85% saturation
+	conSatBrtMix[2] -= conSatBrtMix[2] * ( 1.0 - 0.80) * global.weatherStrength; // 80% brightness
 	break;
 	
 default:
 	break;
+}
+
+if (global.debug)
+{
+	colorMix[0]		-= colorMix[0] * (1.0 - 0.70) * global.weatherStrength;	// 70% red strength
+	colorMix[1]		-= colorMix[1] * (1.0 - 0.85) * global.weatherStrength;	// 85% green strength
+	//colorMix[2]		*= 1.0;
+
+	conSatBrtMix[0] -= conSatBrtMix[0] * ( 1.0 - 0.75) * global.weatherStrength; // 75% contrast
+	conSatBrtMix[1] -= conSatBrtMix[1] * ( 1.0 - 0.85) * global.weatherStrength; // 85% saturation
+	conSatBrtMix[2] -= conSatBrtMix[2] * ( 1.0 - 0.80) * global.weatherStrength; // 80% brightness
 }
 
 // Reflection alpha - This may be added later (or not)
@@ -52,7 +63,8 @@ if ((global.curWeather == weather_types.none) && (weatherCooldown <= 0))
 	if (makeWeatherEvent < global.weatherChance)	// Make weather event happen
 	{
 		// Set random weather length
-		weatherTime				= random_range(global.weatherLengthMin, global.weatherLengthMax);
+		initWeatherTime	= irandom_range(global.weatherLengthMin, global.weatherLengthMax);
+		weatherTime		= initWeatherTime;
 		
 		// Set random weather type
 		var len = array_length_1d(global.weatherTypeArray) - 1;
@@ -74,11 +86,14 @@ if ((global.curWeather == weather_types.none) && (weatherCooldown <= 0))
 	}
 	
 	weatherCooldown--;
+	
+	// Weather strength will be 0 at the start, 1 in the middle, and 0 at the end of the weather time
+	global.weatherStrength = min(1, 2 * sin(pi * weatherTime / initWeatherTime));
 	show_debug_message("No weather happening");
 }
 
 // Update time according to day length
-global.dayTicks++;
+//global.dayTicks++;
 if (global.dayTicks > global.dayLength)
 {
 	global.dayTicks = 0;
