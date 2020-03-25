@@ -54,7 +54,7 @@ shader_set_uniform_f(rPercent, percentrHandheld);
 shader_set_uniform_f(gPercent, percentgHandheld);
 shader_set_uniform_f(bPercent, percentbHandheld);
 
-if (spriteFeet  != -1) draw_sprite_part(spriteHands,  0, floor(xFrame) * frameSize, yFrame * frameSize, frameSize, frameSize, xx, yy);
+if (spriteFeet  != -1) draw_sprite_part(spriteHandheld,  0, floor(xFrame) * frameSize, yFrame * frameSize, frameSize, frameSize, xx, yy);
 
 shader_reset();
 

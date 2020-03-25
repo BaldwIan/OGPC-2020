@@ -26,12 +26,12 @@ case object_states.neutral:
 	if (mouse_check_button_pressed(mb_left))
 	{
 		var mAngle	= point_direction(x, y, mouse_x, mouse_y);
-		if ((mAngle < 90) && (mAngle <= 270))
-		{
-			yFrame = 8;
-		} else
+		if ((mAngle > 90) && (mAngle <= 270))
 		{
 			yFrame = 9;
+		} else
+		{
+			yFrame = 8;
 		}
 		state		= object_states.attack;
 		attackType	= attack_types.primary;
@@ -43,12 +43,12 @@ case object_states.neutral:
 	if (mouse_check_button_pressed(mb_right))
 	{
 		var mAngle	= point_direction(x, y, mouse_x, mouse_y);
-		if ((mAngle < 90) && (mAngle <= 270))
-		{
-			yFrame = 10;
-		} else
+		if ((mAngle > 90) && (mAngle <= 270))
 		{
 			yFrame = 11;
+		} else
+		{
+			yFrame = 10;
 		}
 		state		= object_states.attack;
 		attackType	= attack_types.alternate;
