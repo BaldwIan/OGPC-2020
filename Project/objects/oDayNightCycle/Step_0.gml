@@ -9,15 +9,35 @@ keyNext = (keyPrev + 1) % numKeyTimes;
 var lerpAmt = (time - keyPrev / numKeyTimes) * numKeyTimes;
 
 // mix colors
-colorMix = [lerp(color[keyPrev, 0], color[keyNext, 0], lerpAmt),
-			lerp(color[keyPrev, 1], color[keyNext, 1], lerpAmt),
-			lerp(color[keyPrev, 2], color[keyNext, 2], lerpAmt)];
+colorMix		= [	lerp(color[keyPrev, 0], color[keyNext, 0], lerpAmt),
+					lerp(color[keyPrev, 1], color[keyNext, 1], lerpAmt),
+					lerp(color[keyPrev, 2], color[keyNext, 2], lerpAmt)];
 			
-conSatBrtMix = [lerp(conSatBrt[keyPrev, 0], conSatBrt[keyNext, 0], lerpAmt),
-			lerp(conSatBrt[keyPrev, 1], conSatBrt[keyNext, 1], lerpAmt),
-			lerp(conSatBrt[keyPrev, 2], conSatBrt[keyNext, 2], lerpAmt),
-			lerp(conSatBrt[keyPrev, 3], conSatBrt[keyNext, 3], lerpAmt),
-			lerp(conSatBrt[keyPrev, 4], conSatBrt[keyNext, 4], lerpAmt)];
+conSatBrtMix	= [	lerp(conSatBrt[keyPrev, 0], conSatBrt[keyNext, 0], lerpAmt),
+					lerp(conSatBrt[keyPrev, 1], conSatBrt[keyNext, 1], lerpAmt),
+					lerp(conSatBrt[keyPrev, 2], conSatBrt[keyNext, 2], lerpAmt),
+					lerp(conSatBrt[keyPrev, 3], conSatBrt[keyNext, 3], lerpAmt),
+					lerp(conSatBrt[keyPrev, 4], conSatBrt[keyNext, 4], lerpAmt)];
+					
+switch (global.curWeather)
+{
+case weather_types.none:
+	break;
+
+case weather_types.rain:
+	// Change colors to match rain
+	colorMix[0]		*= 0.7;
+	colorMix[1]		*= 0.85;
+	colorMix[2]		*= 1.0;
+
+	conSatBrtMix[0] *= 0.75;
+	conSatBrtMix[1] *= 0.85;
+	conSatBrtMix[2] *= 0.80;
+	break;
+	
+default:
+	break;
+}
 
 // Reflection alpha - This may be added later (or not)
 
