@@ -28,6 +28,7 @@ case object_states.attack:
 	break;
 }
 
+// Base
 shader_set(colorPercent);
 shader_set_uniform_f(rPercent, percentrBase);
 shader_set_uniform_f(gPercent, percentgBase);
@@ -38,8 +39,26 @@ if (spriteBase  != -1) draw_sprite_part(spriteBase,  0, floor(xFrame) * frameSiz
 shader_reset();
 
 // Hands
+shader_set(colorPercent);
+shader_set_uniform_f(rPercent, percentrHands);
+shader_set_uniform_f(gPercent, percentgHands);
+shader_set_uniform_f(bPercent, percentbHands);
+
 if (spriteFeet  != -1) draw_sprite_part(spriteHands,  0, floor(xFrame) * frameSize, yFrame * frameSize, frameSize, frameSize, xx, yy);
 
+shader_reset();
+
+// Handheld
+shader_set(colorPercent);
+shader_set_uniform_f(rPercent, percentrHandheld);
+shader_set_uniform_f(gPercent, percentgHandheld);
+shader_set_uniform_f(bPercent, percentbHandheld);
+
+if (spriteFeet  != -1) draw_sprite_part(spriteHands,  0, floor(xFrame) * frameSize, yFrame * frameSize, frameSize, frameSize, xx, yy);
+
+shader_reset();
+
+// Feet
 shader_set(colorPercent);
 shader_set_uniform_f(rPercent, percentrFeet);
 shader_set_uniform_f(gPercent, percentgFeet);
@@ -49,6 +68,7 @@ if (spriteFeet  != -1) draw_sprite_part(spriteFeet,  0, floor(xFrame) * frameSiz
 
 shader_reset();
 
+// Legs
 shader_set(colorPercent);
 shader_set_uniform_f(rPercent, percentrLegs);
 shader_set_uniform_f(gPercent, percentgLegs);
@@ -58,6 +78,7 @@ if (spriteLegs  != -1) draw_sprite_part(spriteLegs,  0, floor(xFrame) * frameSiz
 
 shader_reset();
 
+// Torso
 shader_set(colorPercent);
 shader_set_uniform_f(rPercent, percentrTorso);
 shader_set_uniform_f(gPercent, percentgTorso);
@@ -67,6 +88,7 @@ if (spriteTorso != -1) draw_sprite_part(spriteTorso, 0, floor(xFrame) * frameSiz
 
 shader_reset();
 
+// Hair
 shader_set(colorPercent);
 shader_set_uniform_f(rPercent, percentrHair);
 shader_set_uniform_f(gPercent, percentgHair);

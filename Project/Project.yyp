@@ -263,6 +263,14 @@
             }
         },
         {
+            "Key": "3822fff2-e587-48b7-89e2-a8bbcd36abe8",
+            "Value": {
+                "id": "ebeb4e77-2a9a-4f62-80bd-3f47c454a18c",
+                "resourcePath": "sprites\\sMale_handheld_ironspear\\sMale_handheld_ironspear.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "399b557a-4621-4344-afdb-4bc4e60a26f5",
             "Value": {
                 "id": "160b611e-45a3-4b89-bf5e-3fea0fd29552",
@@ -428,6 +436,14 @@
                 "id": "584608e8-dd20-4a90-96e1-efa7f488be18",
                 "resourcePath": "sprites\\sPartDefault\\sPartDefault.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "54361423-71ac-483a-a35b-d5eef0bb7ab9",
+            "Value": {
+                "id": "a6319a6a-f6ed-4ce3-b24f-7783c8e7e343",
+                "resourcePath": "views\\54361423-71ac-483a-a35b-d5eef0bb7ab9.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1204,6 +1220,14 @@
                 "id": "0c942e12-ec9a-4ecf-83c1-85332c7d28af",
                 "resourcePath": "objects\\oEnemy\\oEnemy.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c51a5a87-1ab3-4db9-9f7a-341c7c0c70d6",
+            "Value": {
+                "id": "2510acea-a727-4f1e-9fa8-78d2ab87f127",
+                "resourcePath": "views\\c51a5a87-1ab3-4db9-9f7a-341c7c0c70d6.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

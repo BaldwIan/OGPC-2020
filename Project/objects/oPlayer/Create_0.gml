@@ -49,18 +49,19 @@ attackFrames	= 9;
 frames			= walkFrames;
 walkAnimSpd				= 8;
 primaryAttackAnimSpd	= 10;
-alternateAttackAnimSpd	= 9;
+alternateAttackAnimSpd	= 7;
 animSpd					= walkAnimSpd;	// Animation fps
 
 xFrame = 1;
 yFrame = 0;
 
-spriteBase	= sMale_base;
-spriteHair	= sMale_hair1;
-spriteHands	= sMale_hand_leather;
-spriteFeet	= sMale_feet_leatherboots;
-spriteLegs	= sMale_pants_leather;
-spriteTorso = sMale_torso_leather;
+spriteBase		= sMale_base;
+spriteHair		= sMale_hair1;
+spriteHands		= sMale_hand_leather;
+spriteHandheld	= sMale_handheld_ironspear;
+spriteFeet		= sMale_feet_leatherboots;
+spriteLegs		= sMale_pants_leather;
+spriteTorso		= sMale_torso_leather;
 
 xOffset = sprite_get_xoffset(mask_index);	// Offsets for player mask
 yOffset = sprite_get_yoffset(mask_index);
@@ -73,25 +74,33 @@ rPercent = shader_get_uniform(colorPercent, "redPercent");
 gPercent = shader_get_uniform(colorPercent, "greenPercent");
 bPercent = shader_get_uniform(colorPercent, "bluePercent");
 
-percentrBase	= 209 / 255;
-percentgBase	= 163 / 255;
-percentbBase	= 164 / 255;
+percentrBase		= 209 / 255;
+percentgBase		= 163 / 255;
+percentbBase		= 164 / 255;
 
-percentrFeet	= 1.0;
-percentgFeet	= 1.0;
-percentbFeet	= 1.0;
+percentrHands		= 1.0;
+percentgHands		= 1.0;
+percentbHands		= 1.0;
 
-percentrLegs	= 1.0;
-percentgLegs	= 1.0;
-percentbLegs	= 1.0;
+percentrHandheld	= 1.0;
+percentgHandheld	= 1.0;
+percentbHandheld	= 1.0;
 
-percentrTorso	= 1.0;
-percentgTorso	= 1.0;
-percentbTorso	= 1.0;
+percentrFeet		= 1.0;
+percentgFeet		= 1.0;
+percentbFeet		= 1.0;
 
-percentrHair	= 1.0;
-percentgHair	= 1.0;
-percentbHair	= 1.0;
+percentrLegs		= 1.0;
+percentgLegs		= 1.0;
+percentbLegs		= 1.0;
+
+percentrTorso		= 1.0;
+percentgTorso		= 1.0;
+percentbTorso		= 1.0;
+
+percentrHair		= 1.0;
+percentgHair		= 1.0;
+percentbHair		= 1.0;
 
 #endregion blend_shader
 
