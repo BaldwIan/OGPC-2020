@@ -26,8 +26,6 @@ conSatBrtMix = [lerp(conSatBrt[keyPrev, 0], conSatBrt[keyNext, 0], lerpAmt),
 randomize();
 if (global.curWeather == weather_types.none)
 {
-	if (global.debug) { show_debug_message("Randomizing weather"); }
-	
 	var weatherChanceScale	= 1.0;
 	var makeWeatherEvent	= random(weatherChanceScale);
 	
