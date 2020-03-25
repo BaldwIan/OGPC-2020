@@ -1,11 +1,13 @@
 #region movement
 
 // Movement Variables
-velocity_		= [0, 0];
-knockback_vel	= [0, 0];
-max_velocity_	= [1.5, 1.5];
-sprintSpd		= [2, 2];
-acceleration_	= 3;
+velocity_					= [0, 0];
+knockback_vel				= [0, 0];
+max_velocity_				= [1.5, 1.5];
+primaryAttackSpdScalar		= 0.5;
+alternateAttackSpdScalar	= 0.3;
+sprintSpd					= [1, 1];
+acceleration_				= 3;
 
 #endregion movement
 

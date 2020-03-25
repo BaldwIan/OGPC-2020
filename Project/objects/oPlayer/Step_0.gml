@@ -102,11 +102,64 @@ case object_states.neutral:
 	break;
 	
 case object_states.attack:
-	// Stop moving the player in attack state
-	velocity_[0]	= 0;
-	velocity_[1]	= 0;
+	#region movement
 	
-	if (xFrame >= frames - 1)
+	// To reference velocity array
+	var vector2_x = 0;
+	var vector2_y = 1;
+
+	// --Horizontal Movement
+	
+	// clamp horiz left
+	var leftVelClamp = -max_velocity_[vector2_x];	// Player can not sprint while attacking
+	// clamp horiz right
+	var rightVelClamp = max_velocity_[vector2_x];	// Player can not sprint while attacking
+	
+	
+	// --Vertical Movement
+	
+	var upVelClamp = -max_velocity_[vector2_y];	// Player can not sprint while attacking
+	// clamp horiz right
+	var downVelClamp = max_velocity_[vector2_y];	// Player can not sprint while attacking
+	
+	if (attackType == attack_types.primary)
+	{
+		leftVelClamp	*= primaryAttackSpdScalar;
+		rightVelClamp	*= primaryAttackSpdScalar;
+		upVelClamp		*= primaryAttackSpdScalar;
+		downVelClamp	*= primaryAttackSpdScalar;
+	} else if (attackType == attack_types.alternate)
+	{
+		leftVelClamp	*= alternateAttackSpdScalar;
+		rightVelClamp	*= alternateAttackSpdScalar;
+		upVelClamp		*= alternateAttackSpdScalar;
+		downVelClamp	*= alternateAttackSpdScalar;
+	}
+	
+	// Clamp movement
+	velocity_[vector2_x] = clamp(velocity_[vector2_x] + x_input, leftVelClamp, rightVelClamp);
+	velocity_[vector2_y] = clamp(velocity_[vector2_y] + y_input, upVelClamp, downVelClamp);
+
+	// Knockback
+	velocity_[vector2_x] += knockback_vel[vector2_x] / 2;
+	velocity_[vector2_y] += knockback_vel[vector2_y] / 2;
+	// Reduce knockaback
+	knockback_vel[vector2_x] *= 0.9;
+	knockback_vel[vector2_y] *= 0.9;
+
+	// Friction
+	if (x_input = 0)
+	{
+		velocity_[vector2_x] = lerp(velocity_[vector2_x], 0, .75);
+	}
+	if (y_input = 0)
+	{
+		velocity_[vector2_y] = lerp(velocity_[vector2_y], 0, .75);
+	}
+	
+	#endregion movement
+	
+	if (xFrame >= frames - 1)	// if attack animation is over put player into neutral state
 	{
 		state	= object_states.neutral;
 		frames	= walkFrames;
