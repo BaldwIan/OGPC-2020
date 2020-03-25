@@ -93,7 +93,7 @@ if ((global.curWeather == weather_types.none) && (weatherCooldown <= 0))
 }
 
 // Update time according to day length
-//global.dayTicks++;
+global.dayTicks++;
 if (global.dayTicks > global.dayLength)
 {
 	global.dayTicks = 0;
