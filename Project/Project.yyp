@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "1c232aea-b6fb-4879-963c-d480e3081c11",
+            "Value": {
+                "id": "0e230571-244c-4fc7-b35d-182420b5a19c",
+                "resourcePath": "shaders\\shdRain\\shdRain.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "20203c6a-e8c8-4542-8281-d3ed5455c1f4",
             "Value": {
                 "id": "fece9a88-1dc2-4076-8b99-7ed3b2ffa06e",
