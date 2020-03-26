@@ -56,6 +56,9 @@ info_y = inv_UI_y + (9 * scale);
 slots_x = info_x;
 slots_y = inv_UI_y + (40 * scale);
 
+desc_x = info_x;
+desc_y = inv_UI_y + (156 * scale);
+
 //----Player Info----
 //0 = Name
 // 1 = Value
@@ -78,6 +81,58 @@ ds_player_info[# 1, 3] = "Player";
 //1 = Number
 
 ds_inventory = ds_grid_create(2, inv_slots);
+
+#region Create Items Info Grid
+
+ds_items_info = ds_grid_create(2, item.height);
+
+//---Item Names (We use z and i++ to make things go faster)
+//This is the "name" of the item that will be shown in the description
+var z = 0, i = 0;
+ds_items_info[# z, i++] = "Nothing";
+ds_items_info[# z, i++] = "Tomato";
+ds_items_info[# z, i++] = "Potato";
+ds_items_info[# z, i++] = "Carrot";
+ds_items_info[# z, i++] = "Artichoke";
+ds_items_info[# z, i++] = "Chilli";
+ds_items_info[# z, i++] = "Gourd";
+ds_items_info[# z, i++] = "Corn";
+ds_items_info[# z, i++] = "Wood";
+ds_items_info[# z, i++] = "Stone";
+ds_items_info[# z, i++] = "Bucket";
+ds_items_info[# z, i++] = "Chair";
+ds_items_info[# z, i++] = "Picture";
+ds_items_info[# z, i++] = "Axe";
+ds_items_info[# z, i++] = "Potion";
+ds_items_info[# z, i++] = "Starfish";
+ds_items_info[# z, i++] = "Mushroom";
+
+
+
+//---Item Descriptions
+//This is the description that will be shown AFTER the name stated above
+var z = 1, i = 0;
+ds_items_info[# z, i++] = "Nothing";
+ds_items_info[# z, i++] = "Tomato";
+ds_items_info[# z, i++] = "Potato";
+ds_items_info[# z, i++] = "Carrot";
+ds_items_info[# z, i++] = "Artichoke";
+ds_items_info[# z, i++] = "Chilli";
+ds_items_info[# z, i++] = "Gourd";
+ds_items_info[# z, i++] = "Corn";
+ds_items_info[# z, i++] = "Wood";
+ds_items_info[# z, i++] = "Stone";
+ds_items_info[# z, i++] = "Bucket";
+ds_items_info[# z, i++] = "Chair";
+ds_items_info[# z, i++] = "Picture";
+ds_items_info[# z, i++] = "Axe";
+ds_items_info[# z, i++] = "Potion";
+ds_items_info[# z, i++] = "Starfish";
+ds_items_info[# z, i++] = "Mushroom";
+
+
+
+#endregion
 
 //Draws the inventory
 var yy = 0; 

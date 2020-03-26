@@ -100,6 +100,27 @@ repeat(inv_slots)
 	iy = ii div inv_slots_width;
 }		
 
+//Draw Item Description
+
+var iinfo_grid = ds_items_info, description = "", 
+iitem = inv_grid[#0, selected_slot];
+
+if(iitem > 0) {
+	
+	draw_set_font(fntGui_12);
+	//Shows name. description (for example: Mushroom. A type of food)
+	description = iinfo_grid[# 0, iitem] + ". " + iinfo_grid[# 1, iitem];
+	var sH = string_height("M");
+	c = c_black;
+	
+	draw_text_ext_color(desc_x, desc_y, description, sH, inv_UI_width - (x_buffer*2), c, c, c, c, 1);
+	
+	
+	
+}
+
+
+
 if(pickup_slot != -1)
 {
 	//Item

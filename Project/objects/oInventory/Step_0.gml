@@ -20,6 +20,8 @@ var i_mousey = mousey - slots_y;
 var nx = i_mousex div cell_xbuff;
 var ny = i_mousey div cell_ybuff;
 
+var mouse_in_inventory = true;
+
 //If the mouse is in the inventory the slot will be updated
 if(nx >= 0 and nx < inv_slots_width and ny >= 0 and ny < inv_slots_height)
 {
@@ -34,6 +36,8 @@ if(nx >= 0 and nx < inv_slots_width and ny >= 0 and ny < inv_slots_height)
 		m_slotx = nx;
 		m_sloty = ny;
 	}
+} else {
+	mouse_in_inventory = false;
 }
 
 //Set selected slot to mouse position
@@ -54,8 +58,32 @@ if(pickup_slot != -1)
 	//When the selected slot is clicked by the player
 	if(mouse_check_button_pressed(mb_left))
 	{
+		if(!mouse_in_inventory) {
+			#region Drop Item Into Game World
+			
+			var pitem = inv_grid[# 0, pickup_slot];
+			inv_grid[# 1, pickup_slot] -= 1;
+			
+			//destroy item in inventory if it was the last one
+			if(inv_grid[# 1, pickup_slot] == 0)
+			{
+				inv_grid[# 0, pickup_slot] = item.none;
+				pickup_slot = -1;
+			}
+		
+			//Create the item
+			var inst = instance_create_layer(oPlayer.x, oPlayer.y, "Instances", oItem);
+			with(inst)
+			{
+				item_num = pitem;
+				x_frame = item_num mod (spr_width/cell_size);
+				y_frame = item_num div (spr_width/cell_size);
+			}
+		}
+		
+			#endregion
 		//If the slot being interacted with is empty...
-		if(ss_item == item.none)
+		else if(ss_item == item.none)
 		{
 			//Then the selected slot becomes that item
 			inv_grid[# 0, selected_slot] = inv_grid[# 0, pickup_slot];
