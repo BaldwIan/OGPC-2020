@@ -36,5 +36,36 @@ addKeyTime(010, 080, 220, 0.9, 0.9, 0.00, 0.20, 0.75);	// early night
 
 numKeyTimes = array_height_2d(color);
 
+// --Particles
+weatherParticles	= instance_create_layer(0, 0, "Instances", oPartEmitter);
+with (weatherParticles)
+{
+	depth	= -10000;
+				
+	// Make particles follow player
+	followObj = oCamera;
+	
+	particle = global.particleRain;
+	
+	#region emitter_info
+	
+	// --Emitter info - default values
+	burstAmt = 3;
+				
+	regionW				= global.cwidth;
+	regionH				= 50;
+	regionOffsetX		= 0;
+	regionOffsetY		= 0;
+
+	xMin				= x - (regionW / 2) + regionOffsetX;
+	xMax				= x + (regionW / 2) + regionOffsetX;
+	yMin				= y - (regionH / 2) + regionOffsetY;
+	yMax				= y + (regionH / 2) + regionOffsetY;
+	
+	streamMode = false;
+	
+	#endregion emitter_info
+}
+
 // --Water Reflection
 //This may or may not be set up

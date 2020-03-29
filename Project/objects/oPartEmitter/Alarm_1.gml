@@ -21,7 +21,7 @@ if (part_type_exists(particle))
 {
 	// --Create Emitter
 	emitter = part_emitter_create(global.ps);
-	part_emitter_region(global.ps, particle, xMin, xMax, yMin, yMax, emitterShape, emitterDistribution);
+	part_emitter_region(global.ps, emitter, xMin, xMax, yMin, yMax, emitterShape, emitterDistribution);
 
 	if (streamMode)
 	{

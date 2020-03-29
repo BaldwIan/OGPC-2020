@@ -70,6 +70,27 @@ if ((global.curWeather == weather_types.none) && (weatherCooldown <= 0))
 		var len = array_length_1d(global.weatherTypeArray) - 1;
 		global.curWeather	= global.weatherTypeArray[irandom(len)];	// set current weather to a random weather type
 	
+		// Particles
+		switch(global.curWeather)
+		{
+		case weather_types.none:
+			break;
+			
+		case weather_types.rain:
+			show_debug_message("Rain particles created");
+			if (instance_exists(weatherParticles))
+			{
+				with(weatherParticles)
+				{
+					bursting = true;
+				}
+			}
+			break;
+			
+		default:
+			break;
+		}
+	
 		// DEBUG
 		if (global.debug) { show_debug_message("Weather randomized"); }
 	}
@@ -80,16 +101,33 @@ if ((global.curWeather == weather_types.none) && (weatherCooldown <= 0))
 		// Reset weather and start cooldown
 		global.curWeather	= weather_types.none;
 		if (weatherCooldown < 0) { weatherCooldown		= global.weatherCooldownTime; }
+		
+		// Destroy particles
+		if (instance_exists(weatherParticles))
+		{
+			with(weatherParticles)
+			{
+				bursting = false;
+			}
+		}
 	} else
 	{
 		weatherTime--;
+		
+		// Burst particles
+		if (instance_exists(weatherParticles))
+		{
+			with(weatherParticles)
+			{
+				bursting = true;
+			}
+		}
 	}
 	
 	weatherCooldown--;
 	
 	// Weather strength will be 0 at the start, 1 in the middle, and 0 at the end of the weather time
 	global.weatherStrength = min(1, 2 * sin(pi * weatherTime / initWeatherTime));
-	show_debug_message("No weather happening");
 }
 
 // Update time according to day length

@@ -18,5 +18,5 @@ if (followObj != noone && instance_exists(followObj))
 	yMin				= y - (regionH / 2) + regionOffsetY;
 	yMax				= y + (regionH / 2) + regionOffsetY;
 	
-	part_emitter_region(global.ps, particle, xMin, xMax, yMin, yMax, emitterShape, emitterDistribution);
+	part_emitter_region(global.ps, emitter, xMin, xMax, yMin, yMax, emitterShape, emitterDistribution);
 }

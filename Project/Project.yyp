@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "041646d5-0e3d-4a85-bcf0-eb10779ce75c",
+            "Value": {
+                "id": "d1594a3a-c1eb-4bf2-b295-bf6aea65a013",
+                "resourcePath": "sprites\\sPartRain\\sPartRain.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0424e9fd-36ce-42ca-9e0c-1246e395326d",
             "Value": {
                 "id": "33f113a2-fc87-4f31-8fdb-c26d0a5ec7c3",
