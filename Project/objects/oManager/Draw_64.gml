@@ -17,6 +17,3 @@ if (doTransition)
 	draw_rectangle_color(0, 0, guiWidth, guiHeight, c_black, c_black, c_black, c_black, false);
 	draw_set_alpha(1);
 }
-
-// Show debug as on or off
-draw_text(10, 10, "Debug mode: " + string(global.debug));

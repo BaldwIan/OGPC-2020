@@ -139,6 +139,16 @@ enum crop
 
 #endregion crops
 
+#region inventory
+
+// Grid to store item data - columns are items, rows are properties of that item
+global.DS_ITEM_DATA	= ds_grid_create(2, 0);
+
+// Initiate all items and properties
+createItemTypes();
+
+#endregion inventory
+
 #region items
 
 //Written with "= x" so that we do not have to count through the items list each time
