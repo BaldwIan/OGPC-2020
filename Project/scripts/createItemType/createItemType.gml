@@ -3,9 +3,10 @@
 /// @param itemDescription
 //	- More params will be added later for sure
 
-var displayName		= argument[0];	// Shown name for weapon in inventory
-var itemDescription	= argument[1];	// Description for weapon in inventory
+var yPos			= argument[0];	// Position of weapon
 
-var yPos						= ds_grid_height(global.DS_ITEM_DATA);
+var displayName		= argument[1];	// Shown name for weapon in inventory
+var itemDescription	= argument[2];	// Description for weapon in inventory
+
 global.DS_ITEM_DATA[# yPos, 0]	= displayName;
 global.DS_ITEM_DATA[# yPos, 1]	= itemDescription;
