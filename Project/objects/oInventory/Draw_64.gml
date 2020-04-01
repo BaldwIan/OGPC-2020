@@ -24,7 +24,7 @@ var yy = 0;
 repeat(3)
 {
 	draw_text_color((info_x + 192 * scale) + ((15 + 18) * scale * yy), 
-	info_y, string(info_grid[# 1, yy]), c, c, c, c, 1);
+					info_y, string(info_grid[# 1, yy]), c, c, c, c, 1);
 	yy += 1;
 }
 
@@ -34,13 +34,13 @@ repeat(3)
 var ii, ix, iy, xx, yy, sx, sy, iitem, inv_grid;
 ii = 0; ix = 0; iy = 0; inv_grid = ds_inventory;
 
-repeat(inv_slots)
+repeat (inv_slots)
 {
 	// x,y location for slot
 	xx = slots_x + ((cellSize + x_buffer) * ix * scale);
 	yy = slots_y + ((cellSize + y_buffer) * iy * scale);
 	
-	//Item
+	// Item
 	iitem = inv_grid[# 0, ii];
 	sx = (iitem mod spr_inv_items_columns) * cellSize;
 	sy = (iitem div spr_inv_items_columns) * cellSize;
@@ -50,49 +50,44 @@ repeat(inv_slots)
 
 	switch(ii)
 	{
-		case selected_slot:
-			if(iitem > 0) draw_sprite_part_ext
-			(spr_inv_items, 0, sx, sy, cellSize, 
-			cellSize, xx, yy, scale, scale, c_white, 1);
+	case selected_slot:
+		if(iitem > 0) 
+		{
+			draw_sprite_part_ext(spr_inv_items, 0, sx, sy, cellSize, 
+								cellSize, xx, yy, scale, scale, c_white, 1);
 			gpu_set_blendmode(bm_add);
-			draw_sprite_part_ext(spr_inv_UI, 0, 0, 0, cellSize, cellSize, xx, yy, scale, scale, c_white, .3);
+			draw_sprite_part_ext(spr_inv_UI, 0, 0, 0, cellSize, cellSize, 
+								xx, yy, scale, scale, c_white, .3);
 			gpu_set_blendmode(bm_normal);
+		}
 			
-			// Draw item number
-			if(iitem > 0)
-			{
-
+		// Draw item number
+		if(iitem > 0)
+		{
 			var number = inv_grid[# 1, ii];
 			draw_text_color(xx, yy, string(number), c, c, c, c, 1);
-
-			}
+		}
 		break;
 		
-		case pickup_slot:
-			if(iitem > 0) 
-			// If picked up current slot will NOT show number or item
+	case pickup_slot:
+		if(iitem > 0) 
+		// If picked up current slot will NOT show number or item
 		break;
 		
-
-		
-		default:
-			if(iitem > 0) draw_sprite_part_ext
-			(spr_inv_items, 0, sx, sy, cellSize, 
-			cellSize, xx, yy, scale, scale, c_white, 1);
+	default:
+		if(iitem > 0) draw_sprite_part_ext
+		(spr_inv_items, 0, sx, sy, cellSize, 
+		cellSize, xx, yy, scale, scale, c_white, 1);
 			
-			// Draw item number
-			if(iitem > 0)
-			{
-
+		// Draw item number
+		if(iitem > 0)
+		{
 			var number = inv_grid[# 1, ii];
 			draw_text_color(xx, yy, string(number), c, c, c, c, 1);
-
-			}
+		}
 		
 		break;
 	}
-	
-
 	
 	// Increment
 	ii += 1;
@@ -101,12 +96,11 @@ repeat(inv_slots)
 }		
 
 // Draw Item Description
-
 var iinfo_grid = ds_items_info, description = "", 
-iitem = inv_grid[#0, selected_slot];
+iitem = inv_grid[# 0, selected_slot];
 
-if(iitem > 0) {
-	
+if (iitem > 0)
+{
 	draw_set_font(fntGui_12);
 	// Shows name. description (for example: Mushroom. A type of food)
 	description = iinfo_grid[# 0, iitem] + ". " + iinfo_grid[# 1, iitem];
@@ -114,22 +108,18 @@ if(iitem > 0) {
 	c = c_black;
 	
 	draw_text_ext_color(desc_x, desc_y, description, sH, inv_UI_width - (x_buffer*2), c, c, c, c, 1);
-	
-	
-	
 }
 
 
 
-if(pickup_slot != -1)
+if (pickup_slot != -1)
 {
 	//Item
 	iitem = inv_grid[# 0, pickup_slot];
 	sx = (iitem mod spr_inv_items_columns) * cellSize;
 	sy = (iitem div spr_inv_items_columns) * cellSize;
-	draw_sprite_part_ext
-	(spr_inv_items, 0, sx, sy, cellSize, 
-	cellSize, mousex, mousey, scale, scale, c_white, 1);
+	draw_sprite_part_ext(spr_inv_items, 0, sx, sy, cellSize, 
+						cellSize, mousex, mousey, scale, scale, c_white, 1);
 	
 	var inum = inv_grid[# 1, pickup_slot];
 	draw_text_color(mousex - (cellSize * scale * 0.4), mousey, string(inum), c, c, c, c, 1);
