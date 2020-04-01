@@ -28,15 +28,15 @@ repeat(3)
 	yy += 1;
 }
 
-//----Inventory----
+// --Inventory
 
-//Visit https://www.youtube.com/watch?v=Bj48UWayTsM at 37 minutes for an explanation on the below vars
+// Visit https://www.youtube.com/watch?v=Bj48UWayTsM at 37 minutes for an explanation on the below vars
 var ii, ix, iy, xx, yy, sx, sy, iitem, inv_grid;
 ii = 0; ix = 0; iy = 0; inv_grid = ds_inventory;
 
 repeat(inv_slots)
 {
-	//x,y location for slot
+	// x,y location for slot
 	xx = slots_x + ((cellSize + x_buffer) * ix * scale);
 	yy = slots_y + ((cellSize + y_buffer) * iy * scale);
 	
@@ -45,7 +45,7 @@ repeat(inv_slots)
 	sx = (iitem mod spr_inv_items_columns) * cellSize;
 	sy = (iitem div spr_inv_items_columns) * cellSize;
 	
-	//Draw slot and item
+	// Draw slot and item
 	draw_sprite_part_ext(spr_inv_UI, 0, 0, 0, cellSize, cellSize, xx, yy, scale, scale, c_white, 1);
 
 	switch(ii)
@@ -58,7 +58,7 @@ repeat(inv_slots)
 			draw_sprite_part_ext(spr_inv_UI, 0, 0, 0, cellSize, cellSize, xx, yy, scale, scale, c_white, .3);
 			gpu_set_blendmode(bm_normal);
 			
-			//Draw item number
+			// Draw item number
 			if(iitem > 0)
 			{
 
@@ -70,7 +70,7 @@ repeat(inv_slots)
 		
 		case pickup_slot:
 			if(iitem > 0) 
-			//If picked up current slot will NOT show number or item
+			// If picked up current slot will NOT show number or item
 		break;
 		
 
@@ -80,7 +80,7 @@ repeat(inv_slots)
 			(spr_inv_items, 0, sx, sy, cellSize, 
 			cellSize, xx, yy, scale, scale, c_white, 1);
 			
-			//Draw item number
+			// Draw item number
 			if(iitem > 0)
 			{
 
@@ -94,13 +94,13 @@ repeat(inv_slots)
 	
 
 	
-	//Increment
+	// Increment
 	ii += 1;
 	ix = ii mod inv_slots_width;
 	iy = ii div inv_slots_width;
 }		
 
-//Draw Item Description
+// Draw Item Description
 
 var iinfo_grid = ds_items_info, description = "", 
 iitem = inv_grid[#0, selected_slot];
@@ -108,7 +108,7 @@ iitem = inv_grid[#0, selected_slot];
 if(iitem > 0) {
 	
 	draw_set_font(fntGui_12);
-	//Shows name. description (for example: Mushroom. A type of food)
+	// Shows name. description (for example: Mushroom. A type of food)
 	description = iinfo_grid[# 0, iitem] + ". " + iinfo_grid[# 1, iitem];
 	var sH = string_height("M");
 	c = c_black;
