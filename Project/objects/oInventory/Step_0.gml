@@ -1,7 +1,7 @@
 //If the player pressed the open inventory button then show the inventory
-if(keyboard_check_pressed(global.KInventory)) { showInventory = !showInventory; }
+if (keyboard_check_pressed(global.KInventory)) { showInventory = !showInventory; }
 //Else, the inventory should not be shown and therefore the rest of the code should not be shown
-if(!showInventory) exit;
+if (!showInventory) exit;
 
 #region Mouse Slot
 //Checks where the mouse is within the inventory
@@ -23,20 +23,21 @@ var ny = i_mousey div cell_ybuff;
 var mouse_in_inventory = true;
 
 //If the mouse is in the inventory the slot will be updated
-if(nx >= 0 and nx < inv_slots_width and ny >= 0 and ny < inv_slots_height)
+if ((nx >= 0) && (nx < inv_slots_width) && (ny >= 0) && (ny < inv_slots_height))
 {
 	//Mouse slot x and y minus the buffer space
 	var sx = i_mousex - (nx * cell_xbuff);
 	var sy = i_mousey - (ny * cell_xbuff);
 	
 	//This is the code that changes the selected slot
-	if((sx < cellSize * scale) and (sy < cellSize * scale))
+	if ((sx < cellSize * scale) && (sy < cellSize * scale))
 	{
 		//Sets the coordinates for the slot of the mouse (x,y) = the current slot the mouse is on
 		m_slotx = nx;
 		m_sloty = ny;
 	}
-} else {
+} else
+{
 	mouse_in_inventory = false;
 }
 
@@ -53,13 +54,13 @@ var inv_grid = ds_inventory;
 var ss_item = inv_grid[# 0, selected_slot];
 
 //If the mouse is holding an item...
-if(pickup_slot != -1)
+if (pickup_slot != -1)
 {
 	//When the selected slot is clicked by the player
-	if(mouse_check_button_pressed(mb_left))
+	if (mouse_check_button_pressed(mb_left))
 	{
-		if(!mouse_in_inventory) {
-			#region Drop Item Into Game World
+		if (!mouse_in_inventory) {
+			#region drop_item
 			
 			var pitem = inv_grid[# 0, pickup_slot];
 			inv_grid[# 1, pickup_slot] -= 1;
@@ -80,10 +81,9 @@ if(pickup_slot != -1)
 				y_frame = item_num div (spr_width/cell_size);
 			}
 		}
-		
-			#endregion
+		#endregion drop_item
 		//If the slot being interacted with is empty...
-		else if(ss_item == item.none)
+		else if (ss_item == item.none)
 		{
 			//Then the selected slot becomes that item
 			inv_grid[# 0, selected_slot] = inv_grid[# 0, pickup_slot];
@@ -96,17 +96,17 @@ if(pickup_slot != -1)
 		}
 		else
 		//If the slot has the same item as the item the mouse is holding
-		if(ss_item == inv_grid[# 0, pickup_slot])
+		if (ss_item == inv_grid[# 0, pickup_slot])
 		{
-			if(selected_slot != pickup_slot)
+			if (selected_slot != pickup_slot)
 			{
 				//Items combine values into a single stack of items in the inventory
-			inv_grid[# 1, selected_slot] += inv_grid[# 1, pickup_slot];
-			//Mouse slot becomes empty
-			inv_grid[# 0, pickup_slot] = item.none;
-			inv_grid[# 1, pickup_slot] = 0;
+				inv_grid[# 1, selected_slot] += inv_grid[# 1, pickup_slot];
+				//Mouse slot becomes empty
+				inv_grid[# 0, pickup_slot] = item.none;
+				inv_grid[# 1, pickup_slot] = 0;
 			}
-			pickup_slot = -1;
+				pickup_slot = -1;
 		}
 		else
 		{
@@ -117,14 +117,11 @@ if(pickup_slot != -1)
 			
 			inv_grid[# 0, pickup_slot] = ss_item;
 			inv_grid[# 1, pickup_slot] = ss_item_num;
-
 		}
 	}
 }
-else 
-if(ss_item != item.none)
+else if (ss_item != item.none)
 {
-
 	//Drop item into the Game World
 	if(keyboard_check_pressed(global.KInteract))
 	{
@@ -143,8 +140,6 @@ if(ss_item != item.none)
 			x_frame = item_num mod (spr_width/cell_size);
 			y_frame = item_num div (spr_width/cell_size);
 		}
-		
-		
 	}
 	
 	//Drop pickup item into new slot
