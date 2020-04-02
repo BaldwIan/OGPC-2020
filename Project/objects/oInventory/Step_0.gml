@@ -1,7 +1,11 @@
+#region Show Inventory
+
 //If the player pressed the open inventory button then show the inventory
 if (keyboard_check_pressed(global.KInventory)) { showInventory = !showInventory; }
 //Else, the inventory should not be shown and therefore the rest of the code should not be shown
 if (!showInventory) exit;
+
+#endregion
 
 #region Mouse Slot
 //Checks where the mouse is within the inventory
@@ -68,7 +72,7 @@ if (pickup_slot != -1)
 			//destroy item in inventory if it was the last one
 			if(inv_grid[# 1, pickup_slot] == 0)
 			{
-				inv_grid[# 0, pickup_slot] = item.none;
+				inv_grid[# 0, pickup_slot] = items.none;
 				pickup_slot = -1;
 			}
 		
@@ -83,13 +87,13 @@ if (pickup_slot != -1)
 		}
 		#endregion drop_item
 		//If the slot being interacted with is empty...
-		else if (ss_item == item.none)
+		else if (ss_item == items.none)
 		{
 			//Then the selected slot becomes that item
 			inv_grid[# 0, selected_slot] = inv_grid[# 0, pickup_slot];
 			inv_grid[# 1, selected_slot] = inv_grid[# 1, pickup_slot];
 			//And the mouse no longer holds that item
-			inv_grid[# 0, pickup_slot] = item.none;
+			inv_grid[# 0, pickup_slot] = items.none;
 			inv_grid[# 1, pickup_slot] = 0;
 			
 			pickup_slot = -1;
@@ -103,7 +107,7 @@ if (pickup_slot != -1)
 				//Items combine values into a single stack of items in the inventory
 				inv_grid[# 1, selected_slot] += inv_grid[# 1, pickup_slot];
 				//Mouse slot becomes empty
-				inv_grid[# 0, pickup_slot] = item.none;
+				inv_grid[# 0, pickup_slot] = items.none;
 				inv_grid[# 1, pickup_slot] = 0;
 			}
 				pickup_slot = -1;
@@ -120,7 +124,7 @@ if (pickup_slot != -1)
 		}
 	}
 }
-else if (ss_item != item.none)
+else if (ss_item != items.none)
 {
 	//Drop item into the Game World
 	if(keyboard_check_pressed(global.KInteract))
@@ -129,7 +133,7 @@ else if (ss_item != item.none)
 		//destroy item in inventory if it was the last one
 		if(inv_grid[# 1, selected_slot] == 0)
 		{
-			inv_grid[# 0, selected_slot] = item.none;
+			inv_grid[# 0, selected_slot] = items.none;
 		}
 		
 		//Create the item

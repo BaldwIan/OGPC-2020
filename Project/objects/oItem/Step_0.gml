@@ -11,7 +11,7 @@ if(drop_move)
 	//Otherwise, if the item is ALREADY DROPPED AND the player wants to PICK UP the item
 } else {
 	//Then check if the player is pressing the specified button to pick up the item and is within a certain range
-	if(!keyboard_check(ord("O"))) exit;
+	if(!keyboard_check(global.KPickup)) exit;
 	var px = oPlayer.x;
 	var py = oPlayer.y;
 	var r = 32;
@@ -59,7 +59,7 @@ if(drop_move)
 					yy = 0; repeat(inv_slots)
 				{
 					//If current slot being checked is empty then...
-					if(ds_inv[# 0, yy] == item.none)
+					if(ds_inv[# 0, yy] == items.none)
 					{
 						//Fill current slot with that item (just one)
 						ds_inv[# 0, yy] = in;

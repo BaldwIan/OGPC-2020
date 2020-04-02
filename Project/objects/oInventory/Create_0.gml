@@ -1,3 +1,4 @@
+#region Local Variables
 // For camera
 depth = -1;
 // Incase we change the resolution of our screen
@@ -45,7 +46,6 @@ spr_inv_UI = sInventory;
 spr_inv_items = sItems;
 
 spr_inv_items_columns = sprite_get_width(spr_inv_items) / cellSize;
-spr_inv_items_rows = sprite_get_height(spr_inv_items) / cellSize;
 
 inv_UI_x = (gui_width * 0.5) - (inv_UI_width * 0.5 * scale - 28);
 inv_UI_y = (gui_height * 0.5) - (inv_UI_height * 0.5 * scale) - 20;
@@ -59,6 +59,9 @@ slots_y = inv_UI_y + (40 * scale);
 desc_x = info_x;
 desc_y = inv_UI_y + (156 * scale);
 
+#endregion
+
+#region Draw Name and Currency
 // --Player Info
 // 0 = Name
 // 1 = Value
@@ -74,6 +77,10 @@ ds_player_info[# 1, 1] = irandom_range(0,99);
 ds_player_info[# 1, 2] = irandom_range(0,99);
 ds_player_info[# 1, 3] = "Player";
 
+#endregion
+
+#region Draw Inventory Slots
+// Draws the inventory
 
 //----Inventory----
 // Check enums in declareGlobals to find all the items and their values
@@ -81,67 +88,16 @@ ds_player_info[# 1, 3] = "Player";
 // 1 = Item Stack Amount
 
 ds_inventory = ds_grid_create(2, inv_slots);
-
-#region Create Items Info Grid
-
-ds_items_info = ds_grid_create(2, item.height);
-
-// --Item Names (We use z and i++ to make things go faster)
-// This is the "name" of the item that will be shown in the description
-var z = 0, i = 0;
-ds_items_info[# z, i++] = "Nothing";
-ds_items_info[# z, i++] = "Tomato";
-ds_items_info[# z, i++] = "Potato";
-ds_items_info[# z, i++] = "Carrot";
-ds_items_info[# z, i++] = "Artichoke";
-ds_items_info[# z, i++] = "Chilli";
-ds_items_info[# z, i++] = "Gourd";
-ds_items_info[# z, i++] = "Corn";
-ds_items_info[# z, i++] = "Wood";
-ds_items_info[# z, i++] = "Stone";
-ds_items_info[# z, i++] = "Bucket";
-ds_items_info[# z, i++] = "Chair";
-ds_items_info[# z, i++] = "Picture";
-ds_items_info[# z, i++] = "Axe";
-ds_items_info[# z, i++] = "Potion";
-ds_items_info[# z, i++] = "Starfish";
-ds_items_info[# z, i++] = "Mushroom";
-
-
-
-// --Item Descriptions
-// This is the description that will be shown AFTER the name stated above
-var z = 1, i = 0;
-ds_items_info[# z, i++] = "Nothing";
-ds_items_info[# z, i++] = "Tomato";
-ds_items_info[# z, i++] = "Potato";
-ds_items_info[# z, i++] = "Carrot";
-ds_items_info[# z, i++] = "Artichoke";
-ds_items_info[# z, i++] = "Chilli";
-ds_items_info[# z, i++] = "Gourd";
-ds_items_info[# z, i++] = "Corn";
-ds_items_info[# z, i++] = "Wood";
-ds_items_info[# z, i++] = "Stone";
-ds_items_info[# z, i++] = "Bucket";
-ds_items_info[# z, i++] = "Chair";
-ds_items_info[# z, i++] = "Picture";
-ds_items_info[# z, i++] = "Axe";
-ds_items_info[# z, i++] = "Potion";
-ds_items_info[# z, i++] = "Starfish";
-ds_items_info[# z, i++] = "Mushroom";
-
-
-
-#endregion
-
-// Draws the inventory
 for (i = 0; i < inv_slots; i++)
 {
-	ds_inventory[# 0, i] = irandom_range(1, item.height - 1);
+	ds_inventory[# 0, i] = irandom_range(1, items.height - 1);
 	ds_inventory[# 1, i] = irandom_range(1, 10);
 }
 
+#endregion
 
+#region Items
 
+Spetnaz = 1;
 
-
+#endregion

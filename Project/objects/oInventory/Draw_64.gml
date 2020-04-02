@@ -95,8 +95,13 @@ repeat (inv_slots)
 	iy = ii div inv_slots_width;
 }		
 
+
+
+
+
 // Draw Item Description
-var iinfo_grid = ds_items_info, description = "", 
+var iinfo_grid = global.DS_ITEM_DATA, 
+description = "", 
 iitem = inv_grid[# 0, selected_slot];
 
 if (iitem > 0)

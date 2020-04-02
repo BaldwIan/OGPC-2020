@@ -5,7 +5,6 @@ item_spr = sItems;
 
 //Width and height of sprite sheet
 spr_width = sprite_get_width(item_spr);
-spr_height = sprite_get_height(item_spr);
 
 //Current item value, if -1 then there is no item
 item_num = -1;

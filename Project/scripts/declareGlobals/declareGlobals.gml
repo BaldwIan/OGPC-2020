@@ -55,6 +55,7 @@ global.KPlant = ord("P");
 
 global.KInteract = ord("F");
 global.KInventory = ord("E");
+global.KPickup = ord("O");
 
 #endregion controls
 
@@ -142,7 +143,7 @@ enum crop
 #region inventory
 
 // Grid to store item data - columns are items, rows are properties of that item
-global.DS_ITEM_DATA	= ds_grid_create(2, 0);
+global.DS_ITEM_DATA	= ds_grid_create(2, items.height);
 
 // Initiate all items and properties
 createItemTypes();
@@ -151,9 +152,14 @@ createItemTypes();
 
 #region items
 
-//Written with "= x" so that we do not have to count through the items list each time
+enum items
 
-enum item
+//Has = x after each item so that we don't have to count through if we ever use numbers
+//Items 1-16 are currently placeholder items 0 and 17-20 are items we will be using
+
+
+//height MUST BE THE LAST ENUM! Make sure to update the number every time you add to the list
+
 {
 	none         = 0,
 	tomato       = 1,
@@ -173,11 +179,14 @@ enum item
 	starfish    = 15,
 	mushroom    = 16,
 	
-	height      = 17,
-	//Height must be the last enum!
+	carrotSmallsword = 17,
+	carrotSpear = 18,
+	carrotHammer = 19,
+	
+	height = 20,
 }
 
-#endregion items
+#endregion
 
 #region particle_system
 
@@ -186,8 +195,9 @@ createParticleTypes();
 
 #endregion particle_system
 
-// States that dynamic objects can be in such as stun, aggro, 
 #region object_states
+
+// States that dynamic objects can be in such as stun, aggro, 
 
 enum object_states
 {
