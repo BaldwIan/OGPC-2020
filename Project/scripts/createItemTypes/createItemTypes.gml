@@ -4,7 +4,7 @@ createItemType(items.none, "Nothing", "Nothing");
 
 createItemType(items.tomato, "Tomato", "Tomato");
 createItemType(items.potato, "Potato", "Potato");
-createItemType(items.carrot, "Name", "Carrot");
+createItemType(items.carrot, "Carrot", "Carrot");
 createItemType(items.artichoke, "Artichoke", "Artichoke");
 createItemType(items.chilli, "Chilli", "Chilli");
 createItemType(items.gourd, "Gourd", "Gourd");
